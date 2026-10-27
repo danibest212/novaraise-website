@@ -1,0 +1,874 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="page_mlm" name="page_mlm">
+        <t t-call="novaraise_website.layout">
+            <t t-set="title">Sovereign Multi-Tier MLM Operating System | Novarise Digital</t>
+            <!-- ========================================================================= -->
+  <!-- 3. HIGH-IMPACT OBSIDIAN HERO SECTION (REPLICATING page_home_mlm.xml)       -->
+  <!-- ========================================================================= -->
+  <section class="obsidian-radial grid-bg-pattern relative pt-12 pb-24 border-b border-brand-borderDark overflow-hidden">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      
+      <!-- Top Breadcrumb &amp; Status Pill -->
+      <div class="flex items-center justify-between flex-wrap gap-2 mb-6 text-xs text-slate-400">
+        <div class="flex items-center gap-2">
+          <a href="/" class="hover:text-white">Home</a>
+          <span>/</span>
+          <a href="/#services" class="hover:text-white">Solutions</a>
+          <span>/</span>
+          <span class="text-white font-semibold">Nova MLM</span>
+        </div>
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-950/60 border border-emerald-500/30 text-emerald-400">
+          <span class="w-2 h-2 rounded-full bg-emerald-400 pulse-dot"></span>
+          <span class="font-semibold text-[11px]">Product of Novarise Digital Solution PLC</span>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        
+        <!-- Left Column: Master Proposition -->
+        <div class="lg:col-span-7 space-y-6">
+          
+          <div class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-white/5 border border-white/10 text-xs">
+            <span class="px-2 py-0.5 rounded-full bg-brand-primary text-white text-[10px] font-bold">ENTERPRISE OPERATING SYSTEM</span>
+            <span class="text-slate-400 font-medium">v19.4 Cloud &amp; On-Premises</span>
+          </div>
+
+          <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-white tracking-tight leading-[1.12]">
+            Your Network. <span class="bg-gradient-to-r from-white via-slate-100 to-sky-400 bg-clip-text text-transparent">Your Rules.</span><br/>One Sovereign Platform.
+          </h1>
+
+          <p class="text-base sm:text-lg text-slate-300 font-normal leading-relaxed max-w-2xl">
+            Manage multi-tier distributor genealogy, calculate sub-second multi-plan commissions, and reconcile double-entry financial ledgers with maker-checker governance. Built for high-growth direct selling organizations scaling across East Africa and international markets.
+          </p>
+
+          <!-- Action Buttons -->
+          <div class="flex flex-wrap items-center gap-3.5 pt-2">
+            <a href="#demo-credentials" class="px-7 py-3.5 rounded-full text-sm font-bold bg-brand-primary hover:bg-blue-600 text-white shadow-xl shadow-brand-primary/30 flex items-center gap-2 transition-all">
+              <i data-lucide="key" class="w-4 h-4 text-amber-300"></i>
+              <span>Test Demo Logins</span>
+            </a>
+            <a href="#compensation-explorer" class="px-6 py-3.5 rounded-full text-sm font-bold bg-slate-800 hover:bg-slate-700 text-white border border-slate-700 flex items-center gap-2 transition-colors">
+              <i data-lucide="calculator" class="w-4 h-4 text-brand-interactive"></i>
+              <span>Launch Simulator</span>
+            </a>
+            <a href="#product-demonstration" class="px-5 py-3.5 rounded-full text-sm font-medium bg-transparent hover:bg-white/5 text-slate-300 border border-slate-700 flex items-center gap-2">
+              <i data-lucide="monitor" class="w-4 h-4 text-emerald-400"></i>
+              <span>Distributor Backoffice</span>
+            </a>
+          </div>
+
+          <!-- Real-Time Architecture KPI Tiles (from page_home_mlm.xml) -->
+          <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 pt-6 border-t border-white/10">
+            <div class="card-dark p-3.5 rounded-2xl">
+              <div class="text-[11px] text-slate-400">Genealogy Scale</div>
+              <div class="text-xl font-extrabold text-white font-heading mt-0.5">124k+ Nodes</div>
+              <div class="text-[10px] text-emerald-400 font-medium mt-1 flex items-center gap-1">
+                <i data-lucide="zap" class="w-3 h-3"></i>
+                <span>Sub-second sync</span>
+              </div>
+            </div>
+
+            <div class="card-dark p-3.5 rounded-2xl">
+              <div class="text-[11px] text-slate-400">Execution Speed</div>
+              <div class="text-xl font-extrabold text-white font-heading mt-0.5">&lt; 0.35s Batch</div>
+              <div class="text-[10px] text-slate-400 mt-1">ACID Transaction</div>
+            </div>
+
+            <div class="card-dark p-3.5 rounded-2xl">
+              <div class="text-[11px] text-slate-400">Solvency Ceiling</div>
+              <div class="text-xl font-extrabold text-white font-heading mt-0.5">50% Max GV</div>
+              <div class="text-[10px] text-emerald-400 font-medium mt-1 flex items-center gap-1">
+                <i data-lucide="shield" class="w-3 h-3"></i>
+                <span>DSA Protected</span>
+              </div>
+            </div>
+
+            <div class="card-dark p-3.5 rounded-2xl">
+              <div class="text-[11px] text-slate-400">Financial Bridge</div>
+              <div class="text-xl font-extrabold text-white font-heading mt-0.5">Double-Entry</div>
+              <div class="text-[10px] text-slate-400 mt-1">GL Reconciled</div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Right Column: Interactive Operations Cockpit Window (Binary Tree) -->
+        <div class="lg:col-span-5">
+          <div class="bg-brand-navyDark rounded-3xl overflow-hidden border border-brand-borderDark shadow-2xl">
+            
+            <!-- Window Chrome -->
+            <div class="flex items-center justify-between py-2.5 px-4 bg-slate-950 border-b border-slate-800">
+              <div class="flex items-center gap-2">
+                <span class="w-2.5 h-2.5 rounded-full bg-rose-500"></span>
+                <span class="w-2.5 h-2.5 rounded-full bg-amber-500"></span>
+                <span class="w-2.5 h-2.5 rounded-full bg-emerald-500"></span>
+                <span class="ms-2 text-xs font-medium text-slate-400 font-mono">Nova MLM Operations Cockpit</span>
+              </div>
+              <span class="px-2 py-0.5 rounded-full text-[10px] font-semibold bg-emerald-950 text-emerald-400 border border-emerald-800 flex items-center gap-1">
+                <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 pulse-dot"></span>
+                <span>Live ACID Engine</span>
+              </span>
+            </div>
+
+            <!-- Inside Cockpit Body -->
+            <div class="p-5 space-y-4">
+              
+              <!-- Binary State Visualizer -->
+              <div class="card-dark p-4 rounded-2xl">
+                <div class="flex justify-between items-center mb-3">
+                  <span class="text-[10px] font-bold uppercase tracking-wider text-slate-400">Live Binary Genealogy State</span>
+                  <span class="px-2 py-0.5 rounded text-[10px] font-semibold bg-emerald-950 text-emerald-400 border border-emerald-800">Balanced Leg Active</span>
+                </div>
+
+                <!-- SVG Tree -->
+                <div class="text-center py-2">
+                  <div class="inline-flex flex-col items-center mb-2">
+                    <span class="px-3 py-1 rounded-full bg-brand-primary text-white text-xs font-bold shadow">
+                      ★ Sponsor (Diamond Rank)
+                    </span>
+                    <div class="w-0.5 h-3 bg-slate-600"></div>
+                  </div>
+
+                  <!-- Legs -->
+                  <div class="grid grid-cols-2 gap-4 relative pt-1">
+                    <div class="absolute top-0 left-1/4 right-1/4 h-0.5 bg-slate-700"></div>
+                    
+                    <div class="flex flex-col items-center">
+                      <div class="w-0.5 h-2.5 bg-slate-600"></div>
+                      <div class="bg-slate-900 border border-emerald-500/40 p-2 rounded-xl text-center w-full">
+                        <div class="text-emerald-400 text-xs font-bold">Left Leg: 42,500 BV</div>
+                        <div class="text-[10px] text-slate-400">42 Active Distributors</div>
+                      </div>
+                    </div>
+
+                    <div class="flex flex-col items-center">
+                      <div class="w-0.5 h-2.5 bg-slate-600"></div>
+                      <div class="bg-slate-900 border border-sky-500/40 p-2 rounded-xl text-center w-full">
+                        <div class="text-sky-400 text-xs font-bold">Right Leg: 68,200 BV</div>
+                        <div class="text-[10px] text-slate-400">61 Active Distributors</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="mt-3 pt-3 border-t border-slate-800 flex items-center justify-between text-xs">
+                  <span class="text-slate-400">Cycle Payout: <strong class="text-white">4,250 BV</strong> (1:1 Ratio)</span>
+                  <span class="text-emerald-400 font-mono font-bold">+12,500 ETB Settlement</span>
+                </div>
+              </div>
+
+              <!-- Quick Mini Payout Stream -->
+              <div class="grid grid-cols-2 gap-3 text-xs">
+                <div class="card-dark p-3 rounded-2xl">
+                  <span class="text-slate-400 block text-[10px]">Unilevel Compression</span>
+                  <span class="text-white font-bold">Dynamic Tier 1–7</span>
+                </div>
+                <div class="card-dark p-3 rounded-2xl">
+                  <span class="text-slate-400 block text-[10px]">Rotational Equb Pool</span>
+                  <span class="text-emerald-400 font-bold">Cycle 14 Active</span>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========================================================================= -->
+  <!-- 4. DEMO CREDENTIALS SECTION (FROM PREVIOUS MLM SITE)                     -->
+  <!-- ========================================================================= -->
+  <section id="demo-credentials" class="py-16 bg-slate-950 border-b border-brand-borderDark">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-2xl mx-auto mb-10">
+        <span class="text-xs font-bold uppercase tracking-wider text-amber-400 bg-amber-950/60 px-3 py-1 rounded-full border border-amber-800">
+          Sandbox Live Access
+        </span>
+        <h2 class="text-3xl font-extrabold text-white tracking-tight mt-3">
+          Instant System Testing Credentials
+        </h2>
+        <p class="mt-2 text-slate-400 text-xs sm:text-sm">
+          Test drive all role-based perspectives in our live Odoo 19 sandbox environment with pre-seeded genealogy trees.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        
+        <!-- Credential 1: Admin -->
+        <div class="card-dark p-6 rounded-3xl">
+          <div class="flex items-center justify-between mb-4">
+            <span class="px-2.5 py-0.5 rounded-full text-[10px] font-bold bg-blue-950 text-blue-400 border border-blue-800">
+              ROLE: ADMIN
+            </span>
+            <i data-lucide="shield" class="w-4 h-4 text-blue-400"></i>
+          </div>
+          <h3 class="text-lg font-bold text-white mb-2">Executive Operations Cockpit</h3>
+          <p class="text-xs text-slate-400 mb-4 leading-relaxed">
+            Full governance access: tree reorganization, binary commission batch execution, payout ceiling configuration, and global member ledger audits.
+          </p>
+          <div class="p-3 bg-slate-900 rounded-xl border border-slate-800 font-mono text-xs text-slate-300 space-y-1 mb-4">
+            <div>User: <span class="text-brand-interactive">admin@novaraise.et</span></div>
+            <div>Pass: <span class="text-slate-400">Demo_Admin_2026!</span></div>
+          </div>
+          <button onclick="copyCredentials('admin@novaraise.et', 'Demo_Admin_2026!')" class="w-full py-2 rounded-xl text-xs font-semibold bg-slate-800 hover:bg-slate-700 text-white transition-colors">
+            Copy Login Credentials
+          </button>
+        </div>
+
+        <!-- Credential 2: Diamond Distributor -->
+        <div class="card-dark p-6 rounded-3xl">
+          <div class="flex items-center justify-between mb-4">
+            <span class="px-2.5 py-0.5 rounded-full text-[10px] font-bold bg-emerald-950 text-emerald-400 border border-emerald-800">
+              ROLE: DISTRIBUTOR
+            </span>
+            <i data-lucide="user-check" class="w-4 h-4 text-emerald-400"></i>
+          </div>
+          <h3 class="text-lg font-bold text-white mb-2">Distributor Portal &amp; E-Wallet</h3>
+          <p class="text-xs text-slate-400 mb-4 leading-relaxed">
+            Distributor perspective: real-time downline genealogy explorer, commission breakdown, Telebirr cashout request, e-pin generation, and Equb savings.
+          </p>
+          <div class="p-3 bg-slate-900 rounded-xl border border-slate-800 font-mono text-xs text-slate-300 space-y-1 mb-4">
+            <div>User: <span class="text-emerald-400">distributor@novaraise.et</span></div>
+            <div>Pass: <span class="text-slate-400">Demo_Dist_2026!</span></div>
+          </div>
+          <button onclick="copyCredentials('distributor@novaraise.et', 'Demo_Dist_2026!')" class="w-full py-2 rounded-xl text-xs font-semibold bg-slate-800 hover:bg-slate-700 text-white transition-colors">
+            Copy Login Credentials
+          </button>
+        </div>
+
+        <!-- Credential 3: Finance / Maker-Checker -->
+        <div class="card-dark p-6 rounded-3xl">
+          <div class="flex items-center justify-between mb-4">
+            <span class="px-2.5 py-0.5 rounded-full text-[10px] font-bold bg-amber-950 text-amber-400 border border-amber-800">
+              ROLE: AUDIT
+            </span>
+            <i data-lucide="lock" class="w-4 h-4 text-amber-400"></i>
+          </div>
+          <h3 class="text-lg font-bold text-white mb-2">Finance &amp; Maker-Checker Vault</h3>
+          <p class="text-xs text-slate-400 mb-4 leading-relaxed">
+            Dual-approval key: audit automated batch calculations, verify Ethiopian statutory MoR withholding taxes, and authorize bulk Telebirr bank dispatches.
+          </p>
+          <div class="p-3 bg-slate-900 rounded-xl border border-slate-800 font-mono text-xs text-slate-300 space-y-1 mb-4">
+            <div>User: <span class="text-amber-400">finance@novaraise.et</span></div>
+            <div>Pass: <span class="text-slate-400">Demo_Finance_2026!</span></div>
+          </div>
+          <button onclick="copyCredentials('finance@novaraise.et', 'Demo_Finance_2026!')" class="w-full py-2 rounded-xl text-xs font-semibold bg-slate-800 hover:bg-slate-700 text-white transition-colors">
+            Copy Login Credentials
+          </button>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========================================================================= -->
+  <!-- 5. FOUR SOVEREIGN ENGINES (FROM PREVIOUS MLM ARCHITECTURE)                 -->
+  <!-- ========================================================================= -->
+  <section id="platform-overview" class="py-20 bg-brand-obsidian border-b border-brand-borderDark">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto mb-14">
+        <span class="text-xs font-bold uppercase tracking-wider text-brand-interactive bg-blue-950/60 px-3 py-1 rounded-full border border-blue-800">
+          Core System Architecture
+        </span>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight mt-3">
+          Four Sovereign Enterprise Engines
+        </h2>
+        <p class="mt-3 text-slate-400 text-base">
+          Nova MLM combines mathematical precision with ledger-grade financial controls to power unshakeable direct selling networks.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        
+        <div class="card-dark p-7 rounded-3xl">
+          <div class="w-12 h-12 rounded-2xl bg-blue-950 text-brand-interactive flex items-center justify-center mb-5 border border-blue-800">
+            <i data-lucide="git-branch" class="w-6 h-6"></i>
+          </div>
+          <h3 class="text-lg font-bold text-white mb-2">Genealogy &amp; Lineage</h3>
+          <p class="text-xs text-slate-400 leading-relaxed mb-4">
+            Sub-second traversal across 120,000+ member trees. Binary dual placement legs, dynamic spillover algorithms, and unilevel sponsorship lineage graphs.
+          </p>
+          <div class="text-[11px] font-semibold text-emerald-400">✓ O(log N) tree queries</div>
+        </div>
+
+        <div class="card-dark p-7 rounded-3xl">
+          <div class="w-12 h-12 rounded-2xl bg-blue-950 text-brand-interactive flex items-center justify-center mb-5 border border-blue-800">
+            <i data-lucide="calculator" class="w-6 h-6"></i>
+          </div>
+          <h3 class="text-lg font-bold text-white mb-2">Compensation Engine</h3>
+          <p class="text-xs text-slate-400 leading-relaxed mb-4">
+            Multi-plan matrix: binary pairing volumes, dynamic compression, rank advancement incentives, and leadership matching bonus pools.
+          </p>
+          <div class="text-[11px] font-semibold text-emerald-400">✓ Configurable DSA solvency cap</div>
+        </div>
+
+        <div class="card-dark p-7 rounded-3xl">
+          <div class="w-12 h-12 rounded-2xl bg-blue-950 text-brand-interactive flex items-center justify-center mb-5 border border-blue-800">
+            <i data-lucide="wallet" class="w-6 h-6"></i>
+          </div>
+          <h3 class="text-lg font-bold text-white mb-2">Double-Entry E-Wallet</h3>
+          <p class="text-xs text-slate-400 leading-relaxed mb-4">
+            Immutable balance ledgers separating cash balance, pending return window, points, and e-pin vouchers. Direct automated payout integration with Telebirr and CBE.
+          </p>
+          <div class="text-[11px] font-semibold text-emerald-400">✓ Zero reconciliation discrepancies</div>
+        </div>
+
+        <div class="card-dark p-7 rounded-3xl">
+          <div class="w-12 h-12 rounded-2xl bg-blue-950 text-brand-interactive flex items-center justify-center mb-5 border border-blue-800">
+            <i data-lucide="lock" class="w-6 h-6"></i>
+          </div>
+          <h3 class="text-lg font-bold text-white mb-2">Dual-Key Governance</h3>
+          <p class="text-xs text-slate-400 leading-relaxed mb-4">
+            Maker-checker sign-offs on high-value commission cashouts. Full audit trail on rank adjustments, manual overrides, and tax deduction certificates.
+          </p>
+          <div class="text-[11px] font-semibold text-emerald-400">✓ Full regulatory compliance</div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========================================================================= -->
+  <!-- 6. LIVE ROLE-BASED SCREENSHOTS GALLERY (FROM PREVIOUS BUILD)              -->
+  <!-- ========================================================================= -->
+  <section id="product-demonstration" class="py-20 bg-slate-950 border-b border-brand-borderDark">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto mb-14">
+        <span class="text-xs font-bold uppercase tracking-wider text-emerald-400 bg-emerald-950/60 px-3 py-1 rounded-full border border-emerald-800">
+          Live System Gallery
+        </span>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight mt-3">
+          Inspect Role-Based Experiences
+        </h2>
+        <p class="mt-3 text-slate-400 text-base">
+          Actual production screens from Nova MLM: corporate admin, distributor backoffice, binary compensation plans, and security controls.
+        </p>
+      </div>
+
+      <!-- Screenshot Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        
+        <!-- Screen 1: Corporate Admin Dashboard -->
+        <div class="card-dark rounded-3xl overflow-hidden border border-slate-800">
+          <div class="h-56 bg-slate-950 overflow-hidden relative group">
+            <img src="/novaraise_website/static/src/img/mlm/dashboard_dark.png" alt="Corporate Admin Cockpit" class="w-full h-full object-cover object-top opacity-90 group-hover:scale-105 transition-transform duration-500" />
+            <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-transparent to-transparent"></div>
+          </div>
+          <div class="p-6">
+            <h4 class="text-lg font-bold text-white mb-1.5">Corporate Administrator Cockpit</h4>
+            <p class="text-xs text-slate-400 leading-relaxed">
+              Real-time executive oversight: global network volume, binary pairing velocity, commission reserve balances, and active distributor tiers.
+            </p>
+          </div>
+        </div>
+
+        <!-- Screen 2: Distributor Portal -->
+        <div class="card-dark rounded-3xl overflow-hidden border border-slate-800">
+          <div class="h-56 bg-slate-950 overflow-hidden relative group">
+            <img src="/novaraise_website/static/src/img/mlm/distributor_portal_live.png" alt="Distributor Portal Live" class="w-full h-full object-cover object-top opacity-90 group-hover:scale-105 transition-transform duration-500" />
+            <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-transparent to-transparent"></div>
+          </div>
+          <div class="p-6">
+            <h4 class="text-lg font-bold text-white mb-1.5">Distributor Backoffice &amp; Genealogy</h4>
+            <p class="text-xs text-slate-400 leading-relaxed">
+              Distributor view: interactive binary tree explorer, downline member statuses, carry-over volume points, and rank advancement tracking.
+            </p>
+          </div>
+        </div>
+
+        <!-- Screen 3: Binary Compensation Plan Engine -->
+        <div class="card-dark rounded-3xl overflow-hidden border border-slate-800">
+          <div class="h-56 bg-slate-950 overflow-hidden relative group">
+            <img src="/novaraise_website/static/src/img/mlm/binary_plan_live.png" alt="Binary Plan Configuration" class="w-full h-full object-cover object-top opacity-90 group-hover:scale-105 transition-transform duration-500" />
+            <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-transparent to-transparent"></div>
+          </div>
+          <div class="p-6">
+            <h4 class="text-lg font-bold text-white mb-1.5">Binary &amp; Unilevel Plan Configuration</h4>
+            <p class="text-xs text-slate-400 leading-relaxed">
+              Configurable compensation rules: 1:1 / 2:1 pairing ratios, daily capping thresholds, spillover routing rules, and dynamic compression.
+            </p>
+          </div>
+        </div>
+
+        <!-- Screen 4: Distributor E-Wallet &amp; Payouts -->
+        <div class="card-dark rounded-3xl overflow-hidden border border-slate-800">
+          <div class="h-56 bg-slate-950 overflow-hidden relative group">
+            <img src="/novaraise_website/static/src/img/mlm/distributor_billing.png" alt="Distributor Billing &amp; Wallet" class="w-full h-full object-cover object-top opacity-90 group-hover:scale-105 transition-transform duration-500" />
+            <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-transparent to-transparent"></div>
+          </div>
+          <div class="p-6">
+            <h4 class="text-lg font-bold text-white mb-1.5">Distributor Wallet &amp; Telebirr Cashout</h4>
+            <p class="text-xs text-slate-400 leading-relaxed">
+              Instant payout dispatches via Telebirr API, bank account withdrawals, encrypted e-pin generation, and digital Equb contribution pools.
+            </p>
+          </div>
+        </div>
+
+        <!-- Screen 5: Replicated E-Commerce Store -->
+        <div class="card-dark rounded-3xl overflow-hidden border border-slate-800">
+          <div class="h-56 bg-slate-950 overflow-hidden relative group">
+            <img src="/novaraise_website/static/src/img/mlm/replicated_store.png" alt="Replicated Storefront" class="w-full h-full object-cover object-top opacity-90 group-hover:scale-105 transition-transform duration-500" />
+            <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-transparent to-transparent"></div>
+          </div>
+          <div class="p-6">
+            <h4 class="text-lg font-bold text-white mb-1.5">Replicated Distributor Storefront</h4>
+            <p class="text-xs text-slate-400 leading-relaxed">
+              Personalized e-commerce storefront for every affiliate with automated sponsor cookie attribution, wholesale pricing, and retail customer checkout.
+            </p>
+          </div>
+        </div>
+
+        <!-- Screen 6: Maker-Checker Governance &amp; Audit -->
+        <div class="card-dark rounded-3xl overflow-hidden border border-slate-800">
+          <div class="h-56 bg-slate-950 overflow-hidden relative group">
+            <img src="/novaraise_website/static/src/img/mlm/maker_checker.png" alt="Maker-Checker Security Governance" class="w-full h-full object-cover object-top opacity-90 group-hover:scale-105 transition-transform duration-500" />
+            <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-transparent to-transparent"></div>
+          </div>
+          <div class="p-6">
+            <h4 class="text-lg font-bold text-white mb-1.5">Dual-Key Maker-Checker Governance</h4>
+            <p class="text-xs text-slate-400 leading-relaxed">
+              Audit approvals requiring two executive keys for high-value commission cashouts, statutory tax filings, and custom compensation parameter adjustments.
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========================================================================= -->
+  <!-- 7. INTERACTIVE COMPENSATION CALCULATOR (FROM mlm_calculator.js)          -->
+  <!-- ========================================================================= -->
+  <section id="compensation-explorer" class="py-20 bg-brand-obsidian border-b border-brand-borderDark">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto mb-14">
+        <span class="text-xs font-bold uppercase tracking-wider text-brand-interactive bg-blue-950/60 px-3 py-1 rounded-full border border-blue-800">
+          Mathematical Simulator
+        </span>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight mt-3">
+          Illustrative Volume &amp; Override Calculator
+        </h2>
+        <p class="mt-3 text-slate-400 text-base">
+          Stress-test earnings and margin-aware solvency caps in real time. Backed by Nova MLM's actuarial simulation engine.
+        </p>
+      </div>
+
+      <!-- Calculator Box -->
+      <div class="max-w-4xl mx-auto card-dark p-8 sm:p-12 rounded-3xl border border-slate-700 shadow-2xl">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+          
+          <!-- Slider Controls -->
+          <div class="space-y-6">
+            
+            <div>
+              <div class="flex justify-between items-center text-xs mb-2">
+                <label class="font-bold text-slate-300 uppercase tracking-wider">Plan Architecture</label>
+                <span class="text-brand-interactive font-medium">Configurable Math</span>
+              </div>
+              <select id="calc_plan_type" class="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:ring-2 focus:ring-brand-interactive font-medium">
+                <option value="binary">Binary Plan (1:1 / 2:1 Pairing Volume)</option>
+                <option value="unilevel">Unilevel Plan (with Dynamic Compression)</option>
+                <option value="matrix">Forced Matrix Plan (3x9 / 5x3 Grid)</option>
+                <option value="stairstep">Stairstep Breakaway Plan</option>
+                <option value="hybrid">Hybrid Dual-Leg + Unilevel Overrides</option>
+              </select>
+            </div>
+
+            <div>
+              <div class="flex justify-between items-center text-xs mb-2">
+                <label class="font-bold text-slate-300 uppercase tracking-wider">Personal Monthly Volume (PV)</label>
+                <span id="calc_pv_val" class="font-mono text-emerald-400 font-bold">100 PV</span>
+              </div>
+              <input type="range" id="calc_pv_slider" min="50" max="1000" step="50" value="100" class="w-full accent-brand-interactive bg-slate-800 h-2 rounded-lg cursor-pointer" />
+            </div>
+
+            <div>
+              <div class="flex justify-between items-center text-xs mb-2">
+                <label class="font-bold text-slate-300 uppercase tracking-wider">Direct Sponsored Affiliates</label>
+                <span id="calc_directs_val" class="font-mono text-emerald-400 font-bold">5 Active Directs</span>
+              </div>
+              <input type="range" id="calc_directs_slider" min="1" max="50" step="1" value="5" class="w-full accent-brand-interactive bg-slate-800 h-2 rounded-lg cursor-pointer" />
+            </div>
+
+            <div>
+              <div class="flex justify-between items-center text-xs mb-2">
+                <label class="font-bold text-slate-300 uppercase tracking-wider">Total Downline Group Volume (GV)</label>
+                <span id="calc_gv_val" class="font-mono text-brand-interactive font-bold">15,000 GV</span>
+              </div>
+              <input type="range" id="calc_gv_slider" min="1000" max="150000" step="2500" value="15000" class="w-full accent-brand-interactive bg-slate-800 h-2 rounded-lg cursor-pointer" />
+            </div>
+
+          </div>
+
+          <!-- Real-Time Output Breakdown -->
+          <div class="bg-slate-900/90 rounded-2xl p-6 border border-slate-700/80 space-y-4">
+            <div class="flex justify-between items-center pb-3 border-b border-slate-800">
+              <span class="text-xs font-bold text-slate-400 uppercase tracking-wider">Projected Commission Breakdown</span>
+              <span id="calc_out_cap_status" class="px-2 py-0.5 rounded text-[10px] font-semibold bg-emerald-950 text-emerald-400 border border-emerald-800">
+                Healthy (Within Margin Bounds)
+              </span>
+            </div>
+
+            <div class="space-y-2.5 text-xs">
+              <div class="flex justify-between text-slate-400">
+                <span>Personal Retail Bonus (20%):</span>
+                <strong id="calc_out_personal" class="text-white font-mono">$20</strong>
+              </div>
+              <div class="flex justify-between text-slate-400">
+                <span>Team Override / Pairing Volume:</span>
+                <strong id="calc_out_team" class="text-white font-mono">$600</strong>
+              </div>
+              <div class="flex justify-between text-slate-400">
+                <span>Leadership &amp; Rank Pool:</span>
+                <strong id="calc_out_leadership" class="text-white font-mono">$225</strong>
+              </div>
+              <div class="flex justify-between text-slate-400 pt-2 border-t border-slate-800">
+                <span>Gross Projected Output:</span>
+                <span id="calc_out_gross" class="text-slate-300 font-mono">$845</span>
+              </div>
+              <div class="flex justify-between text-slate-400">
+                <span>Solvency Ceiling Cap (50% GV):</span>
+                <span id="calc_out_cap_limit" class="text-slate-300 font-mono">$7,500</span>
+              </div>
+            </div>
+
+            <!-- Net Commission Display -->
+            <div class="p-4 rounded-xl bg-slate-950 border border-slate-800 text-center">
+              <div class="text-xs text-slate-400 font-medium">Net Estimated Payout</div>
+              <div id="calc_out_net_usd" class="text-3xl font-extrabold text-emerald-400 font-heading mt-1">
+                $845
+              </div>
+              <div id="calc_out_net_etb" class="text-xs text-slate-400 font-mono mt-1 font-semibold">
+                ≈ ETB 105,625
+              </div>
+            </div>
+
+            <button onclick="openRFPModal('Compensation Plan Simulator Discovery')" class="w-full py-2.5 rounded-xl text-xs font-bold bg-brand-primary hover:bg-blue-600 text-white transition-all shadow-md">
+              Request Detailed Actuarial Plan Model
+            </button>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========================================================================= -->
+  <!-- 8. INDUSTRY VERTICAL SOLUTIONS                                            -->
+  <!-- ========================================================================= -->
+  <section id="industry-solutions" class="py-20 bg-slate-950 border-b border-brand-borderDark">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto mb-14">
+        <span class="text-xs font-bold uppercase tracking-wider text-brand-interactive bg-blue-950/60 px-3 py-1 rounded-full border border-blue-800">
+          Sector Modules
+        </span>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight mt-3">
+          Purpose-Built Industry Solutions
+        </h2>
+        <p class="mt-3 text-slate-400 text-base">
+          Pre-configured vertical data models and commission templates for leading direct selling sectors.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        
+        <div class="card-dark p-6 rounded-3xl">
+          <div class="text-amber-400 mb-3"><i data-lucide="building" class="w-6 h-6"></i></div>
+          <h3 class="text-lg font-bold text-white mb-2">Real Estate &amp; Brokerage</h3>
+          <p class="text-xs text-slate-400 leading-relaxed mb-3">
+            Multi-tier agency overrides, property site-visit bookings, customer installment tracking, and milestone escrow commission release.
+          </p>
+          <span class="text-[10px] text-brand-interactive font-medium">✓ Escrow BI Included</span>
+        </div>
+
+        <div class="card-dark p-6 rounded-3xl">
+          <div class="text-emerald-400 mb-3"><i data-lucide="heart" class="w-6 h-6"></i></div>
+          <h3 class="text-lg font-bold text-white mb-2">Health &amp; Wellness</h3>
+          <p class="text-xs text-slate-400 leading-relaxed mb-3">
+            Monthly autoship subscriptions, nutritional product bundles, warehouse inventory batch sync, and replicated customer storefronts.
+          </p>
+          <span class="text-[10px] text-emerald-400 font-medium">✓ Autoship Subscriptions</span>
+        </div>
+
+        <div class="card-dark p-6 rounded-3xl">
+          <div class="text-sky-400 mb-3"><i data-lucide="shield-check" class="w-6 h-6"></i></div>
+          <h3 class="text-lg font-bold text-white mb-2">Insurance &amp; Financial</h3>
+          <p class="text-xs text-slate-400 leading-relaxed mb-3">
+            Policy renewal trails, microfinance credit-scoring overrides, digital Equb group contributions, and NBE statutory accounting.
+          </p>
+          <span class="text-[10px] text-sky-400 font-medium">✓ Digital Equb Integration</span>
+        </div>
+
+        <div class="card-dark p-6 rounded-3xl">
+          <div class="text-purple-400 mb-3"><i data-lucide="shopping-bag" class="w-6 h-6"></i></div>
+          <h3 class="text-lg font-bold text-white mb-2">E-Commerce &amp; Retail</h3>
+          <p class="text-xs text-slate-400 leading-relaxed mb-3">
+            Multi-vendor digital marketplace with automatic sponsor referral attribution, dynamic Telebirr checkout, and rider delivery dispatch.
+          </p>
+          <span class="text-[10px] text-purple-400 font-medium">✓ Telebirr Rails Active</span>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========================================================================= -->
+  <!-- 9. PRICING &amp; COMMERCIAL TIERS                                             -->
+  <!-- ========================================================================= -->
+  <section id="pricing" class="py-20 bg-brand-obsidian border-b border-brand-borderDark">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto mb-14">
+        <span class="text-xs font-bold uppercase tracking-wider text-emerald-400 bg-emerald-950/60 px-3 py-1 rounded-full border border-emerald-800">
+          Commercial Tiers
+        </span>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight mt-3">
+          Transparent Enterprise Pricing
+        </h2>
+        <p class="mt-3 text-slate-400 text-base">
+          From startup direct selling networks to national sovereign multi-tier enterprises.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        
+        <!-- Tier 1 -->
+        <div class="card-dark p-8 rounded-3xl flex flex-col justify-between">
+          <div>
+            <span class="text-xs font-bold text-slate-400 uppercase tracking-wider block mb-2">Startup Direct Network</span>
+            <h3 class="text-2xl font-extrabold text-white font-heading mb-2">Network Starter</h3>
+            <div class="text-3xl font-extrabold text-white mb-4 font-heading">
+              600,000 <span class="text-sm font-normal text-slate-400">ETB one-time</span>
+            </div>
+            <ul class="text-xs text-slate-300 space-y-3 mb-6">
+              <li class="flex items-center gap-2">✓ Binary or Unilevel Math Engine</li>
+              <li class="flex items-center gap-2">✓ Up to 5,000 Network Distributors</li>
+              <li class="flex items-center gap-2">✓ Multi-Currency Member E-Wallet</li>
+              <li class="flex items-center gap-2">✓ Telebirr &amp; CBE Cashout Integration</li>
+              <li class="flex items-center gap-2">✓ 60-Day Post-Launch SLA Warranty</li>
+            </ul>
+          </div>
+          <button onclick="openRFPModal('MLM Network Starter Tier (600,000 ETB)')" class="w-full py-3 rounded-full text-xs font-bold bg-slate-800 hover:bg-slate-700 text-white transition-colors">
+            Deploy Starter Network
+          </button>
+        </div>
+
+        <!-- Tier 2: Popular -->
+        <div class="card-dark p-8 rounded-3xl border-2 border-brand-interactive relative flex flex-col justify-between shadow-2xl">
+          <div class="absolute -top-3.5 right-6 px-3 py-0.5 rounded-full bg-brand-interactive text-white text-[10px] font-bold uppercase tracking-wider">
+            Most Popular
+          </div>
+          <div>
+            <span class="text-xs font-bold text-brand-interactive uppercase tracking-wider block mb-2">High-Velocity Scaling</span>
+            <h3 class="text-2xl font-extrabold text-white font-heading mb-2">Enterprise SuperApp</h3>
+            <div class="text-3xl font-extrabold text-white mb-4 font-heading">
+              1,500,000 <span class="text-sm font-normal text-slate-400">ETB one-time</span>
+            </div>
+            <ul class="text-xs text-slate-200 space-y-3 mb-6">
+              <li class="flex items-center gap-2">✓ Hybrid Binary + Unilevel Compression</li>
+              <li class="flex items-center gap-2">✓ Up to 50,000 Network Distributors</li>
+              <li class="flex items-center gap-2">✓ Digital Rotational Equb &amp; Savings Pools</li>
+              <li class="flex items-center gap-2">✓ Encrypted E-Pin Voucher Generation</li>
+              <li class="flex items-center gap-2">✓ Replicated E-Commerce Storefronts</li>
+              <li class="flex items-center gap-2">✓ 24/7 SLA with 4-Hour Critical Response</li>
+            </ul>
+          </div>
+          <button onclick="openRFPModal('MLM Enterprise SuperApp (1,500,000 ETB)')" class="w-full py-3 rounded-full text-xs font-bold bg-brand-interactive hover:bg-blue-500 text-white shadow-lg shadow-brand-interactive/30 transition-all">
+            Deploy Enterprise SuperApp
+          </button>
+        </div>
+
+        <!-- Tier 3 -->
+        <div class="card-dark p-8 rounded-3xl flex flex-col justify-between">
+          <div>
+            <span class="text-xs font-bold text-slate-400 uppercase tracking-wider block mb-2">Sovereign Ecosystem</span>
+            <h3 class="text-2xl font-extrabold text-white font-heading mb-2">Sovereign Cluster</h3>
+            <div class="text-3xl font-extrabold text-white mb-4 font-heading">
+              3,000,000 <span class="text-sm font-normal text-slate-400">ETB one-time</span>
+            </div>
+            <ul class="text-xs text-slate-300 space-y-3 mb-6">
+              <li class="flex items-center gap-2">✓ Unlimited Distributors &amp; Downlines</li>
+              <li class="flex items-center gap-2">✓ Real Estate Escrow &amp; Brokerage BI</li>
+              <li class="flex items-center gap-2">✓ Full Source Code Ownership &amp; Docker Mesh</li>
+              <li class="flex items-center gap-2">✓ Private On-Premise Data Center Deployment</li>
+              <li class="flex items-center gap-2">✓ Dedicated DevOps Engineer &amp; SLA</li>
+            </ul>
+          </div>
+          <button onclick="openRFPModal('MLM Sovereign Cluster (3,000,000 ETB)')" class="w-full py-3 rounded-full text-xs font-bold bg-slate-800 hover:bg-slate-700 text-white transition-colors">
+            Deploy Sovereign Cluster
+          </button>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========================================================================= -->
+  <!-- 10. DEMO REQUEST &amp; CONTACT SECTION                                        -->
+  <!-- ========================================================================= -->
+  <section id="demo-request" class="py-20 bg-slate-950 border-t border-brand-borderDark">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-6">
+      <span class="text-xs uppercase tracking-widest text-emerald-400 font-bold">Ready to Launch?</span>
+      <h2 class="text-3xl sm:text-5xl font-extrabold text-white tracking-tight">
+        Build Your Direct Selling Advantage
+      </h2>
+      <p class="text-slate-400 text-base max-w-2xl mx-auto">
+        Speak directly with our chief MLM architect. We will model your compensation math, verify company solvency limits, and configure your live sandbox within 48 hours.
+      </p>
+      
+      <div class="flex flex-wrap items-center justify-center gap-4 pt-4">
+        <button onclick="openRFPModal('MLM Master Demo Request')" class="px-8 py-4 rounded-full text-base font-bold bg-brand-primary hover:bg-blue-600 text-white shadow-xl shadow-brand-primary/30 flex items-center gap-2 transition-all">
+          <span>Request Guided Architecture Demo</span>
+          <i data-lucide="arrow-right" class="w-5 h-5"></i>
+        </button>
+        <a href="https://t.me/NovaraiseDigital" target="_blank" class="px-6 py-4 rounded-full text-base font-bold bg-slate-900 hover:bg-slate-800 text-white border border-slate-700 flex items-center gap-2">
+          <i data-lucide="send" class="w-5 h-5 text-brand-interactive"></i>
+          <span>Direct Telegram Chat</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================= -->
+  <!-- 11. FOOTER                                                                -->
+  <!-- ========================================================================= -->
+            
+<script>
+//<![CDATA[
+lucide.createIcons();
+
+    function openModal(serviceName) {
+      document.getElementById('modal-service-input').value = serviceName || 'General MLM Architecture Consultation';
+      document.getElementById('modal-lead-form').classList.remove('hidden');
+      document.getElementById('modal-success').classList.add('hidden');
+      document.getElementById('lead-modal').classList.remove('hidden');
+      lucide.createIcons();
+    }
+
+    function closeModal() {
+      document.getElementById('lead-modal').classList.add('hidden');
+    }
+
+    function handleModalSubmit(e) {
+      e.preventDefault();
+      document.getElementById('modal-lead-form').classList.add('hidden');
+      document.getElementById('modal-success').classList.remove('hidden');
+      lucide.createIcons();
+    }
+
+    function copyCredentials(user, pass) {
+      navigator.clipboard.writeText(`User: ${user} | Pass: ${pass}`);
+      alert(`Copied demo credentials to clipboard:\nUser: ${user}\nPass: ${pass}`);
+    }
+
+    // Exact Mathematical Logic from mlm_calculator.js
+    const pvSlider = document.getElementById('calc_pv_slider');
+    const pvVal = document.getElementById('calc_pv_val');
+    const directsSlider = document.getElementById('calc_directs_slider');
+    const directsVal = document.getElementById('calc_directs_val');
+    const gvSlider = document.getElementById('calc_gv_slider');
+    const gvVal = document.getElementById('calc_gv_val');
+    const planSelect = document.getElementById('calc_plan_type');
+
+    const outPersonal = document.getElementById('calc_out_personal');
+    const outTeam = document.getElementById('calc_out_team');
+    const outLeadership = document.getElementById('calc_out_leadership');
+    const outGross = document.getElementById('calc_out_gross');
+    const outCapStatus = document.getElementById('calc_out_cap_status');
+    const outNetUsd = document.getElementById('calc_out_net_usd');
+    const outNetEtb = document.getElementById('calc_out_net_etb');
+    const outCapLimit = document.getElementById('calc_out_cap_limit');
+
+    function runCompensationSimulation() {
+      const pv = parseInt(pvSlider.value, 10) || 100;
+      const directs = parseInt(directsSlider.value, 10) || 5;
+      const gv = parseInt(gvSlider.value, 10) || 15000;
+      const plan = planSelect.value;
+
+      pvVal.textContent = pv.toLocaleString() + ' PV';
+      directsVal.textContent = directs.toLocaleString() + ' Active Directs';
+      gvVal.textContent = gv.toLocaleString() + ' GV';
+
+      // 1. Personal Retail / Direct Bonus (20% on PV)
+      const personalBonus = Math.round(pv * 0.20);
+
+      // 2. Team Volume / Override Bonus based on Plan
+      let teamBonus = 0;
+      if (plan === 'binary') {
+        const weakerLegVolume = gv * 0.40;
+        teamBonus = Math.round(weakerLegVolume * 0.10);
+      } else if (plan === 'unilevel') {
+        teamBonus = Math.round(gv * 0.07);
+      } else if (plan === 'matrix') {
+        teamBonus = Math.round(gv * 0.06);
+      } else if (plan === 'stairstep') {
+        teamBonus = Math.round(gv * 0.08);
+      } else {
+        teamBonus = Math.round(gv * 0.09);
+      }
+
+      // 3. Leadership & Rank Advancement Bonus
+      let leadershipBonus = 0;
+      if (gv >= 50000 && directs >= 5) {
+        leadershipBonus = Math.round(gv * 0.03);
+      } else if (gv >= 10000 && directs >= 3) {
+        leadershipBonus = Math.round(gv * 0.015);
+      }
+
+      const grossCommission = personalBonus + teamBonus + leadershipBonus;
+      const maxAllowableCap = Math.round(gv * 0.50);
+      let netCommission = grossCommission;
+      let isCapped = false;
+
+      if (grossCommission > maxAllowableCap) {
+        netCommission = maxAllowableCap;
+        isCapped = true;
+      }
+
+      const netEtb = Math.round(netCommission * 125);
+
+      outPersonal.textContent = '$' + personalBonus.toLocaleString();
+      outTeam.textContent = '$' + teamBonus.toLocaleString();
+      outLeadership.textContent = '$' + leadershipBonus.toLocaleString();
+      outGross.textContent = '$' + grossCommission.toLocaleString();
+      outNetUsd.textContent = '$' + netCommission.toLocaleString();
+      outNetEtb.textContent = '≈ ETB ' + netEtb.toLocaleString();
+      outCapLimit.textContent = '$' + maxAllowableCap.toLocaleString();
+
+      if (isCapped) {
+        outCapStatus.className = 'px-2 py-0.5 rounded text-[10px] font-semibold bg-amber-950 text-amber-400 border border-amber-800';
+        outCapStatus.textContent = 'Active (Capped at 50% GV)';
+      } else {
+        outCapStatus.className = 'px-2 py-0.5 rounded text-[10px] font-semibold bg-emerald-950 text-emerald-400 border border-emerald-800';
+        outCapStatus.textContent = 'Healthy (Within Margin Bounds)';
+      }
+    }
+
+    pvSlider.addEventListener('input', runCompensationSimulation);
+    directsSlider.addEventListener('input', runCompensationSimulation);
+    gvSlider.addEventListener('input', runCompensationSimulation);
+    planSelect.addEventListener('change', runCompensationSimulation);
+
+    runCompensationSimulation();
+//]]>
+</script>
+
+        </t>
+    </template>
+</odoo>

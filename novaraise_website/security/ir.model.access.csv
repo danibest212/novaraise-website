@@ -1,0 +1,4 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_novaraise_inquiry_user,novaraise.inquiry.user,model_novaraise_inquiry,base.group_user,1,1,1,1
+access_novaraise_inquiry_public,novaraise.inquiry.public,model_novaraise_inquiry,base.group_public,0,0,1,0
+access_novaraise_inquiry_portal,novaraise.inquiry.portal,model_novaraise_inquiry,base.group_portal,0,0,1,0

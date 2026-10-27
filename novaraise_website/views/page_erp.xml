@@ -1,0 +1,394 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="page_erp" name="page_erp">
+        <t t-call="novaraise_website.layout">
+            <t t-set="title">Connected Enterprise ERP — Ethiopian MoR Certified | Novarise Digital</t>
+            <!-- Hero Section -->
+  <section class="obsidian-radial grid-pattern relative pt-16 pb-24 border-b border-white/10 overflow-hidden">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        
+        <div class="lg:col-span-7 space-y-6">
+          <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-slate-900/90 border border-brand-borderHighlight shadow-xl text-xs font-mono text-slate-300">
+            <span class="w-2 h-2 rounded-full bg-emerald-400 pulse-dot"></span>
+            <span>Ethiopian Ministry of Revenues (MoR) Statutory Certified ERP</span>
+          </div>
+
+          <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-white tracking-tight leading-[1.12]">
+            Connected Enterprise ERP for <br class="hidden sm:inline" />
+            <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-brand-interactive to-emerald-400">
+              Ethiopian Business Realities
+            </span>
+          </h1>
+
+          <p class="text-base sm:text-lg text-slate-300 font-normal leading-relaxed max-w-2xl">
+            Built on clean-core Odoo 19 with 901 audited enterprise business modules. Features automated Withholding Tax (WHT 2%/3%) receipts, Ge'ez calendar, Sene 30 fiscal closing, and direct Telebirr &amp; CBE Birr automated payment rails.
+          </p>
+
+          <div class="pt-2 flex flex-wrap items-center gap-4">
+            <button onclick="openRFPModal('Book MoR Tax ERP Walkthrough')" class="px-8 py-4 rounded-full text-sm font-bold bg-gradient-to-r from-brand-primary to-blue-600 hover:from-blue-600 hover:to-brand-interactive text-white shadow-xl shadow-brand-primary/25 flex items-center gap-2.5 transition-all">
+              <span>Book MoR ERP Walkthrough</span>
+              <i data-lucide="arrow-right" class="w-4 h-4"></i>
+            </button>
+            <a href="#module-catalog" class="px-6 py-4 rounded-full text-sm font-semibold bg-slate-900 hover:bg-slate-800 text-slate-200 border border-slate-700 shadow-sm flex items-center gap-2">
+              <i data-lucide="layers" class="w-4 h-4 text-brand-interactive"></i>
+              <span>Explore 901+ Modules</span>
+            </a>
+          </div>
+
+          <!-- Proof KPI Row -->
+          <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 pt-6 border-t border-slate-800/80 font-mono">
+            <div>
+              <div class="text-2xl font-extrabold text-white font-heading">901</div>
+              <div class="text-xs text-slate-400">Audited Modules</div>
+            </div>
+            <div>
+              <div class="text-2xl font-extrabold text-emerald-400 font-heading">100%</div>
+              <div class="text-xs text-slate-400">MoR Statutory Spec</div>
+            </div>
+            <div>
+              <div class="text-2xl font-extrabold text-brand-interactive font-heading">Hamle–Sene</div>
+              <div class="text-xs text-slate-400">Ge'ez Fiscal Closing</div>
+            </div>
+            <div>
+              <div class="text-2xl font-extrabold text-white font-heading">14–30 Days</div>
+              <div class="text-xs text-slate-400">Rapid Cutover SLA</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Side Screenshot Frame -->
+        <div class="lg:col-span-5 relative">
+          <div class="rounded-3xl overflow-hidden shadow-2xl border border-slate-700 bg-slate-950 p-3">
+            <div class="flex items-center justify-between px-3 py-2 bg-slate-900 rounded-t-2xl border-b border-slate-800 mb-2 font-mono text-xs">
+              <div class="flex items-center gap-1.5">
+                <span class="w-2.5 h-2.5 rounded-full bg-rose-500"></span>
+                <span class="w-2.5 h-2.5 rounded-full bg-amber-500"></span>
+                <span class="w-2.5 h-2.5 rounded-full bg-emerald-500"></span>
+              </div>
+              <span class="text-slate-400">nova.enterprise.et/accounting</span>
+              <span class="text-[10px] text-emerald-400 font-bold">MoR Verified</span>
+            </div>
+            <img src="/novaraise_website/static/src/img/erp_dashboard_11.png" alt="Nova ERP Accounting Dashboard" class="w-full h-auto rounded-xl object-cover" />
+            <div class="p-3 bg-slate-900/90 rounded-b-xl flex items-center justify-between text-xs font-mono text-slate-400 mt-2">
+              <span>wht.tax.receipt engine</span>
+              <span class="text-emerald-400">Clean Core: 95</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 2: MoR Tax Compliance Engine Deep-Dive -->
+  <section id="mor-compliance" class="py-24 bg-[#030610] border-b border-white/10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <span class="text-xs font-mono font-bold uppercase tracking-widest text-brand-interactive">
+          STATUTORY COMPLIANCE ARCHITECTURE
+        </span>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight mt-2">
+          Eliminate Manual Tax Adjustments &amp; Audit Vulnerabilities
+        </h2>
+        <p class="text-slate-400 text-sm mt-2">
+          Every accounting entry in Nova ERP automatically respects Ethiopian tax proclamations, labor law payroll rules, and fiscal calendar dates.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        
+        <div class="glass-card-dark rounded-3xl p-8 border border-white/10">
+          <div class="w-12 h-12 rounded-2xl bg-blue-950 text-brand-interactive flex items-center justify-center mb-6">
+            <i data-lucide="file-check" class="w-6 h-6"></i>
+          </div>
+          <span class="text-[10px] font-mono font-bold text-blue-400 uppercase tracking-wider bg-blue-950 px-2 py-0.5 rounded border border-blue-800">PROCLAMATION 285/2002</span>
+          <h3 class="text-xl font-bold text-white mt-3">Automated WHT Line Splitting</h3>
+          <p class="text-slate-300 text-xs mt-2 leading-relaxed">
+            Payment wizard automatically separates 2% for goods transactions over 10,000 ETB and 3% for services over 3,000 ETB. Instantly prints official MoR Withholding Tax Certificates (<code class="text-brand-interactive font-mono">wht.tax.receipt</code>) at time of disbursement.
+          </p>
+          <div class="mt-4 pt-4 border-t border-slate-800 text-xs font-mono text-emerald-400">
+            ✓ Withholding Payable Account 214100
+          </div>
+        </div>
+
+        <div class="glass-card-dark rounded-3xl p-8 border border-white/10">
+          <div class="w-12 h-12 rounded-2xl bg-emerald-950 text-emerald-400 flex items-center justify-center mb-6">
+            <i data-lucide="calendar" class="w-6 h-6"></i>
+          </div>
+          <span class="text-[10px] font-mono font-bold text-emerald-400 uppercase tracking-wider bg-emerald-950 px-2 py-0.5 rounded border border-emerald-800">DUAL-CALENDAR CORE</span>
+          <h3 class="text-xl font-bold text-white mt-3">Ge'ez Calendar &amp; Sene 30 Closing</h3>
+          <p class="text-slate-300 text-xs mt-2 leading-relaxed">
+            Full dual-calendar engine syncing Gregorian and Ge'ez (Julian) dates across sales, inventory, and financial statements. Automates fiscal year closing on Sene 30 with zero manual journal adjustments.
+          </p>
+          <div class="mt-4 pt-4 border-t border-slate-800 text-xs font-mono text-emerald-400">
+            ✓ Automatic Pagume 5/6 Leap Year Reconcile
+          </div>
+        </div>
+
+        <div class="glass-card-dark rounded-3xl p-8 border border-white/10">
+          <div class="w-12 h-12 rounded-2xl bg-amber-950 text-amber-400 flex items-center justify-center mb-6">
+            <i data-lucide="qr-code" class="w-6 h-6"></i>
+          </div>
+          <span class="text-[10px] font-mono font-bold text-amber-400 uppercase tracking-wider bg-amber-950 px-2 py-0.5 rounded border border-amber-800">ELECTRONIC INVOICE</span>
+          <h3 class="text-xl font-bold text-white mt-3">MoR E-Invoicing &amp; QR Cryptography</h3>
+          <p class="text-slate-300 text-xs mt-2 leading-relaxed">
+            Generates standardized Ministry of Revenues electronic invoices with Base64 QR code encoding TIN, buyer TIN, invoice number, VAT amount, and cryptographic signature hash.
+          </p>
+          <div class="mt-4 pt-4 border-t border-slate-800 text-xs font-mono text-amber-400">
+            ✓ Compatible with Fiscal Cash Registers
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Section 3: 901 Module Catalog Breakdown -->
+  <section id="module-catalog" class="py-24 bg-[#050814] border-b border-white/10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
+        <div>
+          <span class="text-xs font-mono font-bold uppercase tracking-widest text-brand-interactive">
+            MODULAR CONSOLIDATION
+          </span>
+          <h2 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight mt-2">
+            The 901 Discrete Enterprise Module Catalog
+          </h2>
+          <p class="text-slate-400 text-sm mt-2 max-w-2xl">
+            Clean-core Odoo 19 modules consolidated from SmartERP and Ashewa enterprise deployments. No third-party bloat.
+          </p>
+        </div>
+        <button onclick="openRFPModal('Download Complete 901 Module Matrix')" class="inline-flex items-center gap-2 px-6 py-3 rounded-full text-xs font-mono font-bold bg-slate-900 hover:bg-slate-800 text-white border border-slate-700 transition-all">
+          <i data-lucide="download" class="w-3.5 h-3.5 text-brand-interactive"></i>
+          <span>Download 901 Module Matrix PDF</span>
+        </button>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        
+        <div class="glass-card-dark rounded-2xl p-6 border border-white/10">
+          <div class="flex items-center justify-between text-xs font-mono text-slate-400 mb-3">
+            <span class="text-blue-400 font-bold">142 MODULES</span>
+            <span>FINANCE</span>
+          </div>
+          <h4 class="text-lg font-bold text-white mb-2">Accounting &amp; MoR Tax</h4>
+          <p class="text-slate-400 text-xs leading-relaxed">
+            General ledger, automated bank reconciliation, WHT 2%/3%, VAT 15%, TOT, asset depreciation, and Ethiopian payroll taxes (0%–35%).
+          </p>
+        </div>
+
+        <div class="glass-card-dark rounded-2xl p-6 border border-white/10">
+          <div class="flex items-center justify-between text-xs font-mono text-slate-400 mb-3">
+            <span class="text-emerald-400 font-bold">186 MODULES</span>
+            <span>OPERATIONS</span>
+          </div>
+          <h4 class="text-lg font-bold text-white mb-2">Inventory &amp; Supply Chain</h4>
+          <p class="text-slate-400 text-xs leading-relaxed">
+            Multi-warehouse dropshipping, FIFO/AVCO valuation, lot/serial batch expiry tracking, barcode scanner terminal, and automated reorder points.
+          </p>
+        </div>
+
+        <div class="glass-card-dark rounded-2xl p-6 border border-white/10">
+          <div class="flex items-center justify-between text-xs font-mono text-slate-400 mb-3">
+            <span class="text-purple-400 font-bold">115 MODULES</span>
+            <span>MANUFACTURING</span>
+          </div>
+          <h4 class="text-lg font-bold text-white mb-2">MRP &amp; Work Centers</h4>
+          <p class="text-slate-400 text-xs leading-relaxed">
+            Multi-level Bill of Materials (BOM), work center routing, sub-assembly scheduling, scrap management, and real-time cost tracking.
+          </p>
+        </div>
+
+        <div class="glass-card-dark rounded-2xl p-6 border border-white/10">
+          <div class="flex items-center justify-between text-xs font-mono text-slate-400 mb-3">
+            <span class="text-amber-400 font-bold">128 MODULES</span>
+            <span>PEOPLE</span>
+          </div>
+          <h4 class="text-lg font-bold text-white mb-2">HR, Payroll &amp; Biometric</h4>
+          <p class="text-slate-400 text-xs leading-relaxed">
+            ZKTeco biometric integration, 7% employee pension, 11% employer contribution, severance logic, and annual leave Ge'ez calendar tracking.
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Section 4: Telebirr &amp; CBE Payment Rails -->
+  <section id="payment-rails" class="py-24 bg-[#030610] border-b border-white/10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        
+        <div class="lg:col-span-6 space-y-6">
+          <span class="text-xs font-mono font-bold uppercase tracking-widest text-emerald-400 bg-emerald-950 px-3 py-1 rounded-full border border-emerald-800">
+            NATIVE FINANCIAL RAILS
+          </span>
+          <h2 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">
+            Automated Telebirr v2.0 &amp; CBE Settlement
+          </h2>
+          <p class="text-slate-300 text-sm leading-relaxed">
+            Say goodbye to paper bank deposit slips and fraudulent screenshot receipts. Nova ERP connects directly with Ethio Telecom Telebirr and Commercial Bank of Ethiopia (CBE) APIs.
+          </p>
+
+          <div class="space-y-3 pt-2 text-xs font-mono">
+            <div class="flex items-center gap-2 text-slate-300">
+              <i data-lucide="check" class="w-4 h-4 text-emerald-400"></i>
+              <span>HMAC-SHA256 signature verification on incoming webhooks</span>
+            </div>
+            <div class="flex items-center gap-2 text-slate-300">
+              <i data-lucide="check" class="w-4 h-4 text-emerald-400"></i>
+              <span>Instant auto-clearing to General Ledger Account 101200</span>
+            </div>
+            <div class="flex items-center gap-2 text-slate-300">
+              <i data-lucide="check" class="w-4 h-4 text-emerald-400"></i>
+              <span>Telebirr dynamic merchant QR generation on proforma invoices</span>
+            </div>
+          </div>
+
+          <div class="pt-4">
+            <button onclick="openRFPModal('Payment Rails Integration Scope')" class="px-7 py-3.5 rounded-full text-xs font-mono font-bold text-white bg-emerald-600 hover:bg-emerald-500 transition-all shadow-lg shadow-emerald-600/20">
+              <span>Connect Telebirr &amp; CBE to Your ERP</span>
+            </button>
+          </div>
+        </div>
+
+        <div class="lg:col-span-6 rounded-3xl overflow-hidden border border-slate-700 bg-slate-950 p-2">
+          <img src="/novaraise_website/static/src/img/ecommerce_preview.png" alt="Payment Rails Architecture" class="w-full h-80 object-cover object-top rounded-2xl" />
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Section 5: ERP Cost Estimator -->
+  <section id="estimator" class="py-24 bg-[#050814] text-white">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-2xl mx-auto mb-12">
+        <span class="text-xs font-mono font-bold uppercase tracking-widest text-brand-interactive bg-blue-950 px-3 py-1 rounded-full border border-blue-800">
+          2026/27 OFFICIAL RATES
+        </span>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-white mt-3">
+          Nova ERP Implementation Estimator
+        </h2>
+        <p class="text-slate-400 text-sm mt-2">
+          Transparent Ethiopian Birr pricing with zero dollar drain or hidden licensing fees.
+        </p>
+      </div>
+
+      <div class="glass-card-dark rounded-3xl p-8 border border-slate-800 shadow-2xl">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+          
+          <div class="lg:col-span-7 space-y-6">
+            <div>
+              <label class="block text-xs font-mono font-bold uppercase text-slate-300 mb-2">ERP Edition Scope:</label>
+              <select id="erp-tier" onchange="calcErp()" class="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-3 text-white text-sm font-semibold focus:outline-none focus:border-brand-interactive">
+                <option value="300000" data-days="14">Starter ERP (Accounting, Invoicing, WHT, Inventory) — 300,000 ETB</option>
+                <option value="650000" data-days="21" selected="selected">Mid-Market Standard (Manufacturing, HR, Payroll, Sene 30) — 650,000 ETB</option>
+                <option value="1800000" data-days="45">Corporate Enterprise (Multi-Company, 901 Modules, High Load) — 1,800,000 ETB</option>
+              </select>
+            </div>
+
+            <div>
+              <label class="flex items-center gap-3 p-3 rounded-xl bg-slate-900/60 border border-slate-800 cursor-pointer">
+                <input type="checkbox" id="erp-telebirr" checked="checked" onchange="calcErp()" class="w-4 h-4 rounded text-brand-interactive" />
+                <div class="flex-1 text-xs">
+                  <span class="font-bold text-white block">Telebirr &amp; CBE Gateway Rail Connection</span>
+                  <span class="text-slate-400">Direct webhook verification and ledger clearing</span>
+                </div>
+                <span class="text-xs font-mono font-bold text-emerald-400">+50,000 ETB</span>
+              </label>
+            </div>
+          </div>
+
+          <div class="lg:col-span-5 bg-gradient-to-br from-slate-900 to-brand-obsidian p-6 sm:p-8 rounded-2xl border border-slate-700 flex flex-col justify-between shadow-2xl">
+            <div>
+              <div class="text-xs font-mono font-bold uppercase text-slate-400 mb-1">Estimated ERP Investment</div>
+              <div class="text-4xl font-extrabold text-brand-interactive font-mono" id="erp-total-price">
+                700,000 <span class="text-lg text-slate-400">ETB</span>
+              </div>
+              <div class="text-xs text-slate-400 mt-1 font-mono">Excl. 15% VAT • 100% Source Code Included</div>
+
+              <div class="mt-6 pt-6 border-t border-slate-800 space-y-2 text-xs font-mono">
+                <div class="flex justify-between">
+                  <span class="text-slate-400">Deployment SLA:</span>
+                  <span class="font-bold text-emerald-400" id="erp-timeline">21 Business Days</span>
+                </div>
+                <div class="flex justify-between">
+                  <span class="text-slate-400">Local Support:</span>
+                  <span class="font-bold text-white">Addis Ababa On-Site</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="mt-8 pt-6 border-t border-slate-800">
+              <button onclick="openRFPModal('ERP Implementation Reservation (' + document.getElementById('erp-total-price').innerText + ')')" class="w-full py-3.5 rounded-full text-xs font-mono font-bold text-white bg-gradient-to-r from-brand-primary to-blue-600 hover:from-blue-600 hover:to-brand-interactive shadow-lg transition-all">
+                <span>Book Deployment Slot</span>
+              </button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+            
+<script>
+//<![CDATA[
+lucide.createIcons();
+
+    function openModal(title) {
+      document.getElementById('modal-input-focus').value = title || 'ERP MoR Walkthrough';
+      document.getElementById('modal-title').innerText = title || 'Schedule Live ERP Demo';
+      const m = document.getElementById('erp-modal');
+      m.classList.remove('hidden');
+      m.classList.add('flex');
+    }
+
+    function closeModal() {
+      const m = document.getElementById('erp-modal');
+      m.classList.add('hidden');
+      m.classList.remove('flex');
+      document.getElementById('modal-form').classList.remove('hidden');
+      document.getElementById('modal-success').classList.add('hidden');
+    }
+
+    function handleInquiry(e) {
+      e.preventDefault();
+      document.getElementById('modal-form').classList.add('hidden');
+      document.getElementById('modal-success').classList.remove('hidden');
+      lucide.createIcons();
+    }
+
+    function calcErp() {
+      const tier = document.getElementById('erp-tier');
+      const opt = tier.options[tier.selectedIndex];
+      let price = parseInt(opt.value || '650000', 10);
+      let days = opt.getAttribute('data-days') || '21';
+
+      if (document.getElementById('erp-telebirr').checked) {
+        price += 50000;
+      }
+
+      document.getElementById('erp-total-price').innerHTML = 
+        price.toLocaleString() + ' <span class="text-lg text-slate-400">ETB</span>';
+      document.getElementById('erp-timeline').innerText = days + ' Business Days';
+    }
+
+    window.addEventListener('DOMContentLoaded', calcErp);
+//]]>
+</script>
+
+        </t>
+    </template>
+</odoo>

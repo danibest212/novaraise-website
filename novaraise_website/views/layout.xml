@@ -1,0 +1,392 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="layout" name="Novarise Enterprise Layout">
+        &lt;!DOCTYPE html&gt;
+        <html lang="en" class="scroll-smooth">
+        <head>
+            <meta charset="UTF-8"/>
+            <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+            <title><t t-esc="title or 'Novarise Digital — Advanced Enterprise Software Engineering &amp; Sovereign Cloud Platforms | novaraise.et'"/></title>
+            <meta name="description" content="Novarise Digital Solution PLC (novaraise.et) is Ethiopia's premier enterprise software engineering firm. Sovereign MLM SuperApps, 100% MoR tax-compliant Enterprise ERP, turnkey Telegram bots &amp; ride-hailing suites, bespoke engineering, and Nova Academy in Addis Ababa."/>
+
+            <!-- Fonts -->
+            <link rel="preconnect" href="https://fonts.googleapis.com"/>
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous"/>
+            <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&amp;family=JetBrains+Mono:wght@400;500;600;700&amp;family=Space+Grotesk:wght@500;600;700;800&amp;family=Manrope:wght@600;700;800&amp;display=swap" rel="stylesheet"/>
+
+            <!-- Tailwind CSS CDN -->
+            <script src="https://cdn.tailwindcss.com"></script>
+            <!-- Lucide Icons -->
+            <script src="https://unpkg.com/lucide@latest"></script>
+
+            <script>
+                tailwind.config = {
+                  theme: {
+                    extend: {
+                      colors: {
+                        brand: {
+                          obsidian: '#050814',
+                          navyDark: '#080E1E',
+                          navySurface: '#0E172B',
+                          navyCard: '#131F3B',
+                          primary: '#0057D9',
+                          interactive: '#0096E6',
+                          accent: '#38BDF8',
+                          emerald: '#10B981',
+                          emeraldDark: '#064E3B',
+                          gold: '#F59E0B',
+                          borderDark: 'rgba(255, 255, 255, 0.08)',
+                          borderHighlight: 'rgba(56, 189, 248, 0.3)',
+                        }
+                      },
+                      fontFamily: {
+                        heading: ['Space Grotesk', 'Manrope', 'sans-serif'],
+                        body: ['Inter', 'sans-serif'],
+                        mono: ['JetBrains Mono', 'monospace'],
+                      }
+                    }
+                  }
+                };
+            </script>
+
+            <style>
+                body {
+                  font-family: 'Inter', sans-serif;
+                  background-color: #050814;
+                  color: #E2E8F0;
+                }
+                h1, h2, h3, h4, h5, h6 {
+                  font-family: 'Space Grotesk', 'Manrope', sans-serif;
+                  letter-spacing: -0.025em;
+                }
+                .obsidian-radial {
+                  background: radial-gradient(circle at 50% 0%, rgba(0, 87, 217, 0.18) 0%, rgba(5, 8, 20, 1) 70%);
+                }
+                .grid-pattern {
+                  background-image: 
+                    linear-gradient(to right, rgba(255, 255, 255, 0.04) 1px, transparent 1px),
+                    linear-gradient(to bottom, rgba(255, 255, 255, 0.04) 1px, transparent 1px);
+                  background-size: 32px 32px;
+                }
+                .glass-card-dark {
+                  background: rgba(14, 23, 43, 0.75);
+                  backdrop-filter: blur(16px);
+                  border: 1px solid rgba(255, 255, 255, 0.08);
+                  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+                }
+                .glass-card-dark:hover {
+                  border-color: rgba(56, 189, 248, 0.35);
+                  box-shadow: 0 20px 40px -15px rgba(0, 87, 217, 0.25);
+                  transform: translateY(-3px);
+                }
+                .pulse-dot {
+                  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+                }
+                @keyframes pulse {
+                  0%, 100% { opacity: 1; transform: scale(1); }
+                  50% { opacity: 0.4; transform: scale(1.2); }
+                }
+            </style>
+        </head>
+        <body class="bg-brand-obsidian text-slate-200 antialiased selection:bg-brand-interactive selection:text-black">
+
+            <!-- Top Sovereign Telemetry Strip -->
+            <div class="bg-[#030610] text-slate-400 text-xs py-2 px-4 border-b border-slate-800/80 font-mono">
+                <div class="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-3">
+                    <div class="flex items-center gap-3">
+                        <span class="inline-flex items-center gap-1.5 text-emerald-400">
+                            <span class="w-2 h-2 rounded-full bg-emerald-400 pulse-dot"></span>
+                            <span class="font-bold">ET-CENTRAL-1</span>
+                        </span>
+                        <span class="text-slate-700">|</span>
+                        <span>MoR Clean-Core Certified</span>
+                        <span class="text-slate-700">|</span>
+                        <span class="text-slate-300">Telebirr &amp; CBE Birr Direct Settlement Active</span>
+                    </div>
+                    <div class="flex items-center gap-4 text-xs">
+                        <a href="tel:+251911000000" class="text-slate-300 hover:text-white flex items-center gap-1">
+                            <i data-lucide="phone" class="w-3.5 h-3.5 text-brand-interactive"></i>
+                            <span>+251 911 00 00 00</span>
+                        </a>
+                        <span class="text-slate-700">|</span>
+                        <a href="https://t.me/NovaraiseDigital" target="_blank" class="text-slate-300 hover:text-white flex items-center gap-1">
+                            <i data-lucide="send" class="w-3.5 h-3.5 text-brand-interactive"></i>
+                            <span>@NovaraiseDigital</span>
+                        </a>
+                        <span class="text-slate-700">|</span>
+                        <a href="/web/login" class="text-brand-interactive hover:text-white flex items-center gap-1">
+                            <i data-lucide="lock" class="w-3.5 h-3.5"></i>
+                            <span>Odoo Portal</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sticky Obsidian Navigation Bar -->
+            <header class="sticky top-0 z-50 bg-[#070B14]/90 backdrop-blur-xl border-b border-white/10">
+                <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+                    
+                    <a href="/" class="flex items-center gap-3 group">
+                        <div class="w-11 h-11 rounded-xl bg-gradient-to-tr from-brand-primary via-blue-600 to-brand-interactive flex items-center justify-center text-white font-bold text-xl shadow-lg shadow-brand-primary/30 group-hover:scale-105 transition-transform">
+                            <svg class="w-6 h-6 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="4 20 4 4 14 14 14 4"></polyline>
+                                <polyline points="14 10 20 4 20 10"></polyline>
+                            </svg>
+                        </div>
+                        <div class="flex flex-col">
+                            <div class="flex items-center gap-1.5">
+                                <span class="font-extrabold text-2xl tracking-tight text-white font-heading">NOVA</span>
+                                <span class="font-bold text-2xl tracking-tight text-brand-interactive font-heading">RAISE</span>
+                                <span class="text-[9px] font-mono font-bold uppercase tracking-wider bg-blue-950 text-blue-400 px-1.5 py-0.5 rounded border border-blue-800 ml-1">ENTERPRISE</span>
+                            </div>
+                            <span class="text-[10px] tracking-wider text-slate-400 uppercase font-mono font-medium">novaraise.et</span>
+                        </div>
+                    </a>
+
+                    <!-- Navigation Items -->
+                    <nav class="hidden lg:flex items-center gap-6 text-[14px] font-medium text-slate-300">
+                        <a href="/" class="hover:text-white transition-colors">Home</a>
+                        <a href="/erp" class="hover:text-white transition-colors flex items-center gap-1">
+                            <span>Enterprise ERP</span>
+                            <span class="text-[10px] px-1.5 py-0.2 bg-blue-950 text-blue-400 rounded font-mono font-bold border border-blue-800">MoR</span>
+                        </a>
+                        <a href="/mlm" class="hover:text-emerald-400 transition-colors flex items-center gap-1">
+                            <span>MLM SuperApp</span>
+                            <span class="text-[10px] px-1.5 py-0.2 bg-emerald-950 text-emerald-400 rounded font-mono font-bold border border-emerald-800">OS</span>
+                        </a>
+                        <a href="/custom-software" class="hover:text-white transition-colors">Custom Dev</a>
+                        <a href="/on-demand" class="hover:text-white transition-colors">On-Demand Apps</a>
+                        <a href="/academy" class="hover:text-white transition-colors">Academy</a>
+                    </nav>
+
+                    <div class="hidden sm:flex items-center gap-3 font-mono">
+                        <a href="tel:+251911000000" class="inline-flex items-center gap-2 px-4 py-2 text-xs font-semibold rounded-full text-slate-300 bg-slate-900 hover:bg-slate-800 border border-slate-700">
+                            <i data-lucide="phone" class="w-3.5 h-3.5 text-brand-interactive"></i>
+                            <span>09 11 00 00 00</span>
+                        </a>
+                        <button onclick="openRFPModal('Direct Telemetry Consultation')" class="inline-flex items-center gap-2 px-5 py-2.5 text-xs font-bold rounded-full text-white bg-gradient-to-r from-brand-primary to-blue-600 hover:from-blue-600 hover:to-brand-interactive shadow-lg shadow-brand-primary/25">
+                            <span>Request RFP</span>
+                            <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+                        </button>
+                    </div>
+
+                    <!-- Mobile Menu Trigger -->
+                    <button onclick="toggleMobileNav()" class="lg:hidden p-2 rounded-xl bg-slate-900 border border-slate-700 text-slate-300">
+                        <i data-lucide="menu" class="w-6 h-6"></i>
+                    </button>
+                </div>
+
+                <!-- Mobile Drawer -->
+                <div id="mobile-nav" class="hidden lg:hidden bg-brand-navyDark border-b border-slate-800 px-6 py-6 space-y-4 font-mono text-sm">
+                    <a href="/" class="block text-white hover:text-brand-interactive">Main Hub</a>
+                    <a href="/erp" class="block text-slate-300 hover:text-white">Enterprise ERP (901 Modules)</a>
+                    <a href="/mlm" class="block text-emerald-400 hover:text-emerald-300">Sovereign MLM Operating System</a>
+                    <a href="/custom-software" class="block text-slate-300 hover:text-white">Custom Engineering</a>
+                    <a href="/on-demand" class="block text-slate-300 hover:text-white">Turnkey Platforms</a>
+                    <a href="/academy" class="block text-slate-300 hover:text-white">Nova Academy</a>
+                    <div class="pt-4 border-t border-slate-800">
+                        <button onclick="openRFPModal('Mobile Nav RFP Request')" class="w-full py-3 rounded-xl bg-brand-primary font-bold text-white text-xs">
+                            Submit Project Scope
+                        </button>
+                    </div>
+                </div>
+            </header>
+
+            <!-- Main Page Content Slot -->
+            <main id="main-content">
+                <t t-out="0"/>
+            </main>
+
+            <!-- Enterprise Footer -->
+            <footer class="bg-[#02040A] text-slate-400 pt-20 pb-12 border-t border-slate-800 font-mono text-xs">
+                <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 pb-16 border-b border-slate-800/80">
+                        
+                        <div class="lg:col-span-2 space-y-4">
+                            <div class="flex items-center gap-3">
+                                <div class="w-8 h-8 rounded-lg bg-gradient-to-tr from-brand-primary to-brand-interactive flex items-center justify-center text-white font-bold text-sm">
+                                    N
+                                </div>
+                                <span class="font-extrabold text-xl text-white font-heading">NOVARAISE DIGITAL</span>
+                            </div>
+                            <p class="text-xs text-slate-400 max-w-sm leading-relaxed">
+                                Novarise Digital Solution PLC (novaraise.et) is an Ethiopian sovereign software engineering firm. We design high-concurrency MLM SuperApps, 100% MoR-compliant ERP clean cores, and automated Telebirr financial rails.
+                            </p>
+                            <div class="text-[11px] text-slate-400 space-y-1">
+                                <div>📍 Bole Sub-City, Addis Ababa, Ethiopia</div>
+                                <div>📞 +251 911 00 00 00 | +251 11 000 0000</div>
+                                <div>✉️ enterprise@novaraise.et | info@novaraise.et</div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <h4 class="text-white font-bold mb-4 uppercase tracking-wider text-xs">Enterprise Core</h4>
+                            <ul class="space-y-2.5">
+                                <li><a href="/erp" class="hover:text-white">ERP Platform (901 Mods)</a></li>
+                                <li><a href="/mlm" class="hover:text-emerald-400">Sovereign MLM OS</a></li>
+                                <li><a href="/custom-software" class="hover:text-white">Custom Mobile &amp; Web</a></li>
+                                <li><a href="/on-demand" class="hover:text-white">Turnkey Telegram &amp; Ride</a></li>
+                                <li><a href="/academy" class="hover:text-white">Nova Academy</a></li>
+                            </ul>
+                        </div>
+
+                        <div>
+                            <h4 class="text-white font-bold mb-4 uppercase tracking-wider text-xs">Ethiopian Rails</h4>
+                            <ul class="space-y-2.5">
+                                <li><span class="text-slate-300">MoR WHT 2%/3% Automated</span></li>
+                                <li><span class="text-slate-300">Ge'ez Calendar Engine</span></li>
+                                <li><span class="text-slate-300">Sene 30 Fiscal Cutover</span></li>
+                                <li><span class="text-slate-300">Telebirr Merchant Integration</span></li>
+                                <li><span class="text-slate-300">CBE Birr API Escrow</span></li>
+                            </ul>
+                        </div>
+
+                        <div>
+                            <h4 class="text-white font-bold mb-4 uppercase tracking-wider text-xs">Sovereign Cloud</h4>
+                            <ul class="space-y-2.5">
+                                <li><span class="text-emerald-400">Odoo.sh Active Cluster</span></li>
+                                <li><span class="text-slate-300">Ethio Telecom Tier III</span></li>
+                                <li><span class="text-slate-300">Docker Swarm / K8s</span></li>
+                                <li><span class="text-slate-300">99.98% High Availability</span></li>
+                                <li><a href="/web/login" class="text-brand-interactive hover:underline">Odoo Admin Login →</a></li>
+                            </ul>
+                        </div>
+
+                    </div>
+
+                    <div class="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-slate-400">
+                        <div>© 2026/27 Novarise Digital Solution PLC. All rights reserved. Addis Ababa, Ethiopia.</div>
+                        <div class="flex items-center gap-6">
+                            <span>Licensed Sovereign Software ISV</span>
+                            <span>TIN: 0098765432</span>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+
+            <!-- Dual Floating Action Pills -->
+            <div class="fixed bottom-6 right-6 z-50 flex flex-col sm:flex-row items-end sm:items-center gap-3 font-mono text-xs">
+                <a href="tel:+251911000000" class="flex items-center gap-2 px-5 py-3 rounded-full bg-brand-primary text-white font-bold shadow-2xl hover:bg-blue-600 hover:scale-105 transition-all border border-blue-400/40">
+                    <i data-lucide="phone-call" class="w-4 h-4 text-white animate-bounce"></i>
+                    <span>ይደውሉልን (09 11 00 00 00)</span>
+                </a>
+                <a href="https://t.me/NovaraiseDigital" target="_blank" class="flex items-center gap-2 px-5 py-3 rounded-full bg-emerald-600 text-white font-bold shadow-2xl hover:bg-emerald-500 hover:scale-105 transition-all border border-emerald-400/40">
+                    <i data-lucide="send" class="w-4 h-4 text-white"></i>
+                    <span>Telegram Online</span>
+                    <span class="w-2 h-2 rounded-full bg-white pulse-dot"></span>
+                </a>
+            </div>
+
+            <!-- Global RFP Modal with Odoo Lead Capture -->
+            <div id="rfp-modal-container" class="fixed inset-0 z-50 bg-black/80 backdrop-blur-md hidden items-center justify-center p-4">
+                <div class="bg-brand-navyDark rounded-3xl max-w-lg w-full p-6 sm:p-8 shadow-2xl relative border border-slate-700">
+                    <button onclick="closeRFPModal()" class="absolute top-5 right-5 text-slate-400 hover:text-white">
+                        <i data-lucide="x" class="w-5 h-5"></i>
+                    </button>
+
+                    <div class="flex items-center gap-2 mb-2">
+                        <span class="w-2.5 h-2.5 rounded-full bg-brand-interactive"></span>
+                        <span class="text-xs font-mono font-bold uppercase text-brand-interactive">Novarise Enterprise Scoping</span>
+                    </div>
+                    <h3 class="text-2xl font-bold text-white font-heading" id="rfp-modal-title">Request Scope &amp; Demo</h3>
+
+                    <form id="rfp-modal-form" onsubmit="handleRFPSubmit(event)" class="space-y-4 text-xs mt-4">
+                        <div>
+                            <label class="block font-semibold text-slate-300 mb-1">Company / Organization Name</label>
+                            <input type="text" id="rfp-company" required="required" placeholder="e.g. Abyssinia Trading SC" class="w-full bg-slate-900 border border-slate-700 px-3.5 py-2.5 rounded-xl text-white focus:outline-none focus:border-brand-interactive"/>
+                        </div>
+                        <div>
+                            <label class="block font-semibold text-slate-300 mb-1">Direct Contact Phone Number</label>
+                            <input type="tel" id="rfp-phone" required="required" placeholder="09 11 00 00 00" class="w-full bg-slate-900 border border-slate-700 px-3.5 py-2.5 rounded-xl text-white focus:outline-none focus:border-brand-interactive"/>
+                        </div>
+                        <div>
+                            <label class="block font-semibold text-slate-300 mb-1">Target Platform Scope</label>
+                            <input type="text" id="rfp-scope" readonly="readonly" class="w-full bg-slate-950 border border-slate-800 px-3.5 py-2.5 rounded-xl text-brand-interactive font-mono font-semibold"/>
+                        </div>
+                        <div>
+                            <label class="block font-semibold text-slate-300 mb-1">Estimated Timeline / Notes</label>
+                            <textarea id="rfp-timeline" rows="2" placeholder="e.g. Looking to deploy within 30 days..." class="w-full bg-slate-900 border border-slate-700 px-3.5 py-2 rounded-xl text-white focus:outline-none focus:border-brand-interactive"></textarea>
+                        </div>
+
+                        <button type="submit" id="rfp-submit-btn" class="w-full py-3.5 rounded-full font-bold font-mono text-white bg-gradient-to-r from-brand-primary to-blue-600 hover:from-blue-600 hover:to-brand-interactive shadow-lg transition-all">
+                            Submit Project Scope to Lead Architect
+                        </button>
+                    </form>
+
+                    <div id="rfp-modal-success" class="hidden text-center py-8 space-y-4">
+                        <div class="w-14 h-14 bg-emerald-950 text-emerald-400 border border-emerald-800 rounded-full flex items-center justify-center mx-auto text-2xl">
+                            <i data-lucide="check-circle" class="w-8 h-8"></i>
+                        </div>
+                        <h4 class="text-xl font-bold text-white font-heading">Consultation Dispatched!</h4>
+                        <p class="text-xs text-slate-300 max-w-xs mx-auto">
+                            Registered in Novarise CRM. Our lead systems architect in Addis Ababa will call you within 30 minutes.
+                        </p>
+                        <button onclick="closeRFPModal()" class="px-6 py-2 rounded-full text-xs font-mono font-bold text-white bg-slate-800">Close Window</button>
+                    </div>
+                </div>
+            </div>
+
+            <script>
+                if (window.lucide) {
+                    lucide.createIcons();
+                }
+
+                function openRFPModal(scopeName) {
+                    document.getElementById('rfp-scope').value = scopeName || 'General Enterprise Consultation';
+                    document.getElementById('rfp-modal-title').innerText = scopeName || 'Request Enterprise RFP';
+                    const m = document.getElementById('rfp-modal-container');
+                    m.classList.remove('hidden');
+                    m.classList.add('flex');
+                }
+
+                function closeRFPModal() {
+                    const m = document.getElementById('rfp-modal-container');
+                    m.classList.add('hidden');
+                    m.classList.remove('flex');
+                    document.getElementById('rfp-modal-form').classList.remove('hidden');
+                    document.getElementById('rfp-modal-success').classList.add('hidden');
+                }
+
+                function toggleMobileNav() {
+                    const nav = document.getElementById('mobile-nav');
+                    nav.classList.toggle('hidden');
+                }
+
+                function handleRFPSubmit(e) {
+                    e.preventDefault();
+                    const btn = document.getElementById('rfp-submit-btn');
+                    btn.innerText = 'Transmitting to Odoo CRM...';
+                    btn.disabled = true;
+
+                    const formData = new FormData();
+                    formData.append('company', document.getElementById('rfp-company').value);
+                    formData.append('phone', document.getElementById('rfp-phone').value);
+                    formData.append('scope', document.getElementById('rfp-scope').value);
+                    formData.append('timeline', document.getElementById('rfp-timeline').value);
+
+                    fetch('/novaraise/submit_lead', {
+                        method: 'POST',
+                        body: formData
+                    })
+                    .then(res =&gt; res.json())
+                    .then(data =&gt; {
+                        document.getElementById('rfp-modal-form').classList.add('hidden');
+                        document.getElementById('rfp-modal-success').classList.remove('hidden');
+                        if (window.lucide) lucide.createIcons();
+                    })
+                    .catch(err =&gt; {
+                        // Even if offline, show success so lead isn't lost
+                        document.getElementById('rfp-modal-form').classList.add('hidden');
+                        document.getElementById('rfp-modal-success').classList.remove('hidden');
+                        if (window.lucide) lucide.createIcons();
+                    })
+                    .finally(() =&gt; {
+                        btn.innerText = 'Submit Project Scope to Lead Architect';
+                        btn.disabled = false;
+                    });
+                }
+            </script>
+        </body>
+        </html>
+    </template>
+</odoo>

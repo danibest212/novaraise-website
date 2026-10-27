@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_novaraise_inquiry_tree" model="ir.ui.view">
+        <field name="name">novaraise.inquiry.tree</field>
+        <field name="model">novaraise.inquiry</field>
+        <field name="arch" type="xml">
+            <list string="Website Inquiries" decoration-info="state == 'new'" decoration-success="state == 'qualified'">
+                <field name="date_submitted"/>
+                <field name="name"/>
+                <field name="phone"/>
+                <field name="scope"/>
+                <field name="state" widget="badge"/>
+            </list>
+        </field>
+    </record>
+
+    <record id="view_novaraise_inquiry_form" model="ir.ui.view">
+        <field name="name">novaraise.inquiry.form</field>
+        <field name="model">novaraise.inquiry</field>
+        <field name="arch" type="xml">
+            <form string="Website Inquiry">
+                <header>
+                    <field name="state" widget="statusbar" options="{'clickable': '1'}"/>
+                </header>
+                <sheet>
+                    <div class="oe_title">
+                        <label for="name" string="Company Name"/>
+                        <h1><field name="name"/></h1>
+                    </div>
+                    <group>
+                        <group>
+                            <field name="phone" widget="phone"/>
+                            <field name="scope"/>
+                        </group>
+                        <group>
+                            <field name="date_submitted"/>
+                        </group>
+                    </group>
+                    <notebook>
+                        <page string="Requirements &amp; Timeline">
+                            <field name="requirements" placeholder="Client timeline, budget, or architectural specifications..."/>
+                        </page>
+                    </notebook>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="action_novaraise_inquiry" model="ir.actions.act_window">
+        <field name="name">Website Inquiries</field>
+        <field name="res_model">novaraise.inquiry</field>
+        <field name="view_mode">list,form</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">
+                No inquiries yet!
+            </p>
+            <p>
+                Inquiries submitted on novaraise.et (ERP, MLM, Turnkey, Academy) will appear here automatically.
+            </p>
+        </field>
+    </record>
+
+    <menuitem id="menu_novaraise_root"
+              name="Nova Leads"
+              web_icon="novaraise_website,static/src/img/novaraise_logo.jpeg"
+              sequence="10"/>
+
+    <menuitem id="menu_novaraise_inquiries"
+              name="Inquiries &amp; RFPs"
+              parent="menu_novaraise_root"
+              action="action_novaraise_inquiry"
+              sequence="1"/>
+</odoo>
