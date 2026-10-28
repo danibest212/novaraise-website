@@ -1,0 +1,66 @@
+/*
+Theme Name: Nova Digital Enterprise
+Theme URI: https://novaraise.et/
+Author: Novarise Digital Solution PLC
+Author URI: https://novaraise.et/
+Description: Advanced Enterprise Software Engineering & Sovereign Cloud Platform Theme for novaraise.et (Enterprise ERP, Sovereign MLM OS, Turnkey SaaS, Custom Engineering & Nova Academy).
+Version: 1.0.0
+Requires at least: 5.9
+Tested up to: 6.7
+Requires PHP: 7.4
+License: Proprietary
+Text Domain: novadigital
+*/
+
+/* Core Theme Styles */
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #050814;
+  color: #E2E8F0;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Space Grotesk', 'Manrope', sans-serif;
+  letter-spacing: -0.025em;
+}
+
+.obsidian-radial {
+  background: radial-gradient(circle at 50% 0%, rgba(0, 87, 217, 0.18) 0%, rgba(5, 8, 20, 1) 70%);
+}
+
+.grid-pattern {
+  background-image: 
+    linear-gradient(to right, rgba(255, 255, 255, 0.04) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.04) 1px, transparent 1px);
+  background-size: 32px 32px;
+}
+
+.glass-card-dark {
+  background: rgba(14, 23, 43, 0.75);
+  backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.glass-card-dark:hover {
+  border-color: rgba(56, 189, 248, 0.35);
+  box-shadow: 0 20px 40px -15px rgba(0, 87, 217, 0.25);
+  transform: translateY(-3px);
+}
+
+.pulse-dot {
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.4; transform: scale(1.2); }
+}
+
+.syn-key { color: #38BDF8; }
+.syn-str { color: #34D399; }
+.syn-num { color: #FBBF24; }
+.syn-bool { color: #F472B6; }
+.syn-comment { color: #64748B; font-style: italic; }

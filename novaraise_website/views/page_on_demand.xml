@@ -110,7 +110,7 @@
             <button onclick="openRFPModal('Telegram Bot Demo Inquiry')" class="flex-1 py-3 rounded-full text-xs font-mono font-bold text-white bg-brand-primary hover:bg-blue-600 transition-all">
               Request Live Demo
             </button>
-            <a href="https://t.me/NovaraiseDigital" target="_blank" class="px-4 py-3 rounded-full text-xs font-mono font-semibold bg-slate-900 hover:bg-slate-800 text-slate-300 border border-slate-700">
+            <a href="https://t.me/daniel212_212" target="_blank" class="px-4 py-3 rounded-full text-xs font-mono font-semibold bg-slate-900 hover:bg-slate-800 text-slate-300 border border-slate-700">
               Test Telegram
             </a>
           </div>
@@ -162,7 +162,7 @@
             <button onclick="openRFPModal('Ride Hailing Fleet Demo')" class="flex-1 py-3 rounded-full text-xs font-mono font-bold text-white bg-brand-primary hover:bg-blue-600 transition-all">
               Inspect Fleet Demo
             </button>
-            <a href="tel:+251911000000" class="px-4 py-3 rounded-full text-xs font-mono font-semibold bg-slate-900 hover:bg-slate-800 text-slate-300 border border-slate-700">
+            <a href="tel:+251922612024" class="px-4 py-3 rounded-full text-xs font-mono font-semibold bg-slate-900 hover:bg-slate-800 text-slate-300 border border-slate-700">
               Consult Architect
             </a>
           </div>

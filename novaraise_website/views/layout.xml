@@ -12,7 +12,7 @@
             <!-- Fonts -->
             <link rel="preconnect" href="https://fonts.googleapis.com"/>
             <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous"/>
-            <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&amp;family=JetBrains+Mono:wght@400;500;600;700&amp;family=Space+Grotesk:wght@500;600;700;800&amp;family=Manrope:wght@600;700;800&amp;display=swap" rel="stylesheet"/>
+            <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&amp;family=JetBrains+Mono:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
 
             <!-- Tailwind CSS CDN -->
             <script src="https://cdn.tailwindcss.com"></script>
@@ -40,7 +40,7 @@
                         }
                       },
                       fontFamily: {
-                        heading: ['Space Grotesk', 'Manrope', 'sans-serif'],
+                        heading: ['Poppins', 'sans-serif'],
                         body: ['Inter', 'sans-serif'],
                         mono: ['JetBrains Mono', 'monospace'],
                       }
@@ -51,12 +51,12 @@
 
             <style>
                 body {
-                  font-family: 'Inter', sans-serif;
+                  font-family: 'Poppins', sans-serif;
                   background-color: #050814;
                   color: #E2E8F0;
                 }
                 h1, h2, h3, h4, h5, h6 {
-                  font-family: 'Space Grotesk', 'Manrope', sans-serif;
+                  font-family: 'Poppins', sans-serif;
                   letter-spacing: -0.025em;
                 }
                 .obsidian-radial {
@@ -104,14 +104,14 @@
                         <span class="text-slate-300">Telebirr &amp; CBE Birr Direct Settlement Active</span>
                     </div>
                     <div class="flex items-center gap-4 text-xs">
-                        <a href="tel:+251911000000" class="text-slate-300 hover:text-white flex items-center gap-1">
+                        <a href="tel:+251922612024" class="text-slate-300 hover:text-white flex items-center gap-1">
                             <i data-lucide="phone" class="w-3.5 h-3.5 text-brand-interactive"></i>
                             <span>+251 911 00 00 00</span>
                         </a>
                         <span class="text-slate-700">|</span>
-                        <a href="https://t.me/NovaraiseDigital" target="_blank" class="text-slate-300 hover:text-white flex items-center gap-1">
+                        <a href="https://t.me/daniel212_212" target="_blank" class="text-slate-300 hover:text-white flex items-center gap-1">
                             <i data-lucide="send" class="w-3.5 h-3.5 text-brand-interactive"></i>
-                            <span>@NovaraiseDigital</span>
+                            <span>@daniel212_212</span>
                         </a>
                         <span class="text-slate-700">|</span>
                         <a href="/web/login" class="text-brand-interactive hover:text-white flex items-center gap-1">
@@ -160,9 +160,9 @@
                     </nav>
 
                     <div class="hidden sm:flex items-center gap-3 font-mono">
-                        <a href="tel:+251911000000" class="inline-flex items-center gap-2 px-4 py-2 text-xs font-semibold rounded-full text-slate-300 bg-slate-900 hover:bg-slate-800 border border-slate-700">
+                        <a href="tel:+251922612024" class="inline-flex items-center gap-2 px-4 py-2 text-xs font-semibold rounded-full text-slate-300 bg-slate-900 hover:bg-slate-800 border border-slate-700">
                             <i data-lucide="phone" class="w-3.5 h-3.5 text-brand-interactive"></i>
-                            <span>09 11 00 00 00</span>
+                            <span>0922612024</span>
                         </a>
                         <button onclick="openRFPModal('Direct Telemetry Consultation')" class="inline-flex items-center gap-2 px-5 py-2.5 text-xs font-bold rounded-full text-white bg-gradient-to-r from-brand-primary to-blue-600 hover:from-blue-600 hover:to-brand-interactive shadow-lg shadow-brand-primary/25">
                             <span>Request RFP</span>
@@ -266,11 +266,11 @@
 
             <!-- Dual Floating Action Pills -->
             <div class="fixed bottom-6 right-6 z-50 flex flex-col sm:flex-row items-end sm:items-center gap-3 font-mono text-xs">
-                <a href="tel:+251911000000" class="flex items-center gap-2 px-5 py-3 rounded-full bg-brand-primary text-white font-bold shadow-2xl hover:bg-blue-600 hover:scale-105 transition-all border border-blue-400/40">
+                <a href="tel:+251922612024" class="flex items-center gap-2 px-5 py-3 rounded-full bg-brand-primary text-white font-bold shadow-2xl hover:bg-blue-600 hover:scale-105 transition-all border border-blue-400/40">
                     <i data-lucide="phone-call" class="w-4 h-4 text-white animate-bounce"></i>
-                    <span>ይደውሉልን (09 11 00 00 00)</span>
+                    <span>ይደውሉልን (0922612024)</span>
                 </a>
-                <a href="https://t.me/NovaraiseDigital" target="_blank" class="flex items-center gap-2 px-5 py-3 rounded-full bg-emerald-600 text-white font-bold shadow-2xl hover:bg-emerald-500 hover:scale-105 transition-all border border-emerald-400/40">
+                <a href="https://t.me/daniel212_212" target="_blank" class="flex items-center gap-2 px-5 py-3 rounded-full bg-emerald-600 text-white font-bold shadow-2xl hover:bg-emerald-500 hover:scale-105 transition-all border border-emerald-400/40">
                     <i data-lucide="send" class="w-4 h-4 text-white"></i>
                     <span>Telegram Online</span>
                     <span class="w-2 h-2 rounded-full bg-white pulse-dot"></span>
@@ -297,7 +297,7 @@
                         </div>
                         <div>
                             <label class="block font-semibold text-slate-300 mb-1">Direct Contact Phone Number</label>
-                            <input type="tel" id="rfp-phone" required="required" placeholder="09 11 00 00 00" class="w-full bg-slate-900 border border-slate-700 px-3.5 py-2.5 rounded-xl text-white focus:outline-none focus:border-brand-interactive"/>
+                            <input type="tel" id="rfp-phone" required="required" placeholder="0922612024" class="w-full bg-slate-900 border border-slate-700 px-3.5 py-2.5 rounded-xl text-white focus:outline-none focus:border-brand-interactive"/>
                         </div>
                         <div>
                             <label class="block font-semibold text-slate-300 mb-1">Target Platform Scope</label>

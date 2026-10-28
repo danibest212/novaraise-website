@@ -1,0 +1,1254 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Novarise Digital — Sovereign Enterprise Software &amp; Cloud Platforms | novaraise.et</title>
+  <meta name="description" content="Novarise Digital Solution PLC (novaraise.et) is Ethiopia's premier enterprise software engineering firm. Sovereign MLM SuperApps, 100% MoR tax-compliant Enterprise ERP (Odoo 19 Clean Core), turnkey Telegram mini-apps & ride-hailing suites, and bespoke AI engineering in Addis Ababa." />
+
+  <!-- Fonts: Poppins (Primary Font) & JetBrains Mono (Telemetry) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,600&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Tailwind CSS & Lucide Icons -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <!-- Tailwind Configuration for Luxury Enterprise Obsidian Theme -->
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              obsidian: '#030712',      /* Ultra Deep Space Obsidian */
+              navyDark: '#080E1E',      /* Surface Dark */
+              navySurface: '#0E172B',   /* Elevated Card */
+              navyCard: '#131F3B',      /* Highlight Card */
+              primary: '#0057D9',       /* Novaraise Royal Blue */
+              interactive: '#0096E6',   /* High-Tech Cyan Blue */
+              accent: '#38BDF8',        /* Sky Neon */
+              cyanNeon: '#06B6D4',
+              emerald: '#10B981',       /* Sovereign Compliance Green */
+              emeraldDark: '#064E3B',
+              gold: '#F59E0B',          /* Financial Gold */
+              purpleGlow: '#8B5CF6'
+            }
+          },
+          fontFamily: {
+            sans: ['Poppins', 'sans-serif'],
+            heading: ['Poppins', 'sans-serif'],
+            body: ['Poppins', 'sans-serif'],
+            mono: ['JetBrains Mono', 'monospace'],
+          },
+          animation: {
+            'aurora': 'aurora 20s linear infinite',
+            'shimmer': 'shimmer 2.5s ease-in-out infinite',
+            'float-slow': 'floatSlow 6s ease-in-out infinite',
+            'pulse-glow': 'pulseGlow 3s ease-in-out infinite',
+          },
+          keyframes: {
+            aurora: {
+              '0%, 100%': { transform: 'translate(0, 0) scale(1) rotate(0deg)' },
+              '50%': { transform: 'translate(-30px, 20px) scale(1.15) rotate(15deg)' }
+            },
+            shimmer: {
+              '0%': { backgroundPosition: '-200% 0' },
+              '100%': { backgroundPosition: '200% 0' }
+            },
+            floatSlow: {
+              '0%, 100%': { transform: 'translateY(0px)' },
+              '50%': { transform: 'translateY(-10px)' }
+            },
+            pulseGlow: {
+              '0%, 100%': { opacity: '0.4', filter: 'blur(40px)' },
+              '50%': { opacity: '0.8', filter: 'blur(55px)' }
+            }
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #030712;
+      color: #E2E8F0;
+      overflow-x: hidden;
+      letter-spacing: -0.01em;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      font-family: 'Poppins', sans-serif;
+      letter-spacing: -0.025em;
+      font-weight: 700;
+    }
+    .grid-pattern-fine {
+      background-image: 
+        linear-gradient(to right, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+      background-size: 40px 40px;
+    }
+    .glass-panel {
+      background: rgba(14, 23, 43, 0.65);
+      backdrop-filter: blur(24px) saturate(190%);
+      -webkit-backdrop-filter: blur(24px) saturate(190%);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      box-shadow: 0 30px 60px -15px rgba(0, 0, 0, 0.7);
+    }
+    .glass-card-interactive {
+      background: rgba(14, 23, 43, 0.5);
+      backdrop-filter: blur(16px);
+      border: 1px solid rgba(255, 255, 255, 0.07);
+      transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+      position: relative;
+    }
+    .glass-card-interactive:hover {
+      border-color: rgba(56, 189, 248, 0.45);
+      transform: translateY(-4px);
+      box-shadow: 0 20px 40px -15px rgba(0, 87, 217, 0.3), inset 0 0 20px rgba(56, 189, 248, 0.05);
+    }
+    .text-gradient-white {
+      background: linear-gradient(180deg, #FFFFFF 0%, #CBD5E1 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .text-gradient-cyan {
+      background: linear-gradient(135deg, #38BDF8 0%, #0096E6 50%, #3B82F6 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .text-gradient-gold {
+      background: linear-gradient(135deg, #FDE68A 0%, #F59E0B 50%, #D97706 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .glow-cyan-btn {
+      box-shadow: 0 0 30px -5px rgba(0, 150, 230, 0.5);
+    }
+    .glow-cyan-btn:hover {
+      box-shadow: 0 0 45px 0px rgba(56, 189, 248, 0.7);
+    }
+    .pulse-radar {
+      animation: pulseRadar 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+    }
+    @keyframes pulseRadar {
+      0%, 100% { opacity: 1; transform: scale(1); }
+      50% { opacity: 0.3; transform: scale(1.3); }
+    }
+    /* Syntax Highlighting */
+    .syn-k { color: #38BDF8; font-weight: 600; }
+    .syn-s { color: #34D399; }
+    .syn-n { color: #FBBF24; }
+    .syn-c { color: #64748B; font-style: italic; }
+    /* Hide scrollbar */
+    .no-scrollbar::-webkit-scrollbar { display: none; }
+    .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+  </style>
+</head>
+<body class="bg-brand-obsidian text-slate-200 antialiased selection:bg-brand-interactive selection:text-white">
+
+  <!-- ========================================================================= -->
+  <!-- 0. ATMOSPHERIC AURORA LIGHTING LAYER                                      -->
+  <!-- ========================================================================= -->
+  <div class="fixed inset-0 pointer-events-none z-0 overflow-hidden">
+    <!-- Top Cyan Glow -->
+    <div class="absolute -top-[25%] left-1/2 -translate-x-1/2 w-[900px] h-[550px] bg-gradient-to-br from-blue-600/20 via-cyan-500/15 to-transparent rounded-full blur-[130px] animate-aurora"></div>
+    <!-- Right Indigo Glow -->
+    <div class="absolute top-[30%] -right-[15%] w-[650px] h-[650px] bg-indigo-600/10 rounded-full blur-[140px] animate-pulse-glow"></div>
+    <!-- Left Emerald Glow -->
+    <div class="absolute top-[65%] -left-[10%] w-[550px] h-[550px] bg-emerald-600/10 rounded-full blur-[120px] animate-pulse-glow"></div>
+  </div>
+
+  <!-- ========================================================================= -->
+  <!-- 1. FLOATING LUXURY CAPSULE NAVBAR (APPLE / LINEAR STYLE)                   -->
+  <!-- ========================================================================= -->
+  <div class="fixed top-4 inset-x-0 z-50 flex justify-center px-4 pointer-events-none">
+    <header class="w-full max-w-6xl glass-panel rounded-full px-5 py-3 pointer-events-auto flex items-center justify-between border border-white/10 shadow-2xl transition-all duration-300">
+      
+      <!-- Brand Logo -->
+      <a href="index.html" class="flex items-center gap-3 group">
+        <div class="relative w-9 h-9 rounded-full overflow-hidden border border-cyan-400/40 p-0.5 bg-slate-900 shadow-lg shadow-cyan-500/20 group-hover:border-cyan-400 transition-all">
+          <img src="images/novaraise_logo.jpeg" alt="NovaRaise Logo" class="w-full h-full object-cover rounded-full" />
+        </div>
+        <div class="flex flex-col">
+          <span class="font-heading font-black text-base tracking-tight text-white flex items-center gap-1.5">
+            Novarise <span class="text-brand-interactive">Digital</span>
+            <span class="text-[9px] font-mono px-1.5 py-0.2 rounded bg-cyan-950 text-cyan-400 border border-cyan-800/80 font-bold">.et</span>
+          </span>
+          <span class="text-[9px] font-mono text-slate-400 tracking-wider uppercase">Sovereign Enterprise OS</span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation Menu -->
+      <nav class="hidden lg:flex items-center gap-1 font-medium text-xs text-slate-300">
+        <a href="erp.html" class="px-3.5 py-2 rounded-full hover:text-white hover:bg-white/[0.06] transition-all flex items-center gap-1.5">
+          <i data-lucide="building-2" class="w-3.5 h-3.5 text-blue-400"></i>
+          <span>Enterprise ERP</span>
+          <span class="text-[9px] px-1 py-0.2 rounded bg-emerald-950 text-emerald-400 font-mono font-bold">MoR</span>
+        </a>
+        <a href="mlm.html" class="px-3.5 py-2 rounded-full hover:text-white hover:bg-white/[0.06] transition-all flex items-center gap-1.5">
+          <i data-lucide="network" class="w-3.5 h-3.5 text-cyan-400"></i>
+          <span>Sovereign MLM</span>
+        </a>
+        <a href="on-demand.html" class="px-3.5 py-2 rounded-full hover:text-white hover:bg-white/[0.06] transition-all flex items-center gap-1.5">
+          <i data-lucide="smartphone" class="w-3.5 h-3.5 text-amber-400"></i>
+          <span>SuperApps &amp; Bots</span>
+        </a>
+        <a href="custom-software.html" class="px-3.5 py-2 rounded-full hover:text-white hover:bg-white/[0.06] transition-all flex items-center gap-1.5">
+          <i data-lucide="cpu" class="w-3.5 h-3.5 text-purple-400"></i>
+          <span>AI &amp; Bespoke Dev</span>
+        </a>
+        <a href="academy.html" class="px-3.5 py-2 rounded-full hover:text-white hover:bg-white/[0.06] transition-all flex items-center gap-1.5">
+          <i data-lucide="graduation-cap" class="w-3.5 h-3.5 text-emerald-400"></i>
+          <span>Nova Academy</span>
+        </a>
+      </nav>
+
+      <!-- Action Buttons -->
+      <div class="flex items-center gap-3">
+        <!-- Live Status Pill -->
+        <div class="hidden sm:flex items-center gap-2 px-3 py-1.5 rounded-full bg-slate-900/90 border border-slate-700/60 text-[11px] font-mono text-slate-300">
+          <span class="w-2 h-2 rounded-full bg-emerald-400 pulse-radar"></span>
+          <span>Addis Ababa Core: <strong class="text-emerald-400 font-bold">24ms</strong></span>
+        </div>
+
+        <!-- RFP Consultation Button -->
+        <button onclick="openRFPModal('Direct Executive Session')" class="px-4 py-2 rounded-full text-xs font-bold font-mono text-white bg-gradient-to-r from-brand-primary via-blue-600 to-brand-interactive hover:brightness-110 transition-all glow-cyan-btn flex items-center gap-2">
+          <span>Book Architect</span>
+          <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+        </button>
+      </div>
+
+    </header>
+  </div>
+
+  <!-- Spacer for fixed navbar -->
+  <div class="h-24"></div>
+
+  <!-- ========================================================================= -->
+  <!-- 2. HIGH-IMPACT HERO SECTION                                               -->
+  <!-- ========================================================================= -->
+  <section class="relative pt-12 pb-24 grid-pattern-fine z-10 overflow-hidden">
+    
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Top Eyebrow Badge -->
+      <div class="flex justify-center mb-6">
+        <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-slate-900/80 border border-cyan-500/30 text-xs font-mono text-slate-300 shadow-xl backdrop-blur-md">
+          <span class="flex h-2 w-2 relative">
+            <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+            <span class="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
+          </span>
+          <span class="text-emerald-400 font-bold tracking-wide">100% ETHIOPIAN SOVEREIGN STACK</span>
+          <span class="text-slate-600">|</span>
+          <span class="text-slate-300">MoR WHT 2%/3% Ready • Telebirr v2.0 Rails</span>
+        </div>
+      </div>
+
+      <!-- Main Master Headline -->
+      <div class="text-center max-w-4xl mx-auto space-y-6">
+        <h1 class="text-4xl sm:text-6xl lg:text-7xl font-black tracking-tight leading-[1.08] text-gradient-white">
+          Architecting Ethiopia’s Next-Gen
+          <span class="block mt-1 text-gradient-cyan">Enterprise Platforms.</span>
+        </h1>
+        <p class="text-base sm:text-xl text-slate-300 max-w-2xl mx-auto font-normal leading-relaxed">
+          Novarise Digital PLC engineers high-frequency, mission-critical digital systems: 
+          <strong class="text-white font-semibold">100% MoR Tax-Compliant ERP</strong>, 
+          <strong class="text-white font-semibold">Sovereign MLM SuperApps</strong>, and 
+          <strong class="text-white font-semibold">Turnkey On-Demand AI Infrastructure</strong>. 
+          Deployed domestically inside Addis Ababa with sub-50ms latency.
+        </p>
+
+        <!-- Call to Action Buttons -->
+        <div class="flex flex-wrap items-center justify-center gap-4 pt-3">
+          <button onclick="openRFPModal('Hero Fast Track Consultation')" class="px-7 py-4 rounded-full text-sm font-bold font-mono text-white bg-gradient-to-r from-brand-primary via-blue-600 to-brand-interactive hover:brightness-110 transition-all glow-cyan-btn flex items-center gap-3 shadow-2xl">
+            <span>Launch Architecture Consultation</span>
+            <i data-lucide="arrow-up-right" class="w-4 h-4"></i>
+          </button>
+          
+          <a href="#estimator" class="px-7 py-4 rounded-full text-sm font-bold font-mono text-slate-200 bg-slate-900/80 hover:bg-slate-800/90 border border-slate-700 hover:border-slate-500 transition-all flex items-center gap-2 backdrop-blur-md">
+            <i data-lucide="calculator" class="w-4 h-4 text-brand-interactive"></i>
+            <span>Calculate 2026/27 ETB Scope</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- ===================================================================== -->
+      <!-- 3. THE SHOWSTOPPER: TELEMETRY STUDIO CONSOLE (INTERACTIVE 3D STAGE)    -->
+      <!-- ===================================================================== -->
+      <div class="mt-16 max-w-6xl mx-auto">
+        <div class="relative rounded-3xl p-1 bg-gradient-to-b from-cyan-500/30 via-blue-600/10 to-transparent shadow-[0_30px_100px_rgba(0,87,217,0.25)]">
+          
+          <!-- Inner Window Frame -->
+          <div class="glass-panel rounded-[22px] overflow-hidden">
+            
+            <!-- Window Title Bar -->
+            <div class="bg-[#070C1B] px-5 py-3 border-b border-white/[0.08] flex items-center justify-between">
+              <div class="flex items-center gap-2.5">
+                <div class="flex gap-1.5">
+                  <span class="w-3 h-3 rounded-full bg-red-500/80 border border-red-400"></span>
+                  <span class="w-3 h-3 rounded-full bg-amber-500/80 border border-amber-400"></span>
+                  <span class="w-3 h-3 rounded-full bg-emerald-500/80 border border-emerald-400"></span>
+                </div>
+                <span class="text-xs font-mono text-slate-400 ml-2 hidden sm:inline">novaraise.et / sovereign-telemetry-console-v19.4</span>
+              </div>
+
+              <!-- Live Cluster Telemetry -->
+              <div class="flex items-center gap-4 text-[11px] font-mono">
+                <span class="text-slate-400 flex items-center gap-1.5">
+                  <span class="w-2 h-2 rounded-full bg-emerald-400 pulse-radar"></span>
+                  <span>STATUS: <strong>HEALTHY (99.99%)</strong></span>
+                </span>
+                <span class="hidden md:inline text-slate-600">|</span>
+                <span class="hidden md:inline text-slate-400">SECURITY: <strong>TLS 1.3 / SOVEREIGN CORE</strong></span>
+              </div>
+            </div>
+
+            <!-- Segmented Engine Selector Tabs -->
+            <div class="bg-[#050A17] p-2 border-b border-white/[0.06] overflow-x-auto no-scrollbar">
+              <div class="flex items-center gap-2 min-w-max">
+                
+                <button onclick="switchTelemetry('erp')" id="tab-erp" class="tele-tab active px-4 py-2.5 rounded-xl text-xs font-mono font-bold transition-all flex items-center gap-2 bg-brand-primary text-white shadow-lg shadow-brand-primary/30">
+                  <i data-lucide="building-2" class="w-3.5 h-3.5"></i>
+                  <span>1. Enterprise ERP (MoR WHT)</span>
+                </button>
+
+                <button onclick="switchTelemetry('mlm')" id="tab-mlm" class="tele-tab px-4 py-2.5 rounded-xl text-xs font-mono font-bold transition-all flex items-center gap-2 text-slate-400 hover:text-white hover:bg-slate-800/60">
+                  <i data-lucide="network" class="w-3.5 h-3.5"></i>
+                  <span>2. Sovereign MLM SuperApp</span>
+                </button>
+
+                <button onclick="switchTelemetry('ondemand')" id="tab-ondemand" class="tele-tab px-4 py-2.5 rounded-xl text-xs font-mono font-bold transition-all flex items-center gap-2 text-slate-400 hover:text-white hover:bg-slate-800/60">
+                  <i data-lucide="smartphone" class="w-3.5 h-3.5"></i>
+                  <span>3. On-Demand &amp; Telegram Bots</span>
+                </button>
+
+                <button onclick="switchTelemetry('custom')" id="tab-custom" class="tele-tab px-4 py-2.5 rounded-xl text-xs font-mono font-bold transition-all flex items-center gap-2 text-slate-400 hover:text-white hover:bg-slate-800/60">
+                  <i data-lucide="cpu" class="w-3.5 h-3.5"></i>
+                  <span>4. Bespoke Software &amp; AI</span>
+                </button>
+
+                <button onclick="switchTelemetry('academy')" id="tab-academy" class="tele-tab px-4 py-2.5 rounded-xl text-xs font-mono font-bold transition-all flex items-center gap-2 text-slate-400 hover:text-white hover:bg-slate-800/60">
+                  <i data-lucide="graduation-cap" class="w-3.5 h-3.5"></i>
+                  <span>5. Nova Academy</span>
+                </button>
+
+              </div>
+            </div>
+
+            <!-- Console Body Grid -->
+            <div class="p-6 sm:p-8 grid grid-cols-1 lg:grid-cols-12 gap-8 items-center bg-[#070D1E]/90">
+              
+              <!-- Left Column: Dynamic Spec & Live Status -->
+              <div class="lg:col-span-5 space-y-6">
+                <div>
+                  <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full text-[10px] font-mono font-bold uppercase tracking-wider bg-cyan-950/80 text-cyan-400 border border-cyan-800/60 mb-3" id="tele-badge">
+                    ENGINE 01 // MOR ERP CERTIFIED
+                  </div>
+                  <h3 class="text-2xl sm:text-3xl font-extrabold text-white" id="tele-title">
+                    100% Tax Compliant Enterprise ERP
+                  </h3>
+                  <p class="text-slate-300 text-sm mt-2 leading-relaxed" id="tele-desc">
+                    Engineered on Odoo 19 Clean Core with 901 audited modules. Automated 2% Goods &amp; 3% Services Withholding Tax (WHT), Ge'ez Ethiopian fiscal calendar, and native Telebirr/CBE payment reconciliation.
+                  </p>
+                </div>
+
+                <!-- Telemetry Metrics Strip -->
+                <div class="grid grid-cols-2 gap-3 pt-2" id="tele-metrics">
+                  <div class="p-3 rounded-xl bg-slate-900/80 border border-white/[0.06]">
+                    <div class="text-[10px] font-mono uppercase text-slate-400">Regulatory Status</div>
+                    <div class="text-sm font-bold text-emerald-400 mt-0.5">100% MoR Compliant</div>
+                  </div>
+                  <div class="p-3 rounded-xl bg-slate-900/80 border border-white/[0.06]">
+                    <div class="text-[10px] font-mono uppercase text-slate-400">Audited Core Modules</div>
+                    <div class="text-sm font-bold text-cyan-400 mt-0.5">901 Enterprise Apps</div>
+                  </div>
+                </div>
+
+                <!-- Feature Bullet Points -->
+                <div class="space-y-2 text-xs font-mono text-slate-300" id="tele-bullets">
+                  <div class="flex items-center gap-2">
+                    <i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-400 shrink-0"></i>
+                    <span>Automated Sene 30 Fiscal Year Closing Engine</span>
+                  </div>
+                  <div class="flex items-center gap-2">
+                    <i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-400 shrink-0"></i>
+                    <span>Direct Telebirr Merchant API v2.0 Double-Entry Ledger</span>
+                  </div>
+                  <div class="flex items-center gap-2">
+                    <i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-400 shrink-0"></i>
+                    <span>Multi-Company Inter-Entity Transfer Protocol</span>
+                  </div>
+                </div>
+
+                <!-- Deep Dive Button -->
+                <div class="pt-2">
+                  <a href="erp.html" id="tele-link" class="inline-flex items-center gap-2 px-5 py-2.5 rounded-full text-xs font-mono font-bold text-white bg-slate-800 hover:bg-slate-700 border border-slate-600 transition-all">
+                    <span>Explore ERP Specifications</span>
+                    <i data-lucide="chevron-right" class="w-3.5 h-3.5"></i>
+                  </a>
+                </div>
+              </div>
+
+              <!-- Right Column: Interactive UI Showcase Frame -->
+              <div class="lg:col-span-7">
+                <div class="relative rounded-2xl overflow-hidden border border-white/10 bg-slate-950 shadow-2xl group">
+                  <img src="images/erp_dashboard_10.png" id="tele-image" alt="ERP Dashboard Preview" class="w-full h-auto object-cover max-h-[420px] transition-transform duration-500 group-hover:scale-[1.02]" />
+                  
+                  <!-- Bottom Caption Overlay -->
+                  <div class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-slate-950 via-slate-950/80 to-transparent p-5 flex items-center justify-between">
+                    <div>
+                      <div class="text-xs font-bold text-white font-mono" id="tele-caption-title">Enterprise Sales, Inventory &amp; Tax Telemetry</div>
+                      <div class="text-[11px] text-slate-400 font-mono" id="tele-caption-sub">Addis Ababa Core Node • Live Sync Active</div>
+                    </div>
+                    <span class="px-2.5 py-1 rounded-full text-[10px] font-mono font-bold bg-emerald-950/80 text-emerald-400 border border-emerald-800/60">
+                      LIVE ENGINE
+                    </span>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========================================================================= -->
+  <!-- 4. TRUST & AUDITED NATIONAL METRICS BANNER                                -->
+  <!-- ========================================================================= -->
+  <section class="py-14 bg-[#02050E] border-y border-white/[0.08] relative z-10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+        
+        <div class="p-6 rounded-2xl glass-card-interactive">
+          <div class="text-3xl sm:text-4xl lg:text-5xl font-black text-gradient-cyan font-heading">901+</div>
+          <div class="text-xs font-mono font-bold uppercase tracking-wider text-slate-400 mt-2">Audited Odoo Modules</div>
+          <div class="text-[11px] text-slate-300 mt-1">Zero extraneous dependencies</div>
+        </div>
+
+        <div class="p-6 rounded-2xl glass-card-interactive">
+          <div class="text-3xl sm:text-4xl lg:text-5xl font-black text-emerald-400 font-heading">100%</div>
+          <div class="text-xs font-mono font-bold uppercase tracking-wider text-slate-400 mt-2">MoR Tax Compliant</div>
+          <div class="text-[11px] text-slate-300 mt-1">WHT 2%/3% auto-reconciled</div>
+        </div>
+
+        <div class="p-6 rounded-2xl glass-card-interactive">
+          <div class="text-3xl sm:text-4xl lg:text-5xl font-black text-gradient-gold font-heading">25,000+</div>
+          <div class="text-xs font-mono font-bold uppercase tracking-wider text-slate-400 mt-2">MLM Network Nodes</div>
+          <div class="text-[11px] text-slate-300 mt-1">High-frequency genealogy engine</div>
+        </div>
+
+        <div class="p-6 rounded-2xl glass-card-interactive">
+          <div class="text-3xl sm:text-4xl lg:text-5xl font-black text-purple-400 font-heading">&lt; 45ms</div>
+          <div class="text-xs font-mono font-bold uppercase tracking-wider text-slate-400 mt-2">Domestic Ethiopian SLA</div>
+          <div class="text-[11px] text-slate-300 mt-1">Direct Ethio Telecom routing</div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================= -->
+  <!-- 5. BENTO GRID: 5 SOVEREIGN ENGINEERING ENGINES                            -->
+  <!-- ========================================================================= -->
+  <section id="services" class="py-24 bg-[#030712] relative z-10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Section Header -->
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <span class="px-3.5 py-1 rounded-full text-[11px] font-mono font-bold uppercase tracking-widest text-brand-interactive bg-blue-950/80 border border-blue-800/60">
+          5 PRODUCTION DISCIPLINES
+        </span>
+        <h2 class="text-3xl sm:text-5xl font-black text-white mt-4 tracking-tight">
+          Engineered for National Scale.
+        </h2>
+        <p class="text-slate-400 text-base mt-3 max-w-xl mx-auto">
+          Explore our five sovereign platform disciplines built for Ethiopian conglomerates, state enterprises, and ambitious direct-selling leaders.
+        </p>
+      </div>
+
+      <!-- Bento Grid Container -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        
+        <!-- Bento 1: Enterprise ERP (Large 2-col span on LG) -->
+        <div class="lg:col-span-2 rounded-3xl p-8 glass-card-interactive flex flex-col justify-between border border-white/10 group">
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <span class="p-3 rounded-2xl bg-blue-950/80 border border-blue-800 text-blue-400">
+                <i data-lucide="building-2" class="w-6 h-6"></i>
+              </span>
+              <span class="text-xs font-mono font-bold text-emerald-400 bg-emerald-950/80 px-3 py-1 rounded-full border border-emerald-800">
+                MoR WHT 2%/3% CERTIFIED
+              </span>
+            </div>
+            
+            <h3 class="text-2xl font-bold text-white group-hover:text-brand-interactive transition-colors">
+              Nova Enterprise ERP (Odoo 19 Clean Core)
+            </h3>
+            <p class="text-slate-300 text-sm mt-2 leading-relaxed">
+              Complete Ethiopian corporate localization. Ministry of Revenues tax automation, Sene 30 fiscal closing, Ge'ez Ethiopian calendar toggle, and automated bank reconciliation with Telebirr and Commercial Bank of Ethiopia.
+            </p>
+          </div>
+
+          <!-- Interactive Ge'ez / Gregorian Mini Demo Preview -->
+          <div class="mt-6 p-4 rounded-2xl bg-slate-950/80 border border-white/[0.08]">
+            <div class="flex items-center justify-between text-xs font-mono text-slate-400 pb-3 border-b border-slate-800">
+              <span class="flex items-center gap-1.5 text-cyan-400">
+                <i data-lucide="calendar" class="w-4 h-4"></i>
+                <span>ETHIOPIAN CALENDAR RECONCILIATION</span>
+              </span>
+              <span class="text-emerald-400 font-bold">19.4-CLEAN-CORE</span>
+            </div>
+            <div class="grid grid-cols-2 sm:grid-cols-3 gap-3 pt-3 text-xs font-mono">
+              <div>
+                <span class="text-slate-400 block text-[10px]">FISCAL YEAR</span>
+                <span class="text-white font-bold">2017 E.C. (Sene 30)</span>
+              </div>
+              <div>
+                <span class="text-slate-400 block text-[10px]">WHT RATE APPLIED</span>
+                <span class="text-emerald-400 font-bold">2% Goods / 3% Serv.</span>
+              </div>
+              <div class="hidden sm:block">
+                <span class="text-slate-400 block text-[10px]">PAYMENT RAILS</span>
+                <span class="text-blue-400 font-bold">Telebirr &amp; CBE Birr</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="mt-6 pt-4 border-t border-white/[0.08] flex items-center justify-between">
+            <a href="erp.html" class="text-xs font-mono font-bold text-brand-interactive hover:text-white flex items-center gap-1.5 transition-colors">
+              <span>Inspect 901 Audited Modules</span>
+              <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+            </a>
+            <span class="text-xs font-mono text-slate-400">From 300,000 ETB</span>
+          </div>
+        </div>
+
+        <!-- Bento 2: Sovereign MLM SuperApp -->
+        <div class="rounded-3xl p-8 glass-card-interactive flex flex-col justify-between border border-white/10 group">
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <span class="p-3 rounded-2xl bg-cyan-950/80 border border-cyan-800 text-cyan-400">
+                <i data-lucide="network" class="w-6 h-6"></i>
+              </span>
+              <span class="text-xs font-mono font-bold text-cyan-400 bg-cyan-950/80 px-2.5 py-1 rounded-full border border-cyan-800">
+                HIGH FREQUENCY
+              </span>
+            </div>
+            <h3 class="text-2xl font-bold text-white group-hover:text-cyan-400 transition-colors">
+              Sovereign MLM OS
+            </h3>
+            <p class="text-slate-300 text-sm mt-2 leading-relaxed">
+              Binary, Unilevel, Matrix, and Hybrid compensation plans. Real-time automated payout calculations, anti-pyramid safety caps (50% GV maximum), and integrated Telebirr instant commissions.
+            </p>
+          </div>
+
+          <div class="mt-6 pt-4 border-t border-white/[0.08] flex items-center justify-between">
+            <a href="mlm.html" class="text-xs font-mono font-bold text-cyan-400 hover:text-white flex items-center gap-1.5 transition-colors">
+              <span>Interactive Binary Visualizer</span>
+              <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+            </a>
+            <span class="text-xs font-mono text-slate-400">From 600,000 ETB</span>
+          </div>
+        </div>
+
+        <!-- Bento 3: On-Demand SuperApps & Telegram Mini-Apps -->
+        <div class="rounded-3xl p-8 glass-card-interactive flex flex-col justify-between border border-white/10 group">
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <span class="p-3 rounded-2xl bg-amber-950/80 border border-amber-800 text-amber-400">
+                <i data-lucide="smartphone" class="w-6 h-6"></i>
+              </span>
+              <span class="text-xs font-mono font-bold text-amber-400 bg-amber-950/80 px-2.5 py-1 rounded-full border border-amber-800">
+                TURNKEY
+              </span>
+            </div>
+            <h3 class="text-xl font-bold text-white group-hover:text-amber-400 transition-colors">
+              On-Demand &amp; Telegram Bots
+            </h3>
+            <p class="text-slate-300 text-sm mt-2 leading-relaxed">
+              Zero-install Telegram mini-apps with native Telebirr checkout. Ride-hailing dispatch suites, multi-vendor marketplaces, and digital Equb savings platforms.
+            </p>
+          </div>
+
+          <div class="mt-6 pt-4 border-t border-white/[0.08] flex items-center justify-between">
+            <a href="on-demand.html" class="text-xs font-mono font-bold text-amber-400 hover:text-white flex items-center gap-1.5 transition-colors">
+              <span>View On-Demand Catalog</span>
+              <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+            </a>
+            <span class="text-xs font-mono text-slate-400">From 95,000 ETB</span>
+          </div>
+        </div>
+
+        <!-- Bento 4: Bespoke Software & Autonomous AI Dev -->
+        <div class="rounded-3xl p-8 glass-card-interactive flex flex-col justify-between border border-white/10 group">
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <span class="p-3 rounded-2xl bg-purple-950/80 border border-purple-800 text-purple-400">
+                <i data-lucide="cpu" class="w-6 h-6"></i>
+              </span>
+              <span class="text-xs font-mono font-bold text-purple-400 bg-purple-950/80 px-2.5 py-1 rounded-full border border-purple-800">
+                BESPOKE
+              </span>
+            </div>
+            <h3 class="text-xl font-bold text-white group-hover:text-purple-400 transition-colors">
+              Custom Software &amp; AI
+            </h3>
+            <p class="text-slate-300 text-sm mt-2 leading-relaxed">
+              Full-stack Next.js web applications, native Flutter iOS/Android apps with offline synchronization, offline desktop operations (.NET Core), and enterprise AI agents.
+            </p>
+          </div>
+
+          <div class="mt-6 pt-4 border-t border-white/[0.08] flex items-center justify-between">
+            <a href="custom-software.html" class="text-xs font-mono font-bold text-purple-400 hover:text-white flex items-center gap-1.5 transition-colors">
+              <span>Explore AI Stack</span>
+              <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+            </a>
+            <span class="text-xs font-mono text-slate-400">From 150,000 ETB</span>
+          </div>
+        </div>
+
+        <!-- Bento 5: Nova Academy (Corporate Tech Bootcamps) -->
+        <div class="rounded-3xl p-8 glass-card-interactive flex flex-col justify-between border border-white/10 group">
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <span class="p-3 rounded-2xl bg-emerald-950/80 border border-emerald-800 text-emerald-400">
+                <i data-lucide="graduation-cap" class="w-6 h-6"></i>
+              </span>
+              <span class="text-xs font-mono font-bold text-emerald-400 bg-emerald-950/80 px-2.5 py-1 rounded-full border border-emerald-800">
+                CERTIFIED
+              </span>
+            </div>
+            <h3 class="text-xl font-bold text-white group-hover:text-emerald-400 transition-colors">
+              Nova Academy
+            </h3>
+            <p class="text-slate-300 text-sm mt-2 leading-relaxed">
+              Executive bootcamps and certifications. Certified Odoo 19 Functional Consultant tracks, Executive AI for C-Suite leaders, and high-ticket B2B tech sales methodology.
+            </p>
+          </div>
+
+          <div class="mt-6 pt-4 border-t border-white/[0.08] flex items-center justify-between">
+            <a href="academy.html" class="text-xs font-mono font-bold text-emerald-400 hover:text-white flex items-center gap-1.5 transition-colors">
+              <span>Book Cohort Seats</span>
+              <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+            </a>
+            <span class="text-xs font-mono text-slate-400">From 65,000 ETB</span>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========================================================================= -->
+  <!-- 6. LUXURY FINTECH INTERACTIVE ESTIMATOR (OFFICIAL 2026/27 CATALOG)         -->
+  <!-- ========================================================================= -->
+  <section id="estimator" class="py-24 bg-[#02050E] relative z-10 border-t border-white/[0.08]">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Section Title -->
+      <div class="text-center max-w-2xl mx-auto mb-14">
+        <span class="px-3.5 py-1 rounded-full text-[11px] font-mono font-bold uppercase tracking-widest text-brand-interactive bg-blue-950/80 border border-blue-800/60">
+          OFFICIAL 2026/27 SERVICE CATALOG
+        </span>
+        <h2 class="text-3xl sm:text-5xl font-black text-white mt-4 tracking-tight">
+          Interactive Scope &amp; Budget Estimator
+        </h2>
+        <p class="text-slate-400 text-sm sm:text-base mt-2">
+          Calculate projected implementation cost, delivery timeline, and infrastructure footprint in Ethiopian Birr (ETB).
+        </p>
+      </div>
+
+      <!-- Estimator Box -->
+      <div class="glass-panel rounded-3xl p-6 sm:p-10 border border-white/10 shadow-2xl">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+          
+          <!-- Left: Configuration Form -->
+          <div class="lg:col-span-7 space-y-6">
+            
+            <div>
+              <label class="block text-xs font-mono font-bold uppercase tracking-wider text-slate-300 mb-2">
+                1. Select Platform Discipline:
+              </label>
+              <select id="main-est-service" onchange="updateEstimatorOptions()" class="w-full bg-slate-900/90 border border-slate-700/80 rounded-xl px-4 py-3.5 text-white text-sm font-semibold focus:outline-none focus:border-brand-interactive transition-colors">
+                <option value="erp" selected>Nova Enterprise ERP (100% MoR Tax &amp; Bank Compliant)</option>
+                <option value="mlm">Sovereign MLM &amp; Direct Selling SuperApp OS</option>
+                <option value="ondemand">Turnkey On-Demand Platform (Telegram / Ride / Store)</option>
+                <option value="custom">Bespoke Software &amp; AI Engineering (Mobile/Web/Desktop)</option>
+                <option value="academy">Nova Training Academy (Corporate Cohort)</option>
+              </select>
+            </div>
+
+            <div>
+              <label class="block text-xs font-mono font-bold uppercase tracking-wider text-slate-300 mb-2">
+                2. Select Scope &amp; Architecture Tier:
+              </label>
+              <select id="main-est-scope" onchange="runMainEstimate()" class="w-full bg-slate-900/90 border border-slate-700/80 rounded-xl px-4 py-3.5 text-white text-sm font-semibold focus:outline-none focus:border-brand-interactive transition-colors">
+                <!-- Dynamically populated -->
+              </select>
+            </div>
+
+            <!-- Add-ons -->
+            <div>
+              <label class="block text-xs font-mono font-bold uppercase tracking-wider text-slate-300 mb-2">
+                3. Additional Infrastructure Rails:
+              </label>
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                <label class="flex items-center gap-3 p-3.5 rounded-xl bg-slate-900/60 border border-slate-700/70 hover:border-slate-500 cursor-pointer transition-colors">
+                  <input type="checkbox" id="main-add-telebirr" onchange="runMainEstimate()" class="w-4 h-4 rounded text-brand-interactive bg-slate-800 border-slate-600 focus:ring-0">
+                  <span class="text-xs font-mono text-slate-200">Telebirr v2.0 Merchant API (+50,000 ETB)</span>
+                </label>
+                <label class="flex items-center gap-3 p-3.5 rounded-xl bg-slate-900/60 border border-slate-700/70 hover:border-slate-500 cursor-pointer transition-colors">
+                  <input type="checkbox" id="main-add-cloud" onchange="runMainEstimate()" class="w-4 h-4 rounded text-brand-interactive bg-slate-800 border-slate-600 focus:ring-0">
+                  <span class="text-xs font-mono text-slate-200">Ethio Telecom Dedicated VPS (+45,000 ETB)</span>
+                </label>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Right: Live Financial Summary Card -->
+          <div class="lg:col-span-5 rounded-2xl p-6 sm:p-8 bg-gradient-to-br from-slate-900 via-slate-950 to-blue-950/40 border border-cyan-500/30 shadow-2xl relative">
+            
+            <div class="flex items-center justify-between text-xs font-mono text-slate-400 pb-3 border-b border-slate-800">
+              <span>PROJECTED IMPLEMENTATION</span>
+              <span class="text-emerald-400 font-bold">2026/27 CATALOG</span>
+            </div>
+
+            <div class="my-6">
+              <div class="text-xs font-mono text-slate-400 uppercase">Estimated Investment:</div>
+              <div class="text-4xl sm:text-5xl font-black text-gradient-cyan tracking-tight font-heading mt-1" id="main-est-price">
+                300,000 <span class="text-lg font-bold text-slate-400 font-mono">ETB</span>
+              </div>
+              <div class="text-[11px] text-slate-400 font-mono mt-1">Excluding 15% VAT • 100% Tax Deductible</div>
+            </div>
+
+            <div class="space-y-3 pt-4 border-t border-slate-800/80 text-xs font-mono">
+              <div class="flex justify-between items-center">
+                <span class="text-slate-400">Target Go-Live:</span>
+                <span class="font-bold text-white flex items-center gap-1" id="main-est-timeline">
+                  <i data-lucide="zap" class="w-3.5 h-3.5 text-amber-400"></i>
+                  <span>14 Days</span>
+                </span>
+              </div>
+              <div class="flex justify-between items-center">
+                <span class="text-slate-400">Addis Ababa SLA:</span>
+                <span class="font-bold text-emerald-400">2-Hour On-Premise Response</span>
+              </div>
+              <div class="flex justify-between items-center">
+                <span class="text-slate-400">Source Code:</span>
+                <span class="font-bold text-slate-300">100% Sovereign IP Handover</span>
+              </div>
+            </div>
+
+            <div class="mt-8">
+              <button onclick="openRFPModal('Estimated Scope Proposal (' + document.getElementById('main-est-price').innerText + ')')" class="w-full py-4 rounded-xl text-xs font-mono font-bold text-white bg-gradient-to-r from-brand-primary via-blue-600 to-brand-interactive hover:brightness-110 transition-all glow-cyan-btn flex items-center justify-center gap-2 shadow-xl">
+                <span>Generate Official Proforma &amp; RFP</span>
+                <i data-lucide="arrow-right" class="w-4 h-4"></i>
+              </button>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========================================================================= -->
+  <!-- 7. ENTERPRISE ARCHITECTURE COMPARISON TABLE                               -->
+  <!-- ========================================================================= -->
+  <section class="py-24 bg-[#030712] relative z-10 border-t border-white/[0.08]">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-2xl mx-auto mb-14">
+        <span class="px-3.5 py-1 rounded-full text-[11px] font-mono font-bold uppercase tracking-widest text-emerald-400 bg-emerald-950/80 border border-emerald-800/60">
+          ARCHITECTURAL ADVANTAGE
+        </span>
+        <h2 class="text-3xl sm:text-4xl font-black text-white mt-4 tracking-tight">
+          Novarise Digital vs. Generic Providers
+        </h2>
+      </div>
+
+      <div class="glass-panel rounded-3xl overflow-hidden border border-white/10 shadow-2xl">
+        <div class="overflow-x-auto">
+          <table class="w-full text-left text-xs font-mono">
+            <thead>
+              <tr class="bg-[#050A18] border-b border-white/10 text-slate-400">
+                <th class="p-5 font-bold uppercase tracking-wider">Evaluation Vector</th>
+                <th class="p-5 font-bold uppercase tracking-wider text-cyan-400 bg-blue-950/40 border-x border-cyan-500/20">Novarise Digital PLC</th>
+                <th class="p-5 font-bold uppercase tracking-wider">Foreign ERPs (SAP/Oracle)</th>
+                <th class="p-5 font-bold uppercase tracking-wider">Local Generic Agencies</th>
+              </tr>
+            </thead>
+            <tbody class="divide-y divide-white/[0.06] text-slate-300">
+              <tr>
+                <td class="p-5 font-bold text-white">Ethiopian MoR Tax Compliance</td>
+                <td class="p-5 font-bold text-emerald-400 bg-blue-950/20 border-x border-cyan-500/20">✅ 100% Native WHT 2%/3% + Sene 30</td>
+                <td class="p-5 text-slate-400">⚠️ Expensive custom localization</td>
+                <td class="p-5 text-red-400">❌ Manual tax spreadsheets</td>
+              </tr>
+              <tr>
+                <td class="p-5 font-bold text-white">Telebirr &amp; CBE Birr Payment Rails</td>
+                <td class="p-5 font-bold text-emerald-400 bg-blue-950/20 border-x border-cyan-500/20">✅ Automated Double-Entry Reconciliation</td>
+                <td class="p-5 text-slate-400">⚠️ 3rd party bridge required</td>
+                <td class="p-5 text-slate-400">⚠️ Unreconciled webhook only</td>
+              </tr>
+              <tr>
+                <td class="p-5 font-bold text-white">Deployment Latency in Ethiopia</td>
+                <td class="p-5 font-bold text-emerald-400 bg-blue-950/20 border-x border-cyan-500/20">✅ &lt; 45ms (Domestic Ethio Telecom)</td>
+                <td class="p-5 text-slate-400">⚠️ 250ms–400ms (Foreign Cloud)</td>
+                <td class="p-5 text-slate-400">⚠️ Shared foreign cPanel host</td>
+              </tr>
+              <tr>
+                <td class="p-5 font-bold text-white">MLM Genealogy Engine Scaling</td>
+                <td class="p-5 font-bold text-emerald-400 bg-blue-950/20 border-x border-cyan-500/20">✅ 100k+ Nodes with 50% Anti-Pyramid Cap</td>
+                <td class="p-5 text-red-400">❌ No native direct selling OS</td>
+                <td class="p-5 text-red-400">❌ Unstable WordPress plugins</td>
+              </tr>
+              <tr>
+                <td class="p-5 font-bold text-white">Full Source Code Ownership</td>
+                <td class="p-5 font-bold text-emerald-400 bg-blue-950/20 border-x border-cyan-500/20">✅ 100% Sovereign IP Transfer</td>
+                <td class="p-5 text-red-400">❌ Recurring perpetual SaaS lock-in</td>
+                <td class="p-5 text-slate-400">⚠️ Encrypted proprietary CMS</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========================================================================= -->
+  <!-- 8. FOOTER WITH COMPLETE CORPORATE IDENTITY                                -->
+  <!-- ========================================================================= -->
+  <footer class="bg-[#020409] text-slate-400 pt-20 pb-12 border-t border-white/[0.08] relative z-10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 pb-16 border-b border-slate-800">
+        
+        <!-- Column 1: Identity -->
+        <div class="lg:col-span-2 space-y-4">
+          <div class="flex items-center gap-3">
+            <img src="images/novaraise_logo.jpeg" alt="Novarise Logo" class="w-8 h-8 rounded-full border border-cyan-400/40" />
+            <span class="font-heading font-black text-lg text-white">
+              Novarise <span class="text-brand-interactive">Digital</span>
+            </span>
+          </div>
+          <p class="text-xs text-slate-400 leading-relaxed max-w-sm">
+            Novarise Digital Solution PLC (novaraise.et) is an Ethiopian premier enterprise software engineering firm based in Addis Ababa. Certified in MoR tax compliance, Sovereign MLM architectures, and autonomous cloud systems.
+          </p>
+          <div class="text-xs font-mono text-slate-400 space-y-1 pt-2">
+            <div>📍 Addis Ababa, Ethiopia • Bole Sub-City</div>
+            <div>✉️ enterprise@novaraise.et | dev@novaraise.et</div>
+            <div>📞 Direct Call / Architect: <a href="tel:+251922612024" class="text-brand-interactive underline font-bold">0922612024</a></div>
+            <div>💬 Telegram Support: <a href="https://t.me/daniel212_212" target="_blank" class="text-cyan-400 underline font-bold">@daniel212_212</a></div>
+          </div>
+        </div>
+
+        <!-- Column 2: Platforms -->
+        <div>
+          <h4 class="text-xs font-mono font-bold uppercase tracking-wider text-white mb-4">Enterprise Platforms</h4>
+          <ul class="space-y-2 text-xs font-mono">
+            <li><a href="erp.html" class="hover:text-cyan-400 transition-colors">Enterprise ERP (Odoo 19)</a></li>
+            <li><a href="mlm.html" class="hover:text-cyan-400 transition-colors">Sovereign MLM OS</a></li>
+            <li><a href="on-demand.html" class="hover:text-cyan-400 transition-colors">Telegram Mini-Apps</a></li>
+            <li><a href="on-demand.html" class="hover:text-cyan-400 transition-colors">Ride-Hailing &amp; Cargo</a></li>
+            <li><a href="custom-software.html" class="hover:text-cyan-400 transition-colors">Autonomous AI Engines</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 3: Academy & Solutions -->
+        <div>
+          <h4 class="text-xs font-mono font-bold uppercase tracking-wider text-white mb-4">Academy &amp; Services</h4>
+          <ul class="space-y-2 text-xs font-mono">
+            <li><a href="academy.html" class="hover:text-cyan-400 transition-colors">Odoo Consultant Track</a></li>
+            <li><a href="academy.html" class="hover:text-cyan-400 transition-colors">Executive AI Bootcamp</a></li>
+            <li><a href="custom-software.html" class="hover:text-cyan-400 transition-colors">Next.js Web Applications</a></li>
+            <li><a href="custom-software.html" class="hover:text-cyan-400 transition-colors">Flutter Cross-Platform</a></li>
+            <li><a href="custom-software.html" class="hover:text-cyan-400 transition-colors">Offline .NET Desktop</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 4: Quick Desk -->
+        <div>
+          <h4 class="text-xs font-mono font-bold uppercase tracking-wider text-white mb-4">Support &amp; Social Desks</h4>
+          <div class="space-y-3">
+            <a href="https://t.me/daniel212_212" target="_blank" class="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl bg-slate-900 border border-cyan-500/40 text-xs font-mono text-cyan-400 hover:border-cyan-400 transition-all w-full">
+              <i data-lucide="send" class="w-3.5 h-3.5"></i>
+              <span>@daniel212_212 (Telegram)</span>
+            </a>
+            <a href="tel:+251922612024" class="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl bg-slate-900 border border-emerald-500/40 text-xs font-mono text-emerald-400 hover:border-emerald-400 transition-all w-full">
+              <i data-lucide="phone-call" class="w-3.5 h-3.5"></i>
+              <span>Call: 0922612024</span>
+            </a>
+            <button onclick="openRFPModal('Footer RFP Request')" class="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl bg-brand-primary text-white text-xs font-mono font-bold hover:brightness-110 transition-all w-full justify-center">
+              <span>Request RFP Proforma</span>
+            </button>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Bottom Legal Notice -->
+      <div class="pt-8 flex flex-col sm:flex-row items-center justify-between text-[11px] font-mono text-slate-400 gap-4">
+        <div>
+          &copy; 2026/27 Novarise Digital Solution PLC. All Rights Reserved. Domain: <strong class="text-slate-300">novaraise.et</strong>
+        </div>
+        <div class="flex items-center gap-4">
+          <span class="text-emerald-400 flex items-center gap-1.5">
+            <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 pulse-radar"></span>
+            <span>Ethio Telecom Datacenter (213.55.96.150)</span>
+          </span>
+        </div>
+      </div>
+
+    </div>
+  <!-- Floating Direct Contact Widget -->
+  <div class="fixed bottom-6 right-6 z-40 flex flex-col sm:flex-row items-end sm:items-center gap-2.5">
+    <a href="https://t.me/daniel212_212" target="_blank" class="flex items-center gap-2 px-4 py-2.5 rounded-full bg-cyan-600 hover:bg-cyan-500 text-white font-mono text-xs font-bold shadow-2xl hover:scale-105 transition-all border border-cyan-400/40 backdrop-blur-md">
+      <i data-lucide="send" class="w-4 h-4"></i>
+      <span>Telegram: @daniel212_212</span>
+    </a>
+    <a href="tel:+251922612024" class="flex items-center gap-2 px-4 py-2.5 rounded-full bg-emerald-600 hover:bg-emerald-500 text-white font-mono text-xs font-bold shadow-2xl hover:scale-105 transition-all border border-emerald-400/40 backdrop-blur-md">
+      <i data-lucide="phone-call" class="w-4 h-4"></i>
+      <span>Call: 0922612024</span>
+    </a>
+  </div>
+
+  </footer>
+
+  <!-- ========================================================================= -->
+  <!-- 9. INTERACTIVE RFP & ARCHITECTURE CONSULTATION MODAL                      -->
+  <!-- ========================================================================= -->
+  <div id="rfp-modal" class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/80 backdrop-blur-md hidden transition-opacity">
+    <div class="relative w-full max-w-lg glass-panel rounded-3xl p-6 sm:p-8 border border-cyan-500/30 shadow-2xl">
+      
+      <button onclick="closeModal()" class="absolute top-5 right-5 text-slate-400 hover:text-white p-2 rounded-full hover:bg-slate-800 transition-colors">
+        <i data-lucide="x" class="w-5 h-5"></i>
+      </button>
+
+      <div id="modal-form-view">
+        <div class="flex items-center gap-2 text-xs font-mono font-bold text-cyan-400 uppercase tracking-wider mb-2">
+          <i data-lucide="shield-check" class="w-4 h-4"></i>
+          <span>Novarise Enterprise Architecture Desk</span>
+        </div>
+        <h3 class="text-2xl font-bold text-white">Book Architecture Review</h3>
+        <p class="text-xs text-slate-300 mt-1" id="modal-context-desc">
+          Submit your scope parameters. Our Senior Solutions Architect in Addis Ababa will review within 2 hours.
+        </p>
+
+        <form onsubmit="handleModalSubmit(event)" class="mt-6 space-y-4">
+          <div>
+            <label class="block text-xs font-mono text-slate-300 mb-1">Company / Organization Name *</label>
+            <input type="text" required placeholder="e.g. Ethiopian Trading Enterprise" class="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-3 text-white text-xs font-mono focus:outline-none focus:border-brand-interactive" />
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <div>
+              <label class="block text-xs font-mono text-slate-300 mb-1">Contact Person Name *</label>
+              <input type="text" required placeholder="Your Full Name" class="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-3 text-white text-xs font-mono focus:outline-none focus:border-brand-interactive" />
+            </div>
+            <div>
+              <label class="block text-xs font-mono text-slate-300 mb-1">Phone Number (Ethiopia) *</label>
+              <input type="tel" required placeholder="0922612024" class="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-3 text-white text-xs font-mono focus:outline-none focus:border-brand-interactive" />
+            </div>
+          </div>
+
+          <div>
+            <label class="block text-xs font-mono text-slate-300 mb-1">Email Address *</label>
+            <input type="email" required placeholder="name@company.com" class="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-3 text-white text-xs font-mono focus:outline-none focus:border-brand-interactive" />
+          </div>
+
+          <div>
+            <label class="block text-xs font-mono text-slate-300 mb-1">Project Scope &amp; Target Timeline</label>
+            <textarea rows="3" placeholder="Briefly describe your requirements (e.g. MoR ERP migration, MLM launch, Telegram Mini-App)" class="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-2.5 text-white text-xs font-mono focus:outline-none focus:border-brand-interactive"></textarea>
+          </div>
+
+          <button type="submit" class="w-full py-4 rounded-xl text-xs font-mono font-bold text-white bg-gradient-to-r from-brand-primary via-blue-600 to-brand-interactive hover:brightness-110 transition-all glow-cyan-btn shadow-xl flex items-center justify-center gap-2">
+            <span>Submit Architecture Request</span>
+            <i data-lucide="send" class="w-4 h-4"></i>
+          </button>
+        </form>
+      </div>
+
+      <div id="modal-success-view" class="hidden text-center py-8 space-y-4">
+        <div class="w-14 h-14 rounded-full bg-emerald-950 border border-emerald-500 text-emerald-400 flex items-center justify-center mx-auto">
+          <i data-lucide="check" class="w-8 h-8"></i>
+        </div>
+        <h4 class="text-2xl font-bold text-white">Consultation Dispatched</h4>
+        <p class="text-xs text-slate-300 max-w-sm mx-auto leading-relaxed">
+          Your architecture specifications have been sent to our Lead Enterprise Architect. You will receive an official response and proforma via email and phone within 2 business hours.
+        </p>
+        <button onclick="closeModal()" class="px-6 py-2.5 rounded-full text-xs font-mono font-bold bg-slate-800 text-white hover:bg-slate-700 transition-colors">
+          Close Window
+        </button>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ========================================================================= -->
+  <!-- 10. INTERACTIVE TELEMETRY & ESTIMATOR JAVASCRIPT                          -->
+  <!-- ========================================================================= -->
+  <script>
+    // Initialize Lucide Icons
+    lucide.createIcons();
+
+    // 1. Telemetry Console Data & Switcher
+    const telemetryEngines = {
+      erp: {
+        badge: 'ENGINE 01 // MOR ERP CERTIFIED',
+        title: '100% Tax Compliant Enterprise ERP',
+        desc: "Engineered on Odoo 19 Clean Core with 901 audited modules. Automated 2% Goods & 3% Services Withholding Tax (WHT), Ge'ez Ethiopian fiscal calendar, and native Telebirr/CBE payment reconciliation.",
+        metrics: [
+          { label: 'Regulatory Status', val: '100% MoR Compliant', color: 'text-emerald-400' },
+          { label: 'Audited Core Modules', val: '901 Enterprise Apps', color: 'text-cyan-400' }
+        ],
+        bullets: [
+          'Automated Sene 30 Fiscal Year Closing Engine',
+          'Direct Telebirr Merchant API v2.0 Double-Entry Ledger',
+          'Multi-Company Inter-Entity Transfer Protocol'
+        ],
+        link: 'erp.html',
+        linkText: 'Explore ERP Specifications',
+        image: 'images/erp_dashboard_10.png',
+        captionTitle: 'Enterprise Sales, Inventory & Tax Telemetry',
+        captionSub: 'Addis Ababa Core Node • Live Sync Active'
+      },
+      mlm: {
+        badge: 'ENGINE 02 // HIGH FREQUENCY DIRECT SELLING',
+        title: 'Sovereign MLM & Direct Selling SuperApp',
+        desc: 'Built for 100,000+ distributed distributor nodes. Binary, Unilevel, Matrix, and Hybrid compensation engines with millisecond calculation speed and 50% anti-pyramid margin protection.',
+        metrics: [
+          { label: 'Node Capacity', val: '100,000+ Active Nodes', color: 'text-cyan-400' },
+          { label: 'Compensation Speed', val: '&lt; 150ms Instant Calc', color: 'text-emerald-400' }
+        ],
+        bullets: [
+          'Interactive Binary Tree Genealogy Visualizer',
+          'Automated Telebirr Daily Commission Payouts',
+          'Distributor Replicated E-Commerce Storefronts'
+        ],
+        link: 'mlm.html',
+        linkText: 'Explore MLM SuperApp Suite',
+        image: 'images/mlm/dashboard_dark.png',
+        captionTitle: 'Genealogy & Commission Control Room',
+        captionSub: 'Real-time distributor node tracking'
+      },
+      ondemand: {
+        badge: 'ENGINE 03 // ZERO INSTALL SUPERAPPS',
+        title: 'Turnkey On-Demand & Telegram Mini-Apps',
+        desc: 'Harness Ethiopia’s 20M+ Telegram audience with zero-install mini-apps. Featuring native Telebirr checkout, multi-vendor marketplace engines, and ride-hailing dispatch suites.',
+        metrics: [
+          { label: 'Launch Timeline', val: '5 to 10 Days Turnkey', color: 'text-amber-400' },
+          { label: 'Payment Gateway', val: 'Telebirr Native Bot API', color: 'text-emerald-400' }
+        ],
+        bullets: [
+          'Telegram Mini-App with In-App Cart & Telebirr Checkout',
+          'Driver & Rider Mobile Suite with GPS Real-Time Fleet Dispatch',
+          'Digital Equb Savings Engine with Automated Double-Entry'
+        ],
+        link: 'on-demand.html',
+        linkText: 'Explore On-Demand Platforms',
+        image: 'images/telegram_bot_preview.png',
+        captionTitle: 'Telegram Mini-App & Fleet Dispatch Core',
+        captionSub: 'Direct customer acquisition engine'
+      },
+      custom: {
+        badge: 'ENGINE 04 // BESPOKE ENGINEERING & AI',
+        title: 'Custom Cloud, Mobile & AI Architecture',
+        desc: 'Full-stack Next.js web applications, high-performance Flutter mobile apps for iOS and Android, offline-first .NET Core desktop suites, and autonomous Model Context Protocol (MCP) AI agents.',
+        metrics: [
+          { label: 'Technology Stack', val: 'Flutter / Next.js / .NET', color: 'text-purple-400' },
+          { label: 'AI Architecture', val: 'Autonomous MCP Agents', color: 'text-cyan-400' }
+        ],
+        bullets: [
+          'Offline-First Local Database Sync for Remote Ethiopia',
+          'Enterprise REST & GraphQL Microservices Architecture',
+          'Autonomous Executive AI Assistants on Private Servers'
+        ],
+        link: 'custom-software.html',
+        linkText: 'Explore Bespoke Dev & AI',
+        image: 'images/web_app_dashboard.png',
+        captionTitle: 'High-Velocity Custom Engineering',
+        captionSub: 'Scalable microservice topology'
+      },
+      academy: {
+        badge: 'ENGINE 05 // EXECUTIVE TECH CERTIFICATION',
+        title: 'Nova Corporate Training Academy',
+        desc: 'Accelerate your commercial and technical teams. Certified Odoo 19 Functional Consultant tracks, Executive AI for C-Suite leaders, and elite B2B Enterprise Technology Sales bootcamps.',
+        metrics: [
+          { label: 'Curriculum Depth', val: '40 Hours Intensive', color: 'text-emerald-400' },
+          { label: 'Certification', val: 'Odoo 19 Certified Track', color: 'text-cyan-400' }
+        ],
+        bullets: [
+          'Functional ERP Architecture & MoR Accounting Track',
+          'Executive AI Masterclass for Managing Directors',
+          'High-Ticket B2B Software Commercial Strategy'
+        ],
+        link: 'academy.html',
+        linkText: 'View Academy Cohorts',
+        image: 'images/odoo-17-sales-screen.png',
+        captionTitle: 'Executive Hands-on ERP Training',
+        captionSub: 'Addis Ababa Corporate Campus'
+      }
+    };
+
+    function switchTelemetry(key) {
+      const data = telemetryEngines[key];
+      if (!data) return;
+
+      // Update Tab Styles
+      document.querySelectorAll('.tele-tab').forEach(tab => {
+        tab.className = 'tele-tab px-4 py-2.5 rounded-xl text-xs font-mono font-bold transition-all flex items-center gap-2 text-slate-400 hover:text-white hover:bg-slate-800/60';
+      });
+      const activeTab = document.getElementById(`tab-${key}`);
+      if (activeTab) {
+        activeTab.className = 'tele-tab active px-4 py-2.5 rounded-xl text-xs font-mono font-bold transition-all flex items-center gap-2 bg-brand-primary text-white shadow-lg shadow-brand-primary/30';
+      }
+
+      // Update Text Content
+      document.getElementById('tele-badge').innerText = data.badge;
+      document.getElementById('tele-title').innerText = data.title;
+      document.getElementById('tele-desc').innerText = data.desc;
+
+      // Update Metrics
+      const metricsContainer = document.getElementById('tele-metrics');
+      metricsContainer.innerHTML = data.metrics.map(m => `
+        <div class="p-3 rounded-xl bg-slate-900/80 border border-white/[0.06]">
+          <div class="text-[10px] font-mono uppercase text-slate-400">${m.label}</div>
+          <div class="text-sm font-bold ${m.color} mt-0.5">${m.val}</div>
+        </div>
+      `).join('');
+
+      // Update Bullets
+      const bulletsContainer = document.getElementById('tele-bullets');
+      bulletsContainer.innerHTML = data.bullets.map(b => `
+        <div class="flex items-center gap-2">
+          <i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-400 shrink-0"></i>
+          <span>${b}</span>
+        </div>
+      `).join('');
+
+      // Update Link & Image
+      const linkEl = document.getElementById('tele-link');
+      linkEl.href = data.link;
+      linkEl.querySelector('span').innerText = data.linkText;
+
+      const imgEl = document.getElementById('tele-image');
+      imgEl.src = data.image;
+
+      document.getElementById('tele-caption-title').innerText = data.captionTitle;
+      document.getElementById('tele-caption-sub').innerText = data.captionSub;
+
+      lucide.createIcons();
+    }
+
+    // 2. Luxury Project Cost & Timeline Estimator
+    const catalogRates = {
+      erp: [
+        { label: 'Starter Enterprise ERP (MoR Accounting, Sales, Inventory)', price: 300000, time: '14 Days' },
+        { label: 'Mid-Market ERP Suite (Manufacturing, HR, Payroll, WHT 2%/3%)', price: 650000, time: '21 Days' },
+        { label: 'Corporate Conglomerate Edition (Multi-Company, 901 Modules)', price: 1800000, time: '45 Days' }
+      ],
+      mlm: [
+        { label: 'MLM Core Platform (Binary/Unilevel, Distributor Portal, Wallets)', price: 600000, time: '21 Days' },
+        { label: 'MLM SuperApp + Digital Equb + Telebirr Auto-Payouts', price: 1500000, time: '30 Days' },
+        { label: 'Sovereign Direct Selling Enterprise (Real Estate BI, 100k+ Nodes)', price: 3000000, time: '60 Days' }
+      ],
+      ondemand: [
+        { label: 'Telegram Mini-App & Ordering Bot (Telebirr Direct)', price: 95000, time: '5 Days' },
+        { label: 'Multi-Vendor Marketplace (Web + Apps + Escrow Settlement)', price: 350000, time: '10 Days' },
+        { label: 'Ride Hailing & Cargo Dispatch (Rider + Driver + Web Hub)', price: 950000, time: '14 Days' },
+        { label: 'Digital Equb & SACCO OS (Lottery + Double-Entry Ledger)', price: 280000, time: '7 Days' }
+      ],
+      custom: [
+        { label: 'Custom Corporate Web Application (Next.js / TypeScript)', price: 150000, time: '3 Sprints' },
+        { label: 'Native & Flutter Mobile App (iOS / Android / Offline Sync)', price: 550000, time: '6 Sprints' },
+        { label: 'Offline Desktop Operations Software (.NET Core / WPF)', price: 600000, time: '7 Sprints' },
+        { label: 'Autonomous AI Cognitive Microservice (MCP Protocol)', price: 280000, time: '4 Sprints' }
+      ],
+      academy: [
+        { label: 'Certified Odoo 19 ERP Consultant Track (Cohort of 5 Seats)', price: 175000, time: '4 Weeks' },
+        { label: 'Executive AI & Digital Transformation Masterclass (Flat Cohort)', price: 85000, time: '1 Day' },
+        { label: 'High-Ticket B2B Tech Sales Bootcamp (Corporate Commercial Team)', price: 65000, time: '3 Days' },
+        { label: 'Enterprise Annual Training Pass (4 Cohorts / Year)', price: 350000, time: '1 Year' }
+      ]
+    };
+
+    function updateEstimatorOptions() {
+      const service = document.getElementById('main-est-service').value;
+      const scopes = catalogRates[service] || [];
+      const scopeSelect = document.getElementById('main-est-scope');
+
+      scopeSelect.innerHTML = scopes.map((s, idx) => `
+        <option value="${idx}" data-price="${s.price}" data-time="${s.time}">
+          ${s.label} (${s.price.toLocaleString()} ETB)
+        </option>
+      `).join('');
+
+      runMainEstimate();
+    }
+
+    function runMainEstimate() {
+      const scopeSelect = document.getElementById('main-est-scope');
+      if (!scopeSelect.options || scopeSelect.options.length === 0) return;
+      const selected = scopeSelect.options[scopeSelect.selectedIndex];
+
+      let basePrice = parseInt(selected.getAttribute('data-price') || '0', 10);
+      let timeline = selected.getAttribute('data-time') || '14 Days';
+
+      const telebirr = document.getElementById('main-add-telebirr').checked;
+      const cloud = document.getElementById('main-add-cloud').checked;
+
+      if (telebirr) basePrice += 50000;
+      if (cloud) basePrice += 45000;
+
+      document.getElementById('main-est-price').innerHTML = 
+        basePrice.toLocaleString() + ' <span class="text-lg font-bold text-slate-400 font-mono">ETB</span>';
+      
+      document.getElementById('main-est-timeline').innerHTML = 
+        '<i data-lucide="zap" class="w-3.5 h-3.5 text-amber-400"></i> <span>' + timeline + '</span>';
+
+      lucide.createIcons();
+    }
+
+    // 3. Consultation Modal
+    function openRFPModal(context) {
+      document.getElementById('modal-context-desc').innerText = 
+        'Param: ' + context + '. Our Senior Solutions Architect in Addis Ababa will review within 2 hours.';
+      document.getElementById('modal-form-view').classList.remove('hidden');
+      document.getElementById('modal-success-view').classList.add('hidden');
+      document.getElementById('rfp-modal').classList.remove('hidden');
+      lucide.createIcons();
+    }
+
+    function closeModal() {
+      document.getElementById('rfp-modal').classList.add('hidden');
+    }
+
+    function handleModalSubmit(e) {
+      e.preventDefault();
+      document.getElementById('modal-form-view').classList.add('hidden');
+      document.getElementById('modal-success-view').classList.remove('hidden');
+      lucide.createIcons();
+    }
+
+    // Initialize on page load
+    window.addEventListener('DOMContentLoaded', () => {
+      updateEstimatorOptions();
+    });
+  </script>
+</body>
+</html>

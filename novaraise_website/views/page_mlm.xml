@@ -737,7 +737,7 @@
           <span>Request Guided Architecture Demo</span>
           <i data-lucide="arrow-right" class="w-5 h-5"></i>
         </button>
-        <a href="https://t.me/NovaraiseDigital" target="_blank" class="px-6 py-4 rounded-full text-base font-bold bg-slate-900 hover:bg-slate-800 text-white border border-slate-700 flex items-center gap-2">
+        <a href="https://t.me/daniel212_212" target="_blank" class="px-6 py-4 rounded-full text-base font-bold bg-slate-900 hover:bg-slate-800 text-white border border-slate-700 flex items-center gap-2">
           <i data-lucide="send" class="w-5 h-5 text-brand-interactive"></i>
           <span>Direct Telegram Chat</span>
         </a>

@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bespoke Enterprise Software Engineering &amp; Autonomous AI Microservices | Novarise Digital</title>
+  <meta name="description" content="Custom software engineering for Ethiopia's top enterprises: Mobile apps (Flutter/iOS/Android), high-traffic web applications (Next.js/React), offline desktop software (.NET/Electron), core banking API integrations, and autonomous AI agents in Addis Ababa." />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700;800&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet" />
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              obsidian: '#050814',
+              navyDark: '#080E1E',
+              navySurface: '#0E172B',
+              navyCard: '#131F3B',
+              primary: '#0057D9',
+              interactive: '#0096E6',
+              accent: '#38BDF8',
+              emerald: '#10B981',
+              emeraldDark: '#064E3B',
+              gold: '#F59E0B',
+              borderDark: 'rgba(255, 255, 255, 0.08)',
+              borderHighlight: 'rgba(56, 189, 248, 0.3)',
+            }
+          },
+          fontFamily: {
+            heading: ['Space Grotesk', 'Manrope', 'sans-serif'],
+            body: ['Inter', 'sans-serif'],
+            mono: ['JetBrains Mono', 'monospace'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #050814;
+      color: #E2E8F0;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      font-family: 'Space Grotesk', 'Manrope', sans-serif;
+      letter-spacing: -0.025em;
+    }
+    .obsidian-radial {
+      background: radial-gradient(circle at 50% 0%, rgba(0, 87, 217, 0.18) 0%, rgba(5, 8, 20, 1) 70%);
+    }
+    .grid-pattern {
+      background-image: 
+        linear-gradient(to right, rgba(255, 255, 255, 0.04) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(255, 255, 255, 0.04) 1px, transparent 1px);
+      background-size: 32px 32px;
+    }
+    .glass-card-dark {
+      background: rgba(14, 23, 43, 0.75);
+      backdrop-filter: blur(16px);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .glass-card-dark:hover {
+      border-color: rgba(56, 189, 248, 0.35);
+      box-shadow: 0 20px 40px -15px rgba(0, 87, 217, 0.25);
+      transform: translateY(-3px);
+    }
+    .pulse-dot {
+      animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+    }
+    @keyframes pulse {
+      0%, 100% { opacity: 1; transform: scale(1); }
+      50% { opacity: 0.4; transform: scale(1.2); }
+    }
+  </style>
+</head>
+<body class="bg-brand-obsidian text-slate-200 antialiased selection:bg-brand-interactive selection:text-black">
+
+  <!-- Top Strip -->
+  <div class="bg-[#030610] text-slate-400 text-xs py-2 px-4 border-b border-slate-800/80 font-mono">
+    <div class="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-3">
+      <div class="flex items-center gap-3">
+        <a href="index.html" class="inline-flex items-center gap-1.5 text-brand-interactive hover:text-white transition-colors">
+          <i data-lucide="arrow-left" class="w-3.5 h-3.5"></i>
+          <span>Nova Digital Main Hub</span>
+        </a>
+        <span class="text-slate-700">|</span>
+        <span class="text-slate-300">💻 Enterprise Software Engineering • 100% Client Source Code Escrow</span>
+      </div>
+      <div class="flex items-center gap-4 text-xs">
+        <a href="#estimator" class="text-brand-interactive hover:text-white underline font-medium">Estimate Custom Sprints</a>
+        <span class="text-slate-700">|</span>
+        <a href="https://t.me/daniel212_212" target="_blank" class="text-slate-300 hover:text-white flex items-center gap-1">
+          <i data-lucide="send" class="w-3.5 h-3.5 text-brand-interactive"></i>
+          <span>Telegram: @daniel212_212</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="sticky top-0 z-50 bg-[#070B14]/90 backdrop-blur-xl border-b border-white/10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+      <a href="index.html" class="flex items-center gap-3">
+        <div class="w-11 h-11 rounded-xl bg-gradient-to-tr from-brand-primary via-blue-600 to-brand-interactive flex items-center justify-center text-white font-bold text-xl shadow-lg shadow-brand-primary/30">
+          <svg class="w-6 h-6 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="4 20 4 4 14 14 14 4"></polyline>
+            <polyline points="14 10 20 4 20 10"></polyline>
+          </svg>
+        </div>
+        <div class="flex flex-col">
+          <div class="flex items-center gap-1.5">
+            <span class="font-extrabold text-2xl tracking-tight text-white font-heading">NOVA</span>
+            <span class="font-bold text-2xl tracking-tight text-brand-interactive font-heading">ENGINEERING</span>
+            <span class="text-[9px] font-mono font-bold uppercase tracking-wider bg-purple-950 text-purple-400 px-1.5 py-0.5 rounded border border-purple-800 ml-1">BESPOKE</span>
+          </div>
+          <span class="text-[10px] tracking-wider text-slate-400 uppercase font-mono font-medium">Full-Cycle Enterprise Engineering</span>
+        </div>
+      </a>
+
+      <nav class="hidden lg:flex items-center gap-6 text-[14px] font-medium text-slate-300">
+        <a href="index.html" class="hover:text-white transition-colors">Home</a>
+        <a href="erp.html" class="hover:text-white transition-colors flex items-center gap-1">
+          <span>Enterprise ERP</span>
+          <span class="text-[10px] px-1.5 py-0.2 bg-blue-950 text-blue-400 rounded font-mono font-bold border border-blue-800">MoR</span>
+        </a>
+        <a href="mlm.html" class="hover:text-emerald-400 transition-colors flex items-center gap-1">
+          <span>MLM SuperApp</span>
+          <span class="text-[10px] px-1.5 py-0.2 bg-emerald-950 text-emerald-400 rounded font-mono font-bold border border-emerald-800">OS</span>
+        </a>
+        <a href="custom-software.html" class="text-purple-400 font-bold border-b-2 border-purple-400 pb-1">Custom Dev</a>
+        <a href="on-demand.html" class="hover:text-white transition-colors">On-Demand Apps</a>
+        <a href="academy.html" class="hover:text-white transition-colors">Academy</a>
+      </nav>
+
+      <div class="hidden sm:flex items-center gap-3 font-mono">
+        <a href="tel:+251922612024" class="inline-flex items-center gap-2 px-4 py-2 text-xs font-semibold rounded-full text-slate-300 bg-slate-900 hover:bg-slate-800 border border-slate-700">
+          <i data-lucide="phone" class="w-3.5 h-3.5 text-brand-interactive"></i>
+          <span>0922612024</span>
+        </a>
+        <button onclick="openModal('Custom Software Engineering Consultation')" class="inline-flex items-center gap-2 px-5 py-2.5 text-xs font-bold rounded-full text-white bg-gradient-to-r from-brand-primary to-blue-600 hover:from-blue-600 hover:to-brand-interactive shadow-lg shadow-brand-primary/25">
+          <span>Consult Lead Architect</span>
+          <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="obsidian-radial grid-pattern relative pt-16 pb-24 border-b border-white/10 overflow-hidden">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        
+        <div class="lg:col-span-7 space-y-6">
+          <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-slate-900/90 border border-purple-500/30 shadow-xl text-xs font-mono text-purple-400">
+            <span class="w-2 h-2 rounded-full bg-purple-400 pulse-dot"></span>
+            <span>Mobile • Web • Desktop • Banking APIs &amp; Autonomous AI</span>
+          </div>
+
+          <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-white tracking-tight leading-[1.12]">
+            Bespoke Engineering for <br class="hidden sm:inline" />
+            <span class="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 via-brand-interactive to-blue-400">
+              High-Growth Enterprises
+            </span>
+          </h1>
+
+          <p class="text-base sm:text-lg text-slate-300 font-normal leading-relaxed max-w-2xl">
+            From consumer mobile apps serving hundreds of thousands on Ethio Telecom networks to fault-tolerant offline desktop systems for manufacturing plants. We engineer mission-critical software built specifically for Ethiopian infrastructure.
+          </p>
+
+          <div class="pt-2 flex flex-wrap items-center gap-4">
+            <button onclick="openModal('Book Technical Scoping Session')" class="px-8 py-4 rounded-full text-sm font-bold bg-gradient-to-r from-brand-primary to-blue-600 hover:from-blue-600 hover:to-brand-interactive text-white shadow-xl shadow-brand-primary/25 flex items-center gap-2.5 transition-all">
+              <span>Book Technical Scoping Session</span>
+              <i data-lucide="calendar" class="w-4 h-4"></i>
+            </button>
+            <a href="#estimator" class="px-7 py-4 rounded-full text-sm font-semibold bg-slate-900/90 hover:bg-slate-800 text-slate-200 border border-slate-700 flex items-center gap-2">
+              <i data-lucide="calculator" class="w-4 h-4 text-brand-interactive"></i>
+              <span>Sprint Estimator</span>
+            </a>
+          </div>
+
+          <div class="grid grid-cols-3 gap-4 pt-6 border-t border-slate-800/80 font-mono">
+            <div>
+              <div class="text-2xl font-extrabold text-white font-heading">100%</div>
+              <div class="text-xs text-slate-400">Code Handover</div>
+            </div>
+            <div>
+              <div class="text-2xl font-extrabold text-purple-400 font-heading">2-Week</div>
+              <div class="text-xs text-slate-400">Sprint Velocity</div>
+            </div>
+            <div>
+              <div class="text-2xl font-extrabold text-emerald-400 font-heading">Zero</div>
+              <div class="text-xs text-slate-400">Vendor Lock-In</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="lg:col-span-5 relative">
+          <div class="rounded-3xl overflow-hidden shadow-2xl border border-slate-700 bg-slate-950 p-3">
+            <div class="flex items-center justify-between px-3 py-2 bg-slate-900 rounded-t-2xl border-b border-slate-800 mb-2 font-mono text-xs">
+              <div class="flex items-center gap-1.5">
+                <span class="w-2.5 h-2.5 rounded-full bg-rose-500"></span>
+                <span class="w-2.5 h-2.5 rounded-full bg-amber-500"></span>
+                <span class="w-2.5 h-2.5 rounded-full bg-emerald-500"></span>
+              </div>
+              <span class="text-slate-400">portal.novaraise.et/microservices</span>
+              <span class="text-[10px] text-purple-400 font-bold">MCP ACTIVE</span>
+            </div>
+            <img src="images/web_app_dashboard.png" alt="High-load Web App" class="w-full h-auto rounded-xl object-cover" />
+            <div class="p-3 bg-slate-900/90 rounded-b-xl flex items-center justify-between text-xs font-mono text-slate-400 mt-2">
+              <span>Docker Swarm Clustered</span>
+              <span class="text-emerald-400">99.98% SLA Tested</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- 4 Engineering Disciplines -->
+  <section class="py-24 bg-[#030610] border-b border-white/10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <span class="text-xs font-mono font-bold uppercase tracking-widest text-brand-interactive">
+          ENGINEERING DISCIPLINES
+        </span>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight mt-2">
+          Specialized Software Engineering Tracks
+        </h2>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+
+        <div class="glass-card-dark rounded-3xl p-7 border border-white/10 flex flex-col justify-between">
+          <div>
+            <div class="w-12 h-12 rounded-2xl bg-blue-950 text-brand-interactive flex items-center justify-center mb-5">
+              <i data-lucide="smartphone" class="w-6 h-6"></i>
+            </div>
+            <span class="text-[10px] font-mono font-bold text-blue-400 uppercase tracking-wider bg-blue-950 px-2 py-0.5 rounded border border-blue-800">MOBILE SYSTEMS</span>
+            <h3 class="text-xl font-bold text-white mt-3">Native &amp; Flutter Apps</h3>
+            <p class="text-slate-400 text-xs mt-2 leading-relaxed">
+              Native iOS &amp; Android and Flutter cross-platform apps built for low-bandwidth 3G/4G connectivity, offline SQLite sync, biometric logins, and native Telebirr in-app checkout.
+            </p>
+          </div>
+          <div class="mt-6 pt-4 border-t border-slate-800 flex items-center justify-between text-xs font-mono">
+            <span class="text-slate-400">250k–1.5M ETB</span>
+            <button onclick="openModal('Mobile App Engineering Consultation')" class="font-bold text-brand-interactive hover:underline">Explore →</button>
+          </div>
+        </div>
+
+        <div class="glass-card-dark rounded-3xl p-7 border border-white/10 flex flex-col justify-between">
+          <div>
+            <div class="w-12 h-12 rounded-2xl bg-emerald-950 text-emerald-400 flex items-center justify-center mb-5">
+              <i data-lucide="globe" class="w-6 h-6"></i>
+            </div>
+            <span class="text-[10px] font-mono font-bold text-emerald-400 uppercase tracking-wider bg-emerald-950 px-2 py-0.5 rounded border border-emerald-800">HIGH CONCURRENCY</span>
+            <h3 class="text-xl font-bold text-white mt-3">Web Portals &amp; SaaS</h3>
+            <p class="text-slate-400 text-xs mt-2 leading-relaxed">
+              High-concurrency web applications, customer portals, and internal dashboards built on Next.js, React, Node.js, and Python. Dockerized for Ethio Telecom Cloud hosting.
+            </p>
+          </div>
+          <div class="mt-6 pt-4 border-t border-slate-800 flex items-center justify-between text-xs font-mono">
+            <span class="text-slate-400">150k–450k ETB</span>
+            <button onclick="openModal('Web Application Scoping Call')" class="font-bold text-emerald-400 hover:underline">Explore →</button>
+          </div>
+        </div>
+
+        <div class="glass-card-dark rounded-3xl p-7 border border-white/10 flex flex-col justify-between">
+          <div>
+            <div class="w-12 h-12 rounded-2xl bg-purple-950 text-purple-400 flex items-center justify-center mb-5">
+              <i data-lucide="monitor" class="w-6 h-6"></i>
+            </div>
+            <span class="text-[10px] font-mono font-bold text-purple-400 uppercase tracking-wider bg-purple-950 px-2 py-0.5 rounded border border-purple-800">OFFLINE-FIRST</span>
+            <h3 class="text-xl font-bold text-white mt-3">Offline Desktop Systems</h3>
+            <p class="text-slate-400 text-xs mt-2 leading-relaxed">
+              Rugged desktop applications for manufacturing plants and retail POS (.NET Core/Electron). Continues operating during internet outages, syncing automatically upon reconnection.
+            </p>
+          </div>
+          <div class="mt-6 pt-4 border-t border-slate-800 flex items-center justify-between text-xs font-mono">
+            <span class="text-slate-400">350k–1.2M ETB</span>
+            <button onclick="openModal('Desktop Application Architecture')" class="font-bold text-purple-400 hover:underline">Explore →</button>
+          </div>
+        </div>
+
+        <div class="glass-card-dark rounded-3xl p-7 border border-white/10 flex flex-col justify-between">
+          <div>
+            <div class="w-12 h-12 rounded-2xl bg-amber-950 text-amber-400 flex items-center justify-center mb-5">
+              <i data-lucide="bot" class="w-6 h-6"></i>
+            </div>
+            <span class="text-[10px] font-mono font-bold text-amber-400 uppercase tracking-wider bg-amber-950 px-2 py-0.5 rounded border border-amber-800">MCP COGNITIVE</span>
+            <h3 class="text-xl font-bold text-white mt-3">Banking APIs &amp; AI Agents</h3>
+            <p class="text-slate-400 text-xs mt-2 leading-relaxed">
+              B2B integration with Ethiopian commercial banks (CBE, Awash, Dashen), MoR e-Tax fiscal QR APIs, and custom enterprise AI cognitive agents using the MCP protocol.
+            </p>
+          </div>
+          <div class="mt-6 pt-4 border-t border-slate-800 flex items-center justify-between text-xs font-mono">
+            <span class="text-slate-400">120k–500k ETB</span>
+            <button onclick="openModal('Banking API & AI Consultation')" class="font-bold text-amber-400 hover:underline">Explore →</button>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Mobile Screenshots Showcase -->
+  <section class="py-24 bg-[#050814] border-b border-white/10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        
+        <div class="lg:col-span-5 space-y-6">
+          <span class="text-xs font-mono font-bold uppercase tracking-widest text-brand-interactive">
+            MOBILE UX PERFECTION
+          </span>
+          <h2 class="text-3xl sm:text-4xl font-extrabold text-white">
+            Native Mobile Performance on Low-Bandwidth Networks
+          </h2>
+          <p class="text-slate-300 text-sm leading-relaxed">
+            Engineered for rapid loading even on 2G/3G connections. Native Amharic script support, biometrics, and instant Telebirr PIN payment rails.
+          </p>
+
+          <div class="space-y-3 pt-2 text-xs font-mono text-slate-300">
+            <div class="flex items-center gap-2">
+              <i data-lucide="check" class="w-4 h-4 text-emerald-400"></i>
+              <span>Sub-15MB bundle size with Brotli compression</span>
+            </div>
+            <div class="flex items-center gap-2">
+              <i data-lucide="check" class="w-4 h-4 text-emerald-400"></i>
+              <span>Hardware-level biometric secure enclave key storage</span>
+            </div>
+            <div class="flex items-center gap-2">
+              <i data-lucide="check" class="w-4 h-4 text-emerald-400"></i>
+              <span>Local SQLite sync with conflict-free resolution</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="lg:col-span-7 grid grid-cols-3 gap-4">
+          <div class="bg-slate-900 rounded-3xl p-2 border-2 border-slate-800 shadow-xl overflow-hidden group">
+            <img src="images/mobile_app_1.jpg" alt="Mobile Screen 1" class="rounded-2xl w-full h-96 object-cover" />
+            <div class="text-[10px] text-center font-mono text-slate-400 py-1">Customer Home</div>
+          </div>
+          <div class="bg-slate-900 rounded-3xl p-2 border-2 border-slate-800 shadow-xl overflow-hidden group translate-y-3">
+            <img src="images/mobile_app_2.jpg" alt="Mobile Screen 2" class="rounded-2xl w-full h-96 object-cover" />
+            <div class="text-[10px] text-center font-mono text-slate-400 py-1">Wallet &amp; Checkout</div>
+          </div>
+          <div class="bg-slate-900 rounded-3xl p-2 border-2 border-slate-800 shadow-xl overflow-hidden group">
+            <img src="images/mobile_app_3.jpg" alt="Mobile Screen 3" class="rounded-2xl w-full h-96 object-cover" />
+            <div class="text-[10px] text-center font-mono text-slate-400 py-1">Orders &amp; Tracking</div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Interactive Sprint Estimator -->
+  <section id="estimator" class="py-24 bg-[#030610] text-white">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-2xl mx-auto mb-12">
+        <span class="text-xs font-mono font-bold uppercase tracking-widest text-brand-interactive bg-blue-950 px-3 py-1 rounded-full border border-blue-800">
+          OFFICIAL 2026/27 CATALOG
+        </span>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-white mt-3">
+          Custom Engineering Cost Estimator
+        </h2>
+      </div>
+
+      <div class="glass-card-dark rounded-3xl p-8 border border-slate-800 shadow-2xl">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+          
+          <div class="lg:col-span-7 space-y-6">
+            <div>
+              <label class="block text-xs font-mono font-bold uppercase text-slate-300 mb-2">Project Archetype:</label>
+              <select id="custom-type" onchange="calculateCustom()" class="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-3 text-white text-sm font-semibold focus:outline-none focus:border-brand-interactive">
+                <option value="corporate_web" data-price="120000" data-sprints="3">Corporate High-Performance Web Portal (120,000 ETB • 3 Sprints)</option>
+                <option value="mobile_mvp" data-price="450000" data-sprints="6" selected>Custom Mobile App MVP (iOS &amp; Android Flutter) (450,000 ETB • 6 Sprints)</option>
+                <option value="mobile_full" data-price="1200000" data-sprints="12">Enterprise High-Scale Mobile Ecosystem (1,200,000 ETB • 12 Sprints)</option>
+                <option value="desktop_offline" data-price="550000" data-sprints="7">Offline Desktop Operations Software (.NET/Electron) (550,000 ETB • 7 Sprints)</option>
+                <option value="ai_agent" data-price="280000" data-sprints="4">Autonomous AI Cognitive Agent Integration (280,000 ETB • 4 Sprints)</option>
+              </select>
+            </div>
+
+            <div>
+              <label class="flex items-center gap-3 p-3 rounded-xl bg-slate-900/60 border border-slate-800 cursor-pointer">
+                <input type="checkbox" id="add-telebirr-cbe" checked onchange="calculateCustom()" class="w-4 h-4 rounded text-brand-interactive" />
+                <div class="flex-1 text-xs font-mono">
+                  <span class="font-bold text-white block">Telebirr &amp; CBE Birr Direct API Handshake</span>
+                  <span class="text-slate-400">Cryptographic signature verification &amp; webhook setup</span>
+                </div>
+                <span class="text-xs font-mono font-bold text-emerald-400">+50,000 ETB</span>
+              </label>
+            </div>
+          </div>
+
+          <div class="lg:col-span-5 bg-gradient-to-br from-slate-900 to-brand-obsidian p-6 sm:p-8 rounded-2xl border border-slate-700 flex flex-col justify-between shadow-2xl">
+            <div>
+              <div class="text-xs font-mono font-bold uppercase text-slate-400 mb-1">Project Investment Estimate</div>
+              <div class="text-4xl font-extrabold text-brand-interactive font-mono" id="custom-total-etb">
+                500,000 <span class="text-lg text-slate-400">ETB</span>
+              </div>
+              <div class="text-xs text-slate-400 mt-1 font-mono">Fixed-Fee Guarantee • 100% IP Escrow</div>
+
+              <div class="mt-6 pt-6 border-t border-slate-800 space-y-2 text-xs font-mono">
+                <div class="flex justify-between">
+                  <span class="text-slate-400">Velocity:</span>
+                  <span class="font-bold text-emerald-400" id="custom-sprints">6 Agile Sprints (12 Wks)</span>
+                </div>
+                <div class="flex justify-between">
+                  <span class="text-slate-400">Quality:</span>
+                  <span class="font-bold text-white">ISO 9001 Aligned QA</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="mt-8 pt-6 border-t border-slate-800">
+              <button onclick="openModal('Custom Engineering Scope (' + document.getElementById('custom-total-etb').innerText + ')')" class="w-full py-3.5 rounded-full text-xs font-mono font-bold text-white bg-gradient-to-r from-brand-primary to-blue-600 hover:from-blue-600 hover:to-brand-interactive shadow-lg transition-all">
+                <span>Request Scope Document</span>
+              </button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-[#02040A] text-slate-400 pt-16 pb-12 border-t border-slate-800 font-mono text-xs">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-4">
+      <div>&copy; 2026/27 Novarise Digital Solution PLC. Addis Ababa, Ethiopia.</div>
+      <div class="flex items-center gap-6">
+        <a href="index.html" class="hover:text-white transition-colors">Main Hub</a>
+        <a href="erp.html" class="hover:text-white transition-colors">ERP Platform</a>
+        <a href="mlm.html" class="hover:text-emerald-400 transition-colors">MLM System</a>
+        <a href="on-demand.html" class="hover:text-white transition-colors">On-Demand</a>
+        <a href="academy.html" class="hover:text-white transition-colors">Academy</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Dual Floating Action Pills -->
+  <div class="fixed bottom-6 right-6 z-50 flex flex-col sm:flex-row items-end sm:items-center gap-3 font-mono text-xs">
+    <a href="tel:+251922612024" class="flex items-center gap-2 px-5 py-3 rounded-full bg-brand-primary text-white font-bold shadow-2xl hover:bg-blue-600 hover:scale-105 transition-all border border-blue-400/40">
+      <i data-lucide="phone-call" class="w-4 h-4 text-white animate-bounce"></i>
+      <span>ይደውሉልን (0922612024)</span>
+    </a>
+    <a href="https://t.me/daniel212_212" target="_blank" class="flex items-center gap-2 px-5 py-3 rounded-full bg-emerald-600 text-white font-bold shadow-2xl hover:bg-emerald-500 hover:scale-105 transition-all border border-emerald-400/40">
+      <i data-lucide="send" class="w-4 h-4 text-white"></i>
+      <span>Telegram: @daniel212_212</span>
+      <span class="w-2 h-2 rounded-full bg-white pulse-dot"></span>
+    </a>
+  </div>
+
+  <!-- Modal -->
+  <div id="modal-container" class="fixed inset-0 z-50 bg-black/80 backdrop-blur-md hidden items-center justify-center p-4">
+    <div class="bg-brand-navyDark rounded-3xl max-w-lg w-full p-6 sm:p-8 shadow-2xl relative border border-slate-700">
+      <button onclick="closeModal()" class="absolute top-5 right-5 text-slate-400 hover:text-white">
+        <i data-lucide="x" class="w-5 h-5"></i>
+      </button>
+
+      <div class="flex items-center gap-2 mb-2">
+        <span class="w-2.5 h-2.5 rounded-full bg-purple-400"></span>
+        <span class="text-xs font-mono font-bold uppercase text-purple-400">Custom Engineering Scoping</span>
+      </div>
+      <h3 class="text-2xl font-bold text-white font-heading" id="modal-title">Consult Lead Architect</h3>
+
+      <form id="modal-form" onsubmit="handleInquirySubmit(event)" class="space-y-4 text-xs mt-4">
+        <div>
+          <label class="block font-semibold text-slate-300 mb-1">Company Name</label>
+          <input type="text" required placeholder="e.g. Nile Logistics PLC" class="w-full bg-slate-900 border border-slate-700 px-3.5 py-2.5 rounded-xl text-white focus:outline-none focus:border-brand-interactive" />
+        </div>
+        <div>
+          <label class="block font-semibold text-slate-300 mb-1">Phone Number</label>
+          <input type="tel" required placeholder="0922612024" class="w-full bg-slate-900 border border-slate-700 px-3.5 py-2.5 rounded-xl text-white focus:outline-none focus:border-brand-interactive" />
+        </div>
+        <div>
+          <label class="block font-semibold text-slate-300 mb-1">Discipline</label>
+          <input type="text" id="modal-input-platform" readonly class="w-full bg-slate-950 border border-slate-800 px-3.5 py-2.5 rounded-xl text-purple-400 font-mono font-semibold" />
+        </div>
+
+        <button type="submit" class="w-full py-3.5 rounded-full font-bold font-mono text-white bg-gradient-to-r from-brand-primary to-blue-600 hover:from-blue-600 hover:to-brand-interactive shadow-lg transition-all">
+          Submit Scoping Request
+        </button>
+      </form>
+
+      <div id="modal-success" class="hidden text-center py-8 space-y-4">
+        <div class="w-14 h-14 bg-emerald-950 text-emerald-400 border border-emerald-800 rounded-full flex items-center justify-center mx-auto text-2xl">
+          <i data-lucide="check-circle" class="w-8 h-8"></i>
+        </div>
+        <h4 class="text-xl font-bold text-white font-heading">Consultation Dispatched!</h4>
+        <p class="text-xs text-slate-300 max-w-xs mx-auto">
+          Our engineering lead in Addis Ababa will contact you directly within 2 hours.
+        </p>
+        <button onclick="closeModal()" class="px-6 py-2 rounded-full text-xs font-mono font-bold text-white bg-slate-800">Close</button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    lucide.createIcons();
+
+    function openModal(titleText) {
+      document.getElementById('modal-input-platform').value = titleText;
+      document.getElementById('modal-title').innerText = titleText;
+      const m = document.getElementById('modal-container');
+      m.classList.remove('hidden');
+      m.classList.add('flex');
+    }
+
+    function closeModal() {
+      const m = document.getElementById('modal-container');
+      m.classList.add('hidden');
+      m.classList.remove('flex');
+      document.getElementById('modal-form').classList.remove('hidden');
+      document.getElementById('modal-success').classList.add('hidden');
+    }
+
+    function handleInquirySubmit(e) {
+      e.preventDefault();
+      document.getElementById('modal-form').classList.add('hidden');
+      document.getElementById('modal-success').classList.remove('hidden');
+      lucide.createIcons();
+    }
+
+    function calculateCustom() {
+      const sel = document.getElementById('custom-type');
+      const opt = sel.options[sel.selectedIndex];
+      let price = parseInt(opt.getAttribute('data-price') || '0', 10);
+      let sprints = parseInt(opt.getAttribute('data-sprints') || '4', 10);
+
+      if (document.getElementById('add-telebirr-cbe').checked) {
+        price += 50000;
+      }
+
+      document.getElementById('custom-total-etb').innerHTML = 
+        price.toLocaleString() + ' <span class="text-lg text-slate-400">ETB</span>';
+      document.getElementById('custom-sprints').innerHTML = 
+        '<i data-lucide="zap" class="w-3.5 h-3.5"></i> ' + sprints + ' Agile Sprints (' + (sprints * 2) + ' Wks)';
+      lucide.createIcons();
+    }
+
+    window.addEventListener('DOMContentLoaded', calculateCustom);
+  </script>
+</body>
+</html>

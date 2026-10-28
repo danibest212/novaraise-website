@@ -1,0 +1,277 @@
+<?php
+/**
+ * Template Name: Nova Academy
+ *
+ * @package NovaDigital
+ */
+
+get_header();
+?>
+
+  <!-- Hero Section -->
+  <section class="obsidian-radial grid-pattern relative pt-16 pb-24 border-b border-white/10 overflow-hidden">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        
+        <div class="lg:col-span-7 space-y-6">
+          <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-slate-900/90 border border-amber-500/30 shadow-xl text-xs font-mono text-amber-400">
+            <span class="w-2 h-2 rounded-full bg-amber-400 pulse-dot"></span>
+            <span>Taught by Senior Software Architects &amp; Odoo Certified Consultants</span>
+          </div>
+
+          <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-white tracking-tight leading-[1.12]">
+            Bridge Your Company's <br class="hidden sm:inline" />
+            <span class="text-transparent bg-clip-text bg-gradient-to-r from-amber-400 via-brand-interactive to-blue-400">
+              Digital Capability Gap
+            </span>
+          </h1>
+
+          <p class="text-base sm:text-lg text-slate-300 font-normal leading-relaxed max-w-2xl">
+            Theoretical IT courses don't configure Ethiopian MoR withholding taxes or deploy Docker Swarm clusters to Ethio Telecom Cloud. Nova Academy delivers intensive, hands-on enterprise cohorts and certified consultant credentials.
+          </p>
+
+          <div class="pt-2 flex flex-wrap items-center gap-4">
+            <button onclick="openRFPModal('Book Corporate Cohort')" class="px-8 py-4 rounded-full text-sm font-bold bg-gradient-to-r from-brand-primary to-blue-600 hover:from-blue-600 hover:to-brand-interactive text-white shadow-xl shadow-brand-primary/25 flex items-center gap-2.5 transition-all">
+              <span>Book Corporate Cohort</span>
+              <i data-lucide="calendar" class="w-4 h-4"></i>
+            </button>
+            <a href="#estimator" class="px-7 py-4 rounded-full text-sm font-semibold bg-slate-900/90 hover:bg-slate-800 text-slate-200 border border-slate-700 flex items-center gap-2">
+              <i data-lucide="calculator" class="w-4 h-4 text-brand-interactive"></i>
+              <span>Estimate Training Fees</span>
+            </a>
+          </div>
+
+          <div class="grid grid-cols-3 gap-4 pt-6 border-t border-slate-800/80 font-mono">
+            <div>
+              <div class="text-2xl font-extrabold text-white font-heading">100%</div>
+              <div class="text-xs text-slate-400">Sandbox Labs</div>
+            </div>
+            <div>
+              <div class="text-2xl font-extrabold text-amber-400 font-heading">Odoo 19</div>
+              <div class="text-xs text-slate-400">Certified Track</div>
+            </div>
+            <div>
+              <div class="text-2xl font-extrabold text-emerald-400 font-heading">Official</div>
+              <div class="text-xs text-slate-400">Credentials</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="lg:col-span-5 relative">
+          <div class="rounded-3xl overflow-hidden shadow-2xl border border-slate-700 bg-slate-950 p-3">
+            <div class="flex items-center justify-between px-3 py-2 bg-slate-900 rounded-t-2xl border-b border-slate-800 mb-2 font-mono text-xs">
+              <div class="flex items-center gap-1.5">
+                <span class="w-2.5 h-2.5 rounded-full bg-rose-500"></span>
+                <span class="w-2.5 h-2.5 rounded-full bg-amber-500"></span>
+                <span class="w-2.5 h-2.5 rounded-full bg-emerald-500"></span>
+              </div>
+              <span class="text-slate-400">academy.novaraise.et/lab</span>
+              <span class="text-[10px] text-emerald-400 font-bold">LIVE LAB</span>
+            </div>
+            <img src="<?php echo novadigital_asset('erp_dashboard_10.png'); ?>" alt="Odoo ERP Sandbox Lab" class="w-full h-auto rounded-xl object-cover" />
+            <div class="p-3 bg-slate-900/90 rounded-b-xl flex items-center justify-between text-xs font-mono text-slate-400 mt-2">
+              <span>Certified ERP Consultant Track</span>
+              <span class="text-amber-400">Addis Ababa Cohorts</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- 4 Specialized Tracks -->
+  <section class="py-24 bg-[#030610] border-b border-white/10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <span class="text-xs font-mono font-bold uppercase tracking-widest text-brand-interactive">
+          CURRICULUM TRACKS
+        </span>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight mt-2">
+          Practical Programs for Ethiopian Enterprises
+        </h2>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+
+        <div class="glass-card-dark rounded-3xl p-7 border border-white/10 flex flex-col justify-between">
+          <div>
+            <div class="w-12 h-12 rounded-2xl bg-blue-950 text-brand-interactive flex items-center justify-center mb-5">
+              <i data-lucide="layers" class="w-6 h-6"></i>
+            </div>
+            <span class="text-[10px] font-mono font-bold text-blue-400 uppercase tracking-wider bg-blue-950 px-2 py-0.5 rounded border border-blue-800">ERP CERTIFICATION</span>
+            <h3 class="text-xl font-bold text-white mt-3">Certified Odoo ERP Track</h3>
+            <p class="text-slate-400 text-xs mt-2 leading-relaxed">
+              4-week intensive on configuring Odoo 19 for Ethiopian enterprises: Chart of Accounts, WHT 2%/3%, Ge'ez calendar, Sene 30 fiscal closing, and Telebirr merchant integration.
+            </p>
+          </div>
+          <div class="mt-6 pt-4 border-t border-slate-800 flex items-center justify-between text-xs font-mono">
+            <span class="text-slate-400">35,000 ETB / Seat</span>
+            <button onclick="openRFPModal('Odoo ERP Track Registration')" class="font-bold text-brand-interactive hover:underline">Register →</button>
+          </div>
+        </div>
+
+        <div class="glass-card-dark rounded-3xl p-7 border border-white/10 flex flex-col justify-between">
+          <div>
+            <div class="w-12 h-12 rounded-2xl bg-purple-950 text-purple-400 flex items-center justify-center mb-5">
+              <i data-lucide="cpu" class="w-6 h-6"></i>
+            </div>
+            <span class="text-[10px] font-mono font-bold text-purple-400 uppercase tracking-wider bg-purple-950 px-2 py-0.5 rounded border border-purple-800">C-SUITE DIRECTORS</span>
+            <h3 class="text-xl font-bold text-white mt-3">Executive AI Masterclass</h3>
+            <p class="text-slate-400 text-xs mt-2 leading-relaxed">
+              1-day executive masterclass for Managing Directors and Board Members. Cut through AI hype and implement autonomous workflows, cloud security, and digital governance.
+            </p>
+          </div>
+          <div class="mt-6 pt-4 border-t border-slate-800 flex items-center justify-between text-xs font-mono">
+            <span class="text-slate-400">85,000 ETB Flat</span>
+            <button onclick="openRFPModal('Executive AI Masterclass Reservation')" class="font-bold text-purple-400 hover:underline">Register →</button>
+          </div>
+        </div>
+
+        <div class="glass-card-dark rounded-3xl p-7 border border-white/10 flex flex-col justify-between">
+          <div>
+            <div class="w-12 h-12 rounded-2xl bg-emerald-950 text-emerald-400 flex items-center justify-center mb-5">
+              <i data-lucide="trending-up" class="w-6 h-6"></i>
+            </div>
+            <span class="text-[10px] font-mono font-bold text-emerald-400 uppercase tracking-wider bg-emerald-950 px-2 py-0.5 rounded border border-emerald-800">COMMERCIAL REVENUE</span>
+            <h3 class="text-xl font-bold text-white mt-3">B2B Tech Sales Bootcamp</h3>
+            <p class="text-slate-400 text-xs mt-2 leading-relaxed">
+              Train your corporate commercial team to win 7-figure enterprise contracts in Addis Ababa. Modern consultative selling, CRM pipeline discipline, and RFP response mastery.
+            </p>
+          </div>
+          <div class="mt-6 pt-4 border-t border-slate-800 flex items-center justify-between text-xs font-mono">
+            <span class="text-slate-400">65,000 ETB Flat</span>
+            <button onclick="openRFPModal('B2B Tech Sales Bootcamp Booking')" class="font-bold text-emerald-400 hover:underline">Register →</button>
+          </div>
+        </div>
+
+        <div class="glass-card-dark rounded-3xl p-7 border border-white/10 flex flex-col justify-between">
+          <div>
+            <div class="w-12 h-12 rounded-2xl bg-amber-950 text-amber-400 flex items-center justify-center mb-5">
+              <i data-lucide="terminal" class="w-6 h-6"></i>
+            </div>
+            <span class="text-[10px] font-mono font-bold text-amber-400 uppercase tracking-wider bg-amber-950 px-2 py-0.5 rounded border border-amber-800">ENGINEERING TEAMS</span>
+            <h3 class="text-xl font-bold text-white mt-3">DevOps &amp; Cloud Architecture</h3>
+            <p class="text-slate-400 text-xs mt-2 leading-relaxed">
+              Upskill in-house engineers in Docker, GitLab CI/CD, PostgreSQL replication, high-availability deployments, and Ethio Telecom Tier III data center configuration.
+            </p>
+          </div>
+          <div class="mt-6 pt-4 border-t border-slate-800 flex items-center justify-between text-xs font-mono">
+            <span class="text-slate-400">40,000 ETB / Seat</span>
+            <button onclick="openRFPModal('DevOps Bootcamp Registration')" class="font-bold text-amber-400 hover:underline">Register →</button>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Cohort Investment Estimator -->
+  <section id="estimator" class="py-24 bg-[#050814] text-white">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-2xl mx-auto mb-12">
+        <span class="text-xs font-mono font-bold uppercase tracking-widest text-brand-interactive bg-blue-950 px-3 py-1 rounded-full border border-blue-800">
+          OFFICIAL 2026/27 CATALOG
+        </span>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-white mt-3">
+          Nova Academy Cohort Estimator
+        </h2>
+      </div>
+
+      <div class="glass-card-dark rounded-3xl p-8 border border-slate-800 shadow-2xl">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+          
+          <div class="lg:col-span-7 space-y-6">
+            <div>
+              <label class="block text-xs font-mono font-bold uppercase text-slate-300 mb-2">Select Program:</label>
+              <select id="acad-program" onchange="calculateAcademy()" class="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-3 text-white text-sm font-semibold focus:outline-none focus:border-brand-interactive">
+                <option value="odoo_track" data-price="35000" data-is-per-seat="true" data-duration="4 Weeks">Certified Odoo 19 ERP Consultant Track (35,000 ETB/seat • 4 Weeks)</option>
+                <option value="exec_ai" data-price="85000" data-is-per-seat="false" data-duration="1 Full Day">Executive AI Strategy Masterclass (85,000 ETB flat cohort • 1 Day)</option>
+                <option value="b2b_sales" data-price="65000" data-is-per-seat="false" data-duration="3 Days">Corporate B2B Tech Sales Excellence (65,000 ETB flat cohort • 3 Days)</option>
+                <option value="devops_bootcamp" data-price="40000" data-is-per-seat="true" data-duration="3 Weeks">Cloud DevOps &amp; Ethio Telecom Infrastructure (40,000 ETB/seat • 3 Weeks)</option>
+              </select>
+            </div>
+
+            <div>
+              <label class="block text-xs font-mono font-bold uppercase text-slate-300 mb-2">Number of Seats:</label>
+              <input type="range" id="acad-seats" min="1" max="25" value="5" oninput="calculateAcademy()" class="w-full h-2 bg-slate-700 rounded-lg appearance-none cursor-pointer accent-brand-interactive" />
+              <div class="flex justify-between text-xs text-slate-400 mt-2 font-mono">
+                <span>1 Seat</span>
+                <span id="seats-display" class="font-bold text-white text-sm">5 Seats</span>
+                <span>25 Seats</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="lg:col-span-5 bg-gradient-to-br from-slate-900 to-brand-obsidian p-6 sm:p-8 rounded-2xl border border-slate-700 flex flex-col justify-between shadow-2xl">
+            <div>
+              <div class="text-xs font-mono font-bold uppercase text-slate-400 mb-1">Total Training Investment</div>
+              <div class="text-4xl font-extrabold text-brand-interactive font-mono" id="acad-total-etb">
+                175,000 <span class="text-lg text-slate-400">ETB</span>
+              </div>
+              <div class="text-xs text-slate-400 mt-1 font-mono">MoR Deductible Corporate Training</div>
+
+              <div class="mt-6 pt-6 border-t border-slate-800 space-y-2 text-xs font-mono">
+                <div class="flex justify-between">
+                  <span class="text-slate-400">Duration:</span>
+                  <span class="font-bold text-emerald-400" id="acad-duration">4 Weeks</span>
+                </div>
+                <div class="flex justify-between">
+                  <span class="text-slate-400">Format:</span>
+                  <span class="font-bold text-white">Live Hands-On Sandbox</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="mt-8 pt-6 border-t border-slate-800">
+              <button onclick="openRFPModal('Cohort Reservation (' + document.getElementById('acad-total-etb').innerText + ')')" class="w-full py-3.5 rounded-full text-xs font-mono font-bold text-white bg-gradient-to-r from-brand-primary to-blue-600 hover:from-blue-600 hover:to-brand-interactive shadow-lg transition-all">
+                <span>Reserve Cohort Dates</span>
+              </button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <script>
+    function calculateAcademy() {
+      const sel = document.getElementById('acad-program');
+      if (!sel) return;
+      const opt = sel.options[sel.selectedIndex];
+      const price = parseInt(opt.getAttribute('data-price') || '35000', 10);
+      const isPerSeat = opt.getAttribute('data-is-per-seat') === 'true';
+      const duration = opt.getAttribute('data-duration') || '4 Weeks';
+      const seatsInput = document.getElementById('acad-seats');
+      const seats = seatsInput ? parseInt(seatsInput.value || '5', 10) : 5;
+
+      const seatsDisplay = document.getElementById('seats-display');
+      if (seatsDisplay) {
+        seatsDisplay.innerText = seats + (seats === 1 ? ' Seat' : ' Seats');
+      }
+
+      let total = isPerSeat ? (price * seats) : price;
+
+      const totalEl = document.getElementById('acad-total-etb');
+      const durEl = document.getElementById('acad-duration');
+      if (totalEl) {
+        totalEl.innerHTML = total.toLocaleString() + ' <span class="text-lg text-slate-400">ETB</span>';
+      }
+      if (durEl) {
+        durEl.innerText = duration;
+      }
+      if (window.lucide) {
+        lucide.createIcons();
+      }
+    }
+
+    window.addEventListener('DOMContentLoaded', calculateAcademy);
+  </script>
+
+<?php
+get_footer();
