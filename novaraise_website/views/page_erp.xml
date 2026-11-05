@@ -159,7 +159,7 @@
             The 901 Discrete Enterprise Module Catalog
           </h2>
           <p class="text-slate-400 text-sm mt-2 max-w-2xl">
-            Clean-core Odoo 19 modules consolidated from SmartERP and Ashewa enterprise deployments. No third-party bloat.
+            Clean-core Odoo 19 modules consolidated across all Ethiopian enterprise verticals. Zero third-party bloat.
           </p>
         </div>
         <button onclick="openRFPModal('Download Complete 901 Module Matrix')" class="inline-flex items-center gap-2 px-6 py-3 rounded-full text-xs font-mono font-bold bg-slate-900 hover:bg-slate-800 text-white border border-slate-700 transition-all">
