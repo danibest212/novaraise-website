@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Earn Money with Your Language | Novaraise</title>
+  <meta name="description" content="Earn money on your phone by recording, transcribing and checking Amharic, Oromo, Tigrinya and Somali. Paid through telebirr or bank transfer." />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Tailwind CSS & Lucide Icons -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              obsidian: '#030712',
+              navyDark: '#080E1E',
+              navySurface: '#0E172B',
+              navyCard: '#131F3B',
+              primary: '#0057D9',
+              interactive: '#0096E6',
+              accent: '#38BDF8',
+              emerald: '#10B981',
+              gold: '#F59E0B',
+              purple: '#8B5CF6'
+            }
+          },
+          fontFamily: {
+            sans: ['Poppins', 'sans-serif'],
+            mono: ['JetBrains Mono', 'monospace'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    body { font-family: 'Poppins', sans-serif; background-color: #030712; color: #E2E8F0; }
+    .glass-panel { background: rgba(14, 23, 43, 0.7); backdrop-filter: blur(20px); border: 1px solid rgba(255, 255, 255, 0.08); }
+    .glass-card { background: rgba(14, 23, 43, 0.5); backdrop-filter: blur(14px); border: 1px solid rgba(255, 255, 255, 0.07); transition: all 0.3s ease; }
+    .glass-card:hover { border-color: rgba(16, 185, 129, 0.4); transform: translateY(-3px); box-shadow: 0 20px 40px -15px rgba(16, 185, 129, 0.25); }
+    .text-gradient { background: linear-gradient(135deg, #34D399 0%, #10B981 50%, #059669 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+    .glow-emerald { box-shadow: 0 0 30px -5px rgba(16, 185, 129, 0.4); }
+  </style>
+</head>
+<body class="bg-brand-obsidian text-slate-200 antialiased selection:bg-emerald-400 selection:text-black">
+
+  <!-- TOP BAR -->
+  <div class="bg-[#02050E] text-slate-400 text-xs py-2 px-4 border-b border-white/[0.06] font-mono">
+    <div class="max-w-7xl mx-auto flex items-center justify-between">
+      <div class="flex items-center gap-2">
+        <a href="index.html" class="text-brand-interactive hover:text-white transition-colors flex items-center gap-1">
+          <i data-lucide="arrow-left" class="w-3.5 h-3.5"></i>
+          <span>Novaraise Main Hub</span>
+        </a>
+        <span class="text-slate-600">|</span>
+        <span class="text-slate-300">Earn Money with Your Language • Instant Telebirr / CBE Payouts</span>
+      </div>
+      <div class="flex items-center gap-4 text-[11px]">
+        <span class="text-emerald-400 font-bold">100% Free to Join</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- HEADER -->
+  <header class="sticky top-0 z-50 glass-panel border-b border-white/10 px-4 sm:px-8 py-3.5 transition-all">
+    <div class="max-w-7xl mx-auto flex items-center justify-between">
+      
+      <a href="index.html" class="flex items-center gap-3">
+        <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-emerald-600 via-teal-600 to-emerald-400 flex items-center justify-center font-bold text-white shadow-lg shadow-emerald-500/30 font-mono text-lg">
+          <i data-lucide="smartphone" class="w-5 h-5"></i>
+        </div>
+        <div class="flex flex-col">
+          <span class="font-extrabold text-lg text-white tracking-tight flex items-center gap-1.5">
+            Novaraise <span class="text-emerald-400">Earn</span>
+          </span>
+          <span class="text-[9px] font-mono text-slate-400 tracking-wider uppercase">Contributor Portal</span>
+        </div>
+      </a>
+
+      <!-- Desktop Nav -->
+      <nav class="hidden xl:flex items-center gap-1 text-xs font-semibold text-slate-300">
+        <a href="index.html" class="px-3 py-2 rounded-full hover:text-white hover:bg-white/[0.05] transition-colors">Home</a>
+        <a href="services.html" class="px-3 py-2 rounded-full hover:text-white hover:bg-white/[0.05] transition-colors">Services</a>
+        <a href="reportready.html" class="px-3 py-2 rounded-full hover:text-white hover:bg-white/[0.05] transition-colors">ReportReady</a>
+        <a href="language-data.html" class="px-3 py-2 rounded-full hover:text-white hover:bg-white/[0.05] transition-colors">Language Data</a>
+        <a href="earn.html" class="px-3.5 py-2 rounded-full text-white bg-emerald-950 border border-emerald-800/80 transition-colors">Earn</a>
+        <a href="academy.html" class="px-3 py-2 rounded-full hover:text-white hover:bg-white/[0.05] transition-colors">Academy</a>
+        <a href="partners.html" class="px-3 py-2 rounded-full hover:text-white hover:bg-white/[0.05] transition-colors">Partners and Impact</a>
+        <a href="about.html" class="px-3 py-2 rounded-full hover:text-white hover:bg-white/[0.05] transition-colors">About</a>
+        <a href="contact.html" class="px-3 py-2 rounded-full hover:text-white hover:bg-white/[0.05] transition-colors">Contact</a>
+      </nav>
+
+      <div class="flex items-center gap-3">
+        <a href="#signup" class="px-5 py-2.5 rounded-full text-xs font-bold font-mono text-slate-950 bg-emerald-400 hover:bg-emerald-300 transition-all glow-emerald flex items-center gap-2">
+          <span>Sign Up to Contribute</span>
+          <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+        </a>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="relative pt-20 pb-24 px-4 sm:px-6 lg:px-8 border-b border-white/[0.08] overflow-hidden">
+    <div class="absolute -top-24 left-1/2 -translate-x-1/2 w-[700px] h-[400px] bg-gradient-to-tr from-emerald-600/20 via-teal-600/15 to-transparent blur-[130px] rounded-full pointer-events-none"></div>
+
+    <div class="max-w-4xl mx-auto text-center space-y-6 relative z-10">
+      <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-slate-900/90 border border-emerald-500/30 text-xs font-mono text-emerald-400 shadow-xl">
+        <span class="w-2 h-2 rounded-full bg-emerald-400 animate-ping"></span>
+        <span>CONTRIBUTOR NETWORK • AMHARIC, OROMO, TIGRINYA, SOMALI</span>
+      </div>
+
+      <h1 class="text-4xl sm:text-6xl font-extrabold text-white tracking-tight leading-[1.12]">
+        Your language is valuable. <br class="hidden sm:inline" />
+        <span class="text-gradient">Get paid for it.</span>
+      </h1>
+
+      <p class="text-base sm:text-lg text-slate-300 max-w-2xl mx-auto font-normal leading-relaxed">
+        Help build technology that understands Ethiopian languages, and earn money for your work, directly from your phone.
+      </p>
+
+      <div class="pt-3">
+        <a href="#signup" class="px-9 py-4 rounded-full text-sm font-bold font-mono text-slate-950 bg-emerald-400 hover:bg-emerald-300 transition-all glow-emerald inline-flex items-center gap-2 shadow-2xl">
+          <span>Sign Up to Contribute</span>
+          <i data-lucide="arrow-right" class="w-4 h-4"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW IT WORKS -->
+  <section class="py-24 px-4 sm:px-6 lg:px-8 border-b border-white/[0.08]">
+    <div class="max-w-6xl mx-auto space-y-16">
+      
+      <div class="text-center space-y-3">
+        <span class="text-xs font-mono font-bold uppercase tracking-widest text-emerald-400">SIMPLE 4-STEP ONBOARDING</span>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-white">How It Works</h2>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        
+        <div class="glass-card rounded-3xl p-7 space-y-3">
+          <div class="text-3xl font-extrabold font-mono text-emerald-400">1. Sign up.</div>
+          <p class="text-slate-300 text-xs sm:text-sm leading-relaxed">
+            Create your free account using your phone number. No fees, ever.
+          </p>
+        </div>
+
+        <div class="glass-card rounded-3xl p-7 space-y-3">
+          <div class="text-3xl font-extrabold font-mono text-teal-400">2. Take a short test.</div>
+          <p class="text-slate-300 text-xs sm:text-sm leading-relaxed">
+            Show that you know your language through a quick 5-minute reading or typing check.
+          </p>
+        </div>
+
+        <div class="glass-card rounded-3xl p-7 space-y-3">
+          <div class="text-3xl font-extrabold font-mono text-cyan-400">3. Start tasks.</div>
+          <p class="text-slate-300 text-xs sm:text-sm leading-relaxed">
+            Record sentences, transcribe audio, translate or check others' work on your phone.
+          </p>
+        </div>
+
+        <div class="glass-card rounded-3xl p-7 space-y-3">
+          <div class="text-3xl font-extrabold font-mono text-amber-400">4. Get paid.</div>
+          <p class="text-slate-300 text-xs sm:text-sm leading-relaxed">
+            Earnings are sent directly to your Telebirr account or bank transfer upon validation.
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- WHO CAN JOIN & YOUR RIGHTS -->
+  <section class="py-24 px-4 sm:px-6 lg:px-8 bg-[#040816] border-b border-white/[0.08]">
+    <div class="max-w-5xl mx-auto space-y-12">
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        
+        <!-- Who Can Join -->
+        <div class="glass-panel p-8 rounded-3xl space-y-4 border border-emerald-500/20">
+          <div class="w-10 h-10 rounded-xl bg-emerald-950 text-emerald-400 flex items-center justify-center">
+            <i data-lucide="users" class="w-5 h-5"></i>
+          </div>
+          <h3 class="text-2xl font-bold text-white">Who Can Join</h3>
+          <p class="text-slate-300 text-sm leading-relaxed">
+            Anyone 18 or older who speaks, reads and writes one of our languages (Amharic, Afaan Oromoo, Tigrinya, Somali) well and has a smartphone.
+          </p>
+          <p class="text-slate-400 text-xs leading-relaxed">
+            Students, graduates, women, and people outside the big cities are all welcome to apply and contribute.
+          </p>
+        </div>
+
+        <!-- Your Rights -->
+        <div class="glass-panel p-8 rounded-3xl space-y-4 border border-cyan-500/20">
+          <div class="w-10 h-10 rounded-xl bg-blue-950 text-cyan-400 flex items-center justify-center">
+            <i data-lucide="shield" class="w-5 h-5"></i>
+          </div>
+          <h3 class="text-2xl font-bold text-white">Your Rights</h3>
+          <ul class="space-y-3 text-xs sm:text-sm text-slate-300 font-mono">
+            <li class="flex items-start gap-2.5">
+              <i data-lucide="check" class="w-4 h-4 text-emerald-400 shrink-0 mt-0.5"></i>
+              <span>You always know what a task is and what you will be paid before starting.</span>
+            </li>
+            <li class="flex items-start gap-2.5">
+              <i data-lucide="check" class="w-4 h-4 text-emerald-400 shrink-0 mt-0.5"></i>
+              <span>Your personal information and privacy are strictly protected.</span>
+            </li>
+            <li class="flex items-start gap-2.5">
+              <i data-lucide="check" class="w-4 h-4 text-emerald-400 shrink-0 mt-0.5"></i>
+              <span>You can leave at any time with all earned funds paid out.</span>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FAQS -->
+  <section class="py-24 px-4 sm:px-6 lg:px-8 border-b border-white/[0.08]">
+    <div class="max-w-3xl mx-auto space-y-10">
+      
+      <div class="text-center space-y-2">
+        <h2 class="text-3xl font-extrabold text-white">Frequently Asked Questions</h2>
+      </div>
+
+      <div class="space-y-4">
+        <div class="glass-panel p-6 rounded-2xl space-y-2">
+          <h3 class="text-base font-bold text-white">How much can I earn?</h3>
+          <p class="text-slate-300 text-sm">Pay depends on the task length and type. The exact rate in ETB is shown transparently before you start each task.</p>
+        </div>
+
+        <div class="glass-panel p-6 rounded-2xl space-y-2">
+          <h3 class="text-base font-bold text-white">How soon am I paid?</h3>
+          <p class="text-slate-300 text-sm">Payouts are processed regularly via Telebirr or direct bank transfer once quality review criteria are verified.</p>
+        </div>
+
+        <div class="glass-panel p-6 rounded-2xl space-y-2">
+          <h3 class="text-base font-bold text-white">Is it free to join?</h3>
+          <p class="text-slate-300 text-sm font-semibold text-emerald-400">Yes. Never pay anyone to join Novaraise. Registration and qualification are 100% free.</p>
+        </div>
+      </div>
+
+      <!-- Registration Form Mock / Hook -->
+      <div id="signup" class="pt-8">
+        <div class="glass-panel p-8 rounded-3xl border border-emerald-500/30 text-center space-y-4">
+          <h3 class="text-2xl font-bold text-white">Ready to start earning?</h3>
+          <p class="text-xs text-slate-300 max-w-sm mx-auto">Enter your details to join the contributor pool. We will send you an onboarding SMS and test link.</p>
+          <form onsubmit="alert('Thank you! Your contributor registration has been received. You will receive an onboarding SMS shortly.'); return false;" class="max-w-md mx-auto space-y-3 pt-2 text-left text-xs font-mono">
+            <div>
+              <label class="block text-slate-400 mb-1">Your Full Name</label>
+              <input type="text" required placeholder="Abebe Bikila" class="w-full bg-slate-900 border border-slate-700 px-4 py-2.5 rounded-xl text-white focus:outline-none focus:border-emerald-400" />
+            </div>
+            <div>
+              <label class="block text-slate-400 mb-1">Phone Number (Telebirr registered)</label>
+              <input type="tel" required placeholder="0911000000" class="w-full bg-slate-900 border border-slate-700 px-4 py-2.5 rounded-xl text-white focus:outline-none focus:border-emerald-400" />
+            </div>
+            <div>
+              <label class="block text-slate-400 mb-1">Primary Language</label>
+              <select class="w-full bg-slate-900 border border-slate-700 px-4 py-2.5 rounded-xl text-white focus:outline-none focus:border-emerald-400">
+                <option>Amharic (አማርኛ)</option>
+                <option>Afaan Oromoo</option>
+                <option>Tigrinya (ትግርኛ)</option>
+                <option>Somali (Soomaali)</option>
+              </select>
+            </div>
+            <button type="submit" class="w-full py-3.5 rounded-xl font-bold bg-emerald-400 hover:bg-emerald-300 text-slate-950 font-mono transition-all">
+              Submit Contributor Application
+            </button>
+          </form>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-[#020409] text-slate-400 pt-16 pb-12 border-t border-white/[0.08] font-mono text-xs">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
+      <div class="flex flex-col md:flex-row items-start md:items-center justify-between gap-6 pb-8 border-b border-slate-800">
+        <div>
+          <div class="flex items-center gap-3">
+            <div class="w-8 h-8 rounded-lg bg-emerald-500 text-black flex items-center justify-center font-bold">N</div>
+            <span class="font-heading font-black text-lg text-white font-sans">Novaraise <span class="text-emerald-400">Earn</span></span>
+          </div>
+          <p class="text-xs text-slate-400 mt-2 font-sans max-w-md">Digital and AI solutions, built in Ethiopia for the world.</p>
+        </div>
+        <div class="text-xs text-slate-400 space-y-1">
+          <div>Contact: <strong class="text-white font-sans">Melaknesh Afework</strong></div>
+          <div>Email: <a href="mailto:melak@novarise.et" class="text-cyan-400 underline">melak@novarise.et</a></div>
+          <div>Phone: <a href="tel:+251922612024" class="text-emerald-400 underline">0922612024</a></div>
+        </div>
+      </div>
+      <div class="flex flex-wrap items-center justify-center gap-x-6 gap-y-3 text-xs text-slate-300">
+        <a href="services.html" class="hover:text-cyan-400 transition-colors">Services</a>
+        <a href="reportready.html" class="hover:text-cyan-400 transition-colors">ReportReady</a>
+        <a href="language-data.html" class="hover:text-cyan-400 transition-colors">Language Data</a>
+        <a href="earn.html" class="text-emerald-400 font-bold">Earn with Novaraise</a>
+        <a href="academy.html" class="hover:text-cyan-400 transition-colors">Academy</a>
+        <a href="partners.html" class="hover:text-cyan-400 transition-colors">Partners and Impact</a>
+        <a href="about.html" class="hover:text-cyan-400 transition-colors">About</a>
+        <a href="contact.html" class="hover:text-cyan-400 transition-colors">Contact</a>
+      </div>
+      <div class="pt-6 border-t border-slate-900 flex flex-col sm:flex-row items-center justify-between text-[11px] text-slate-500 gap-4">
+        <div>&copy; 2026 Novaraise Digital Solution PLC. All rights reserved. | novaraise.et</div>
+        <div>Addis Ababa, Ethiopia</div>
+      </div>
+    </div>
+  </footer>
+
+  <script>lucide.createIcons();</script>
+</body>
+</html>

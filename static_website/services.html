@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Software, ERP and AI Services | Novaraise</title>
+  <meta name="description" content="Web and app development, ERP and Odoo implementation, AI chatbots and automation, and data services from an Ethiopian team, at fixed scope and fixed price." />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Tailwind CSS & Lucide Icons -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              obsidian: '#030712',
+              navyDark: '#080E1E',
+              navySurface: '#0E172B',
+              navyCard: '#131F3B',
+              primary: '#0057D9',
+              interactive: '#0096E6',
+              accent: '#38BDF8',
+              emerald: '#10B981',
+              gold: '#F59E0B',
+              purple: '#8B5CF6'
+            }
+          },
+          fontFamily: {
+            sans: ['Poppins', 'sans-serif'],
+            mono: ['JetBrains Mono', 'monospace'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    body { font-family: 'Poppins', sans-serif; background-color: #030712; color: #E2E8F0; }
+    .glass-panel { background: rgba(14, 23, 43, 0.7); backdrop-filter: blur(20px); border: 1px solid rgba(255, 255, 255, 0.08); }
+    .glass-card { background: rgba(14, 23, 43, 0.5); backdrop-filter: blur(14px); border: 1px solid rgba(255, 255, 255, 0.07); transition: all 0.3s ease; }
+    .glass-card:hover { border-color: rgba(56, 189, 248, 0.4); transform: translateY(-3px); box-shadow: 0 20px 40px -15px rgba(0, 87, 217, 0.25); }
+    .text-gradient { background: linear-gradient(135deg, #38BDF8 0%, #0096E6 50%, #3B82F6 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+    .glow-cyan { box-shadow: 0 0 30px -5px rgba(0, 150, 230, 0.5); }
+  </style>
+</head>
+<body class="bg-brand-obsidian text-slate-200 antialiased selection:bg-brand-interactive selection:text-white">
+
+  <!-- TOP BAR -->
+  <div class="bg-[#02050E] text-slate-400 text-xs py-2 px-4 border-b border-white/[0.06] font-mono">
+    <div class="max-w-7xl mx-auto flex items-center justify-between">
+      <div class="flex items-center gap-2">
+        <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+        <span class="text-slate-300">Novaraise Digital Solution PLC</span>
+        <span class="text-slate-600 hidden sm:inline">|</span>
+        <span class="text-slate-400 hidden sm:inline">Fixed Scope, Fixed Price Software &amp; AI Engineering</span>
+      </div>
+      <div class="flex items-center gap-4 text-[11px]">
+        <a href="earn.html" class="text-cyan-400 hover:text-white font-semibold transition-colors flex items-center gap-1">
+          <i data-lucide="sparkles" class="w-3 h-3"></i>
+          <span>Earn with Novaraise</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- HEADER -->
+  <header class="sticky top-0 z-50 glass-panel border-b border-white/10 px-4 sm:px-8 py-3.5 transition-all">
+    <div class="max-w-7xl mx-auto flex items-center justify-between">
+      
+      <a href="index.html" class="flex items-center gap-3">
+        <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-brand-primary via-blue-600 to-brand-interactive flex items-center justify-center font-bold text-white shadow-lg shadow-brand-primary/40 font-mono text-lg">N</div>
+        <div class="flex flex-col">
+          <span class="font-extrabold text-lg text-white tracking-tight">Novaraise <span class="text-brand-interactive">Digital</span></span>
+          <span class="text-[9px] font-mono text-slate-400 tracking-wider uppercase">novaraise.et</span>
+        </div>
+      </a>
+
+      <!-- Desktop Nav -->
+      <nav class="hidden xl:flex items-center gap-1 text-xs font-semibold text-slate-300">
+        <a href="index.html" class="px-3.5 py-2 rounded-full hover:text-white hover:bg-white/[0.05] transition-colors">Home</a>
+        <a href="services.html" class="px-3.5 py-2 rounded-full text-white bg-white/[0.08] transition-colors">Services</a>
+        <a href="reportready.html" class="px-3.5 py-2 rounded-full hover:text-white hover:bg-white/[0.05] transition-colors flex items-center gap-1.5">
+          <span>ReportReady</span>
+          <span class="text-[9px] px-1.5 py-0.2 rounded bg-cyan-950 text-cyan-400 border border-cyan-800 font-mono">NGO</span>
+        </a>
+        <a href="language-data.html" class="px-3.5 py-2 rounded-full hover:text-white hover:bg-white/[0.05] transition-colors flex items-center gap-1.5">
+          <span>Language Data</span>
+          <span class="text-[9px] px-1.5 py-0.2 rounded bg-emerald-950 text-emerald-400 border border-emerald-800 font-mono">AI</span>
+        </a>
+        <a href="academy.html" class="px-3.5 py-2 rounded-full hover:text-white hover:bg-white/[0.05] transition-colors">Academy</a>
+        <a href="partners.html" class="px-3.5 py-2 rounded-full hover:text-white hover:bg-white/[0.05] transition-colors">Partners and Impact</a>
+        <a href="about.html" class="px-3.5 py-2 rounded-full hover:text-white hover:bg-white/[0.05] transition-colors">About</a>
+        <a href="contact.html" class="px-3.5 py-2 rounded-full hover:text-white hover:bg-white/[0.05] transition-colors">Contact</a>
+      </nav>
+
+      <div class="flex items-center gap-3">
+        <a href="contact.html" class="px-5 py-2.5 rounded-full text-xs font-bold font-mono text-white bg-gradient-to-r from-brand-primary via-blue-600 to-brand-interactive hover:brightness-110 transition-all glow-cyan flex items-center gap-2">
+          <span>Talk to Us</span>
+          <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+        </a>
+        <button onclick="toggleMobileMenu()" class="xl:hidden p-2 rounded-lg text-slate-300 hover:text-white hover:bg-slate-800 focus:outline-none">
+          <i data-lucide="menu" class="w-6 h-6"></i>
+        </button>
+      </div>
+
+    </div>
+
+    <!-- Mobile Drawer -->
+    <div id="mobile-menu" class="hidden xl:hidden pt-4 pb-2 border-t border-slate-800 mt-3 space-y-1 text-sm font-semibold text-slate-300">
+      <a href="index.html" class="block px-3 py-2 rounded-lg hover:bg-slate-800 hover:text-white">Home</a>
+      <a href="services.html" class="block px-3 py-2 rounded-lg text-white bg-slate-800">Services</a>
+      <a href="reportready.html" class="block px-3 py-2 rounded-lg hover:bg-slate-800 hover:text-white">ReportReady</a>
+      <a href="language-data.html" class="block px-3 py-2 rounded-lg hover:bg-slate-800 hover:text-white">Language Data</a>
+      <a href="earn.html" class="block px-3 py-2 rounded-lg hover:bg-slate-800 text-cyan-400">Earn with Novaraise</a>
+      <a href="academy.html" class="block px-3 py-2 rounded-lg hover:bg-slate-800 hover:text-white">Academy</a>
+      <a href="partners.html" class="block px-3 py-2 rounded-lg hover:bg-slate-800 hover:text-white">Partners and Impact</a>
+      <a href="about.html" class="block px-3 py-2 rounded-lg hover:bg-slate-800 hover:text-white">About</a>
+      <a href="contact.html" class="block px-3 py-2 rounded-lg hover:bg-slate-800 hover:text-white">Contact</a>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="relative pt-20 pb-24 px-4 sm:px-6 lg:px-8 border-b border-white/[0.08] overflow-hidden">
+    <div class="absolute -top-24 left-1/2 -translate-x-1/2 w-[700px] h-[400px] bg-gradient-to-tr from-brand-primary/20 via-brand-interactive/15 to-transparent blur-[120px] rounded-full pointer-events-none"></div>
+
+    <div class="max-w-4xl mx-auto text-center space-y-6 relative z-10">
+      <span class="text-xs font-mono font-bold uppercase tracking-widest text-brand-interactive bg-blue-950/80 px-3.5 py-1 rounded-full border border-blue-800/60">
+        FIXED SCOPE • FIXED PRICE • GUARANTEED DELIVERY
+      </span>
+      <h1 class="text-4xl sm:text-6xl font-extrabold text-white tracking-tight leading-[1.12]">
+        Practical digital services, <br class="hidden sm:inline" />
+        <span class="text-gradient">delivered with care.</span>
+      </h1>
+      <p class="text-base sm:text-lg text-slate-300 max-w-2xl mx-auto font-normal leading-relaxed">
+        Fixed-scope packages for organizations in Ethiopia and abroad. Clear deliverables, clear prices, a team that stays accountable.
+      </p>
+      <div class="pt-2">
+        <a href="contact.html" class="px-8 py-4 rounded-full text-sm font-bold font-mono text-white bg-gradient-to-r from-brand-primary via-blue-600 to-brand-interactive hover:brightness-110 transition-all glow-cyan inline-flex items-center gap-2">
+          <span>Request a Quote</span>
+          <i data-lucide="arrow-right" class="w-4 h-4"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- OUR SERVICES (4 CATEGORIES VERBATIM) -->
+  <section class="py-24 px-4 sm:px-6 lg:px-8 border-b border-white/[0.08]">
+    <div class="max-w-7xl mx-auto space-y-12">
+      
+      <div class="text-center max-w-3xl mx-auto space-y-3">
+        <span class="text-xs font-mono font-bold uppercase tracking-widest text-cyan-400">OUR SERVICES</span>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-white">Engineered for Your Growth</h2>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        
+        <!-- Service 1 -->
+        <div class="glass-card rounded-3xl p-8 sm:p-10 flex flex-col justify-between space-y-6">
+          <div class="space-y-4">
+            <div class="w-12 h-12 rounded-2xl bg-blue-950 text-brand-interactive flex items-center justify-center">
+              <i data-lucide="layout" class="w-6 h-6"></i>
+            </div>
+            <h3 class="text-2xl font-bold text-white">Web and app development</h3>
+            <p class="text-slate-300 text-sm leading-relaxed">
+              Websites, web applications and mobile apps designed around your users.
+            </p>
+            <div class="p-4 rounded-2xl bg-slate-900/80 border border-white/[0.06] space-y-2 text-xs font-mono">
+              <div><strong class="text-cyan-400">For:</strong> businesses, NGOs, startups and institutions.</div>
+              <div><strong class="text-emerald-400">You get:</strong> design, development, testing, launch and a handover you can run.</div>
+            </div>
+          </div>
+          <div class="pt-4 border-t border-slate-800">
+            <a href="contact.html" class="text-xs font-mono font-bold text-brand-interactive hover:text-white flex items-center gap-1.5">
+              <span>Discuss Web &amp; App Scope →</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Service 2 -->
+        <div class="glass-card rounded-3xl p-8 sm:p-10 flex flex-col justify-between space-y-6">
+          <div class="space-y-4">
+            <div class="w-12 h-12 rounded-2xl bg-emerald-950 text-emerald-400 flex items-center justify-center">
+              <i data-lucide="layers" class="w-6 h-6"></i>
+            </div>
+            <h3 class="text-2xl font-bold text-white">ERP and Odoo implementation and support</h3>
+            <p class="text-slate-300 text-sm leading-relaxed">
+              Setup, configuration, data migration, training and ongoing support for Odoo-based systems.
+            </p>
+            <div class="p-4 rounded-2xl bg-slate-900/80 border border-white/[0.06] space-y-2 text-xs font-mono">
+              <div><strong class="text-cyan-400">For:</strong> growing companies and organizations that need their finance, operations and projects in one place.</div>
+              <div><strong class="text-emerald-400">You get:</strong> a working system your team can use, with documentation and training.</div>
+            </div>
+          </div>
+          <div class="pt-4 border-t border-slate-800">
+            <a href="contact.html" class="text-xs font-mono font-bold text-emerald-400 hover:text-white flex items-center gap-1.5">
+              <span>Discuss ERP &amp; Odoo Implementation →</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Service 3 -->
+        <div class="glass-card rounded-3xl p-8 sm:p-10 flex flex-col justify-between space-y-6">
+          <div class="space-y-4">
+            <div class="w-12 h-12 rounded-2xl bg-purple-950 text-purple-400 flex items-center justify-center">
+              <i data-lucide="bot" class="w-6 h-6"></i>
+            </div>
+            <h3 class="text-2xl font-bold text-white">AI chatbots and automation</h3>
+            <p class="text-slate-300 text-sm leading-relaxed">
+              Chatbots for customer questions, orders and bookings, and automation of repetitive back-office work, in English and Amharic.
+            </p>
+            <div class="p-4 rounded-2xl bg-slate-900/80 border border-white/[0.06] space-y-2 text-xs font-mono">
+              <div><strong class="text-cyan-400">For:</strong> businesses and service organizations.</div>
+              <div><strong class="text-emerald-400">You get:</strong> a working assistant connected to your tools, plus a simple way to improve it over time.</div>
+            </div>
+          </div>
+          <div class="pt-4 border-t border-slate-800">
+            <a href="contact.html" class="text-xs font-mono font-bold text-purple-400 hover:text-white flex items-center gap-1.5">
+              <span>Discuss Chatbots &amp; Automation →</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Service 4 -->
+        <div class="glass-card rounded-3xl p-8 sm:p-10 flex flex-col justify-between space-y-6">
+          <div class="space-y-4">
+            <div class="w-12 h-12 rounded-2xl bg-amber-950 text-amber-400 flex items-center justify-center">
+              <i data-lucide="database" class="w-6 h-6"></i>
+            </div>
+            <h3 class="text-2xl font-bold text-white">Data services</h3>
+            <p class="text-slate-300 text-sm leading-relaxed">
+              Data collection, cleaning, transcription, translation and validation.
+            </p>
+            <div class="p-4 rounded-2xl bg-slate-900/80 border border-white/[0.06] space-y-2 text-xs font-mono">
+              <div><strong class="text-cyan-400">For:</strong> research teams, companies and NGOs.</div>
+              <div><strong class="text-emerald-400">You get:</strong> checked, consistent data in the format you need.</div>
+            </div>
+          </div>
+          <div class="pt-4 border-t border-slate-800">
+            <a href="language-data.html" class="text-xs font-mono font-bold text-amber-400 hover:text-white flex items-center gap-1.5">
+              <span>Explore Data &amp; Language Catalog →</span>
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- HOW PACKAGES WORK -->
+  <section class="py-24 px-4 sm:px-6 lg:px-8 bg-[#040816] border-b border-white/[0.08]">
+    <div class="max-w-5xl mx-auto space-y-12">
+      
+      <div class="text-center space-y-3">
+        <span class="text-xs font-mono font-bold uppercase tracking-widest text-emerald-400">ACCOUNTABILITY</span>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-white">How Packages Work</h2>
+        <p class="text-slate-400 text-sm">
+          Prices are in USD for international clients and ETB for local clients.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+        <div class="glass-panel p-6 rounded-2xl space-y-2">
+          <div class="text-cyan-400 font-mono font-bold text-sm">1. Fixed scope.</div>
+          <p class="text-slate-300 text-xs sm:text-sm">We agree the deliverables in writing before any line of code or configuration begins.</p>
+        </div>
+        <div class="glass-panel p-6 rounded-2xl space-y-2">
+          <div class="text-emerald-400 font-mono font-bold text-sm">2. Fixed price.</div>
+          <p class="text-slate-300 text-xs sm:text-sm">No surprise costs for the agreed scope. Transparent payment schedules tied to milestones.</p>
+        </div>
+        <div class="glass-panel p-6 rounded-2xl space-y-2">
+          <div class="text-amber-400 font-mono font-bold text-sm">3. Staged delivery.</div>
+          <p class="text-slate-300 text-xs sm:text-sm">You review progress at each stage, giving you complete visibility and control.</p>
+        </div>
+        <div class="glass-panel p-6 rounded-2xl space-y-2">
+          <div class="text-purple-400 font-mono font-bold text-sm">4. Support plans.</div>
+          <p class="text-slate-300 text-xs sm:text-sm">Monthly retainers are available after launch to ensure ongoing reliability and improvements.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FAQS -->
+  <section class="py-24 px-4 sm:px-6 lg:px-8 border-b border-white/[0.08]">
+    <div class="max-w-4xl mx-auto space-y-12">
+      
+      <div class="text-center space-y-3">
+        <span class="text-xs font-mono font-bold uppercase tracking-widest text-brand-interactive">QUESTIONS &amp; ANSWERS</span>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-white">Frequently Asked Questions</h2>
+      </div>
+
+      <div class="space-y-6">
+        <div class="glass-panel p-6 rounded-2xl space-y-2">
+          <h3 class="text-base font-bold text-white">Do you work with clients outside Ethiopia?</h3>
+          <p class="text-slate-300 text-sm leading-relaxed">
+            Yes. We work with organizations in Ethiopia, the USA, Canada and Europe, with regular online meetings and clear written updates.
+          </p>
+        </div>
+
+        <div class="glass-panel p-6 rounded-2xl space-y-2">
+          <h3 class="text-base font-bold text-white">How long does a project take?</h3>
+          <p class="text-slate-300 text-sm leading-relaxed">
+            Most packages take between 2 and 8 weeks depending on scope complexity. We confirm the exact timeline in your proposal.
+          </p>
+        </div>
+
+        <div class="glass-panel p-6 rounded-2xl space-y-2">
+          <h3 class="text-base font-bold text-white">Who does the work?</h3>
+          <p class="text-slate-300 text-sm leading-relaxed">
+            Our Ethiopian team, supported by modern AI tools. A named project lead is your contact throughout the entire engagement.
+          </p>
+        </div>
+
+        <div class="glass-panel p-6 rounded-2xl space-y-2">
+          <h3 class="text-base font-bold text-white">Can you support us after launch?</h3>
+          <p class="text-slate-300 text-sm leading-relaxed">
+            Yes. We offer monthly support and maintenance plans covering bug fixes, server updates, and continuous enhancements.
+          </p>
+        </div>
+      </div>
+
+      <div class="text-center pt-8">
+        <a href="contact.html" class="px-8 py-4 rounded-full text-sm font-bold font-mono text-white bg-gradient-to-r from-brand-primary via-blue-600 to-brand-interactive hover:brightness-110 transition-all glow-cyan inline-flex items-center gap-2">
+          <span>Request a Quote</span>
+          <i data-lucide="arrow-right" class="w-4 h-4"></i>
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-[#020409] text-slate-400 pt-16 pb-12 border-t border-white/[0.08] font-mono text-xs">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
+      
+      <div class="flex flex-col md:flex-row items-start md:items-center justify-between gap-6 pb-8 border-b border-slate-800">
+        <div>
+          <div class="flex items-center gap-3">
+            <div class="w-8 h-8 rounded-lg bg-brand-primary flex items-center justify-center font-bold text-white">N</div>
+            <span class="font-heading font-black text-lg text-white font-sans">Novaraise <span class="text-brand-interactive">Digital</span></span>
+          </div>
+          <p class="text-xs text-slate-400 mt-2 font-sans max-w-md">
+            Digital and AI solutions, built in Ethiopia for the world.
+          </p>
+        </div>
+        <div class="text-xs text-slate-400 space-y-1">
+          <div>Contact: <strong class="text-white font-sans">Melaknesh Afework</strong></div>
+          <div>Email: <a href="mailto:melak@novarise.et" class="text-cyan-400 underline">melak@novarise.et</a></div>
+          <div>Phone: <a href="tel:+251922612024" class="text-emerald-400 underline">0922612024</a></div>
+        </div>
+      </div>
+
+      <div class="flex flex-wrap items-center justify-center gap-x-6 gap-y-3 text-xs text-slate-300">
+        <a href="services.html" class="text-cyan-400 font-bold">Services</a>
+        <a href="reportready.html" class="hover:text-cyan-400 transition-colors">ReportReady</a>
+        <a href="language-data.html" class="hover:text-cyan-400 transition-colors">Language Data</a>
+        <a href="earn.html" class="hover:text-emerald-400 transition-colors">Earn with Novaraise</a>
+        <a href="academy.html" class="hover:text-cyan-400 transition-colors">Academy</a>
+        <a href="partners.html" class="hover:text-cyan-400 transition-colors">Partners and Impact</a>
+        <a href="about.html" class="hover:text-cyan-400 transition-colors">About</a>
+        <a href="contact.html" class="hover:text-cyan-400 transition-colors">Contact</a>
+        <a href="about.html#privacy" class="hover:text-slate-400 transition-colors text-slate-500">Privacy Policy</a>
+        <a href="about.html#terms" class="hover:text-slate-400 transition-colors text-slate-500">Terms</a>
+      </div>
+
+      <div class="pt-6 border-t border-slate-900 flex flex-col sm:flex-row items-center justify-between text-[11px] text-slate-500 gap-4">
+        <div>&copy; 2026 Novaraise Digital Solution PLC. All rights reserved. | novaraise.et</div>
+        <div>Addis Ababa, Ethiopia</div>
+      </div>
+
+    </div>
+  </footer>
+
+  <script>
+    lucide.createIcons();
+    function toggleMobileMenu() {
+      document.getElementById('mobile-menu').classList.toggle('hidden');
+    }
+  </script>
+</body>
+</html>
