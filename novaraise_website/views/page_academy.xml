@@ -60,7 +60,7 @@
                 <span class="w-2.5 h-2.5 rounded-full bg-amber-500"></span>
                 <span class="w-2.5 h-2.5 rounded-full bg-emerald-500"></span>
               </div>
-              <span class="text-slate-400">academy.novaraise.et/lab</span>
+              <span class="text-slate-400">academy.nova.smarterp.et/lab</span>
               <span class="text-[10px] text-emerald-400 font-bold">LIVE LAB</span>
             </div>
             <img src="/novaraise_website/static/src/img/erp_dashboard_10.png" alt="Odoo ERP Sandbox Lab" class="w-full h-auto rounded-xl object-cover" />

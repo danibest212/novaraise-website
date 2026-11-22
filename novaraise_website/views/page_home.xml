@@ -933,7 +933,7 @@
         latency: 'THROUGHPUT: 25,000 TX/MIN',
         code: `<span class="syn-comment"># Native Telebirr &amp; CBE Birr Webhook Ingestion Pipe</span>
 POST /api/v2/payment/settle/telebirr HTTP/1.1
-Host: api.novaraise.et
+Host: api.nova.smarterp.et
 Authorization: Signature keyId="novarise-prod",algorithm="hmac-sha256"
 
 {
@@ -1003,7 +1003,7 @@ def calculate_distributor_cycle(node_id, left_bv, right_bv, direct_count):
         code: `<span class="syn-comment"># Autonomous Enterprise Agent Tool Dispatch (MCP Protocol)</span>
 {
   <span class="syn-key">"agent_id"</span>: <span class="syn-str">"agent_mor_tax_auditor"</span>,
-  <span class="syn-key">"mcp_server"</span>: <span class="syn-str">"enterprise.novaraise.et:8090"</span>,
+  <span class="syn-key">"mcp_server"</span>: <span class="syn-str">"enterprise.nova.smarterp.et:8090"</span>,
   <span class="syn-key">"active_tools"</span>: [
     <span class="syn-str">"validate_tin_number"</span>,
     <span class="syn-str">"audit_invoice_withholding_rate"</span>,
@@ -1039,7 +1039,7 @@ def calculate_distributor_cycle(node_id, left_bv, right_bv, direct_count):
 version: '3.9'
 services:
   nova_erp_core:
-    image: registry.novaraise.et/core/odoo19:v19.4-mor
+    image: registry.nova.smarterp.et/core/odoo19:v19.4-mor
     deploy:
       replicas: 4
       restart_policy:

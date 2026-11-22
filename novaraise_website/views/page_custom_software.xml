@@ -60,7 +60,7 @@
                 <span class="w-2.5 h-2.5 rounded-full bg-amber-500"></span>
                 <span class="w-2.5 h-2.5 rounded-full bg-emerald-500"></span>
               </div>
-              <span class="text-slate-400">portal.novaraise.et/microservices</span>
+              <span class="text-slate-400">portal.nova.smarterp.et/microservices</span>
               <span class="text-[10px] text-purple-400 font-bold">MCP ACTIVE</span>
             </div>
             <img src="/novaraise_website/static/src/img/web_app_dashboard.png" alt="High-load Web App" class="w-full h-auto rounded-xl object-cover" />

@@ -6,7 +6,7 @@
         <head>
             <meta charset="UTF-8"/>
             <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-            <title><t t-esc="title or 'Novarise Digital — Advanced Enterprise Software Engineering &amp; Sovereign Cloud Platforms | novaraise.et'"/></title>
+            <title><t t-esc="title or 'Novarise Digital — Advanced Enterprise Software Engineering &amp; Sovereign Cloud Platforms | nova.smarterp.et'"/></title>
             <meta name="description" content="Novarise Digital Solution PLC (novaraise.et) is Ethiopia's premier enterprise software engineering firm. Sovereign MLM SuperApps, 100% MoR tax-compliant Enterprise ERP, turnkey Telegram bots &amp; ride-hailing suites, bespoke engineering, and Nova Academy in Addis Ababa."/>
 
             <!-- Fonts -->
