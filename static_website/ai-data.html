@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nova Voice &amp; Data — Crowdsourced Ethiopian-Language AI Data Platform | novaraise.et</title>
+  <meta name="description" content="Pay Ethiopians to teach global AI their languages. High-fidelity speech, text, RLHF and transcription datasets in Amharic, Afaan Oromoo, Tigrinya, and Somali. Instant contributor payouts via Telebirr." />
+
+  <!-- Fonts: Poppins & JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,600&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Tailwind CSS & Lucide Icons -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              obsidian: '#030712',
+              navyDark: '#080E1E',
+              navySurface: '#0E172B',
+              navyCard: '#131F3B',
+              primary: '#0057D9',
+              interactive: '#0096E6',
+              accent: '#38BDF8',
+              emerald: '#10B981',
+              emeraldDark: '#064E3B',
+              gold: '#F59E0B',
+              purple: '#8B5CF6'
+            }
+          },
+          fontFamily: {
+            sans: ['Poppins', 'sans-serif'],
+            mono: ['JetBrains Mono', 'monospace'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    body { font-family: 'Poppins', sans-serif; background-color: #030712; color: #E2E8F0; }
+    .glass-panel { background: rgba(14, 23, 43, 0.7); backdrop-filter: blur(20px); border: 1px solid rgba(255, 255, 255, 0.08); }
+    .glow-cyan-btn { box-shadow: 0 0 25px -5px rgba(0, 150, 230, 0.5); }
+    .pulse-dot { animation: pulseDot 2s cubic-bezier(0.4, 0, 0.6, 1) infinite; }
+    @keyframes pulseDot { 0%, 100% { opacity: 1; transform: scale(1); } 50% { opacity: .4; transform: scale(1.2); } }
+  </style>
+</head>
+<body class="bg-brand-obsidian text-slate-100 min-h-screen selection:bg-brand-interactive selection:text-black">
+
+  <!-- NAVBAR -->
+  <nav class="fixed top-0 left-0 right-0 z-50 glass-panel border-b border-slate-800/80 px-6 py-4">
+    <div class="max-w-7xl mx-auto flex items-center justify-between">
+      <a href="index.html" class="flex items-center gap-3">
+        <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-brand-primary via-blue-600 to-brand-interactive flex items-center justify-center font-bold text-white shadow-lg shadow-brand-primary/40 font-mono text-lg">N</div>
+        <div>
+          <span class="text-lg font-extrabold tracking-tight text-white">NOVACROWD <span class="text-brand-interactive">AI</span></span>
+          <span class="block text-[9px] font-mono text-slate-400 tracking-wider uppercase">By Novaraise Digital Solutions</span>
+        </div>
+      </a>
+      <div class="hidden md:flex items-center gap-8 text-xs font-semibold text-slate-300">
+        <a href="index.html" class="hover:text-white transition-colors">Overview</a>
+        <a href="#languages" class="hover:text-white transition-colors">Languages</a>
+        <a href="#how-it-works" class="hover:text-white transition-colors">How It Works</a>
+        <a href="#buyers" class="hover:text-white transition-colors">For AI Labs</a>
+        <a href="#contributors" class="hover:text-white transition-colors">For Contributors</a>
+        <a href="diaspora.html" class="text-amber-400 hover:text-amber-300 transition-colors">Sponsor an SME</a>
+        <a href="erp.html" class="text-brand-interactive hover:text-blue-300 transition-colors">Enterprise ERP</a>
+      </div>
+      <div class="flex items-center gap-3">
+        <a href="#buyers" class="px-5 py-2.5 rounded-full text-xs font-bold bg-gradient-to-r from-brand-primary to-brand-interactive hover:brightness-110 text-white transition-all glow-cyan-btn">Order Datasets</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="pt-36 pb-20 px-6 relative overflow-hidden">
+    <div class="absolute top-20 left-1/2 -translate-x-1/2 w-[700px] h-[350px] bg-gradient-to-tr from-brand-primary/20 via-brand-interactive/15 to-emerald-500/10 blur-[130px] rounded-full -z-10"></div>
+    <div class="max-w-5xl mx-auto text-center space-y-6">
+      
+      <div class="inline-flex items-center gap-2.5 px-4 py-1.5 rounded-full glass-panel border border-brand-interactive/30 text-xs font-mono text-brand-interactive shadow-sm">
+        <span class="w-2 h-2 rounded-full bg-emerald-400 pulse-dot"></span>
+        <span>ETHIOPIAN-LANGUAGE AI CROWDSOURCING &amp; SPEECH PLATFORM</span>
+      </div>
+
+      <h1 class="text-4xl sm:text-6xl font-black text-white tracking-tight leading-[1.12]">
+        Pay Ethiopians to Teach <br class="hidden sm:inline"/>
+        <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-brand-interactive to-emerald-400">
+          Global AI Their Languages.
+        </span>
+      </h1>
+
+      <p class="text-base sm:text-lg text-slate-300 max-w-3xl mx-auto leading-relaxed font-normal">
+        Over 120 million people speak Ethiopian languages, yet almost every global LLM and speech engine fails in them. Novaraise operates Ethiopia’s first ethical, crowdsourced language data platform—connecting local native speakers with global AI labs for speech collection, RLHF tuning, translation, and audio transcription.
+      </p>
+
+      <!-- Key Impact Badges -->
+      <div class="flex flex-wrap justify-center items-center gap-4 pt-4">
+        <a href="#buyers" class="px-8 py-4 rounded-full text-sm font-bold bg-gradient-to-r from-brand-primary via-blue-600 to-brand-interactive hover:brightness-110 text-white shadow-xl shadow-brand-primary/30 flex items-center gap-2 transition-all glow-cyan-btn">
+          <i data-lucide="database" class="w-4 h-4"></i>
+          <span>Order Custom AI Datasets (USD)</span>
+        </a>
+        <a href="#contributors" class="px-7 py-4 rounded-full text-sm font-semibold glass-panel hover:bg-slate-800 text-slate-200 border border-slate-700 flex items-center gap-2 transition-all">
+          <i data-lucide="smartphone" class="w-4 h-4 text-emerald-400"></i>
+          <span>Earn Money on Telebirr (ETB)</span>
+        </a>
+      </div>
+
+      <!-- Real Telemetry Grid -->
+      <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 pt-12 max-w-4xl mx-auto border-t border-slate-800/80 font-mono text-left">
+        <div class="glass-panel p-4 rounded-2xl">
+          <div class="text-2xl sm:text-3xl font-extrabold text-white">4</div>
+          <div class="text-xs text-slate-400 mt-1">Major Languages (Amharic, Oromo, Tigrinya, Somali)</div>
+        </div>
+        <div class="glass-panel p-4 rounded-2xl">
+          <div class="text-2xl sm:text-3xl font-extrabold text-brand-interactive">1,200+</div>
+          <div class="text-xs text-slate-400 mt-1">Verified Native Contributors</div>
+        </div>
+        <div class="glass-panel p-4 rounded-2xl">
+          <div class="text-2xl sm:text-3xl font-extrabold text-emerald-400">100%</div>
+          <div class="text-xs text-slate-400 mt-1">Instant Telebirr / CBE Birr Payouts</div>
+        </div>
+        <div class="glass-panel p-4 rounded-2xl">
+          <div class="text-2xl sm:text-3xl font-extrabold text-amber-400">1/5th</div>
+          <div class="text-xs text-slate-400 mt-1">Cost vs. Western Annotation Firms</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- THE TWO-SIDED FLYWHEEL -->
+  <section id="how-it-works" class="py-20 px-6 bg-slate-950/60 border-y border-slate-800/80">
+    <div class="max-w-6xl mx-auto space-y-12">
+      <div class="text-center space-y-3">
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-white">The Three-Pillar Language Flywheel</h2>
+        <p class="text-slate-400 text-sm max-w-2xl mx-auto">Proven globally by Karya, Sama, and Mozilla Common Voice—now deployed natively in Ethiopia with direct mobile money rails.</p>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-6">
+        <!-- Pillar 1 -->
+        <div class="glass-panel p-8 rounded-3xl space-y-4 border-t-2 border-emerald-500">
+          <div class="w-12 h-12 rounded-2xl bg-emerald-950/80 border border-emerald-500/30 flex items-center justify-center text-emerald-400">
+            <i data-lucide="users" class="w-6 h-6"></i>
+          </div>
+          <h3 class="text-xl font-bold text-white">1. Native Contributors</h3>
+          <p class="text-xs text-slate-300 leading-relaxed">
+            University students, bilingual professionals, and regional youth sign up on their mobile phones, pass language qualification tests, and complete bite-sized voice recordings, translations, and text reviews.
+          </p>
+          <div class="pt-2 text-xs font-mono text-emerald-400 font-semibold flex items-center gap-1.5">
+            <i data-lucide="check-circle" class="w-4 h-4"></i>
+            <span>Instant Telebirr Payouts per Task</span>
+          </div>
+        </div>
+
+        <!-- Pillar 2 -->
+        <div class="glass-panel p-8 rounded-3xl space-y-4 border-t-2 border-brand-interactive">
+          <div class="w-12 h-12 rounded-2xl bg-blue-950/80 border border-brand-interactive/30 flex items-center justify-center text-brand-interactive">
+            <i data-lucide="cpu" class="w-6 h-6"></i>
+          </div>
+          <h3 class="text-xl font-bold text-white">2. Global AI Buyers</h3>
+          <p class="text-xs text-slate-300 leading-relaxed">
+            AI foundation model labs, speech recognition companies, telecoms, Ethiopian banks, and healthcare orgs order verified corpora in Amharic, Afaan Oromoo, Tigrinya, and Somali.
+          </p>
+          <div class="pt-2 text-xs font-mono text-brand-interactive font-semibold flex items-center gap-1.5">
+            <i data-lucide="dollar-sign" class="w-4 h-4"></i>
+            <span>Billed in USD/EUR with Strict SLAs</span>
+          </div>
+        </div>
+
+        <!-- Pillar 3 -->
+        <div class="glass-panel p-8 rounded-3xl space-y-4 border-t-2 border-amber-500">
+          <div class="w-12 h-12 rounded-2xl bg-amber-950/80 border border-amber-500/30 flex items-center justify-center text-amber-400">
+            <i data-lucide="heart-handshake" class="w-6 h-6"></i>
+          </div>
+          <h3 class="text-xl font-bold text-white">3. Impact Donors</h3>
+          <p class="text-xs text-slate-300 leading-relaxed">
+            International development agencies (USAID/Kefeta, GIZ, Mastercard Foundation) fund public-good open datasets and digital inclusion programs for women and rural youth.
+          </p>
+          <div class="pt-2 text-xs font-mono text-amber-400 font-semibold flex items-center gap-1.5">
+            <i data-lucide="award" class="w-4 h-4"></i>
+            <span>100% Measurable Youth Jobs</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- LANGUAGES COVERED -->
+  <section id="languages" class="py-20 px-6">
+    <div class="max-w-6xl mx-auto space-y-12">
+      <div class="text-center space-y-3">
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-white">Supported Language Matrices</h2>
+        <p class="text-slate-400 text-sm max-w-2xl mx-auto">High-accuracy corpora, linguistic phoneme alignment, and multi-dialect coverage across the Horn of Africa.</p>
+      </div>
+
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <!-- Amharic -->
+        <div class="glass-panel p-6 rounded-2xl space-y-4">
+          <div class="flex justify-between items-center">
+            <span class="text-2xl font-black text-white">አማርኛ</span>
+            <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-blue-900/60 text-blue-300 border border-blue-700">Ge'ez Script</span>
+          </div>
+          <h4 class="text-lg font-bold text-white">Amharic</h4>
+          <p class="text-xs text-slate-300">Over 57M speakers. Speech-to-text audio corpus, customer support intent classification, conversational AI chat logs, and named entity recognition (NER).</p>
+          <div class="pt-2 text-xs font-mono text-slate-400">Corpus: 350+ Hours Audio</div>
+        </div>
+
+        <!-- Afaan Oromoo -->
+        <div class="glass-panel p-6 rounded-2xl space-y-4">
+          <div class="flex justify-between items-center">
+            <span class="text-2xl font-black text-white">Afaan Oromoo</span>
+            <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-emerald-900/60 text-emerald-300 border border-emerald-700">Qubee Script</span>
+          </div>
+          <h4 class="text-lg font-bold text-white">Oromo</h4>
+          <p class="text-xs text-slate-300">Over 40M speakers. Acoustic models, sentence verification, financial intent taxonomy, and conversational dialogue datasets.</p>
+          <div class="pt-2 text-xs font-mono text-slate-400">Corpus: 220+ Hours Audio</div>
+        </div>
+
+        <!-- Tigrinya -->
+        <div class="glass-panel p-6 rounded-2xl space-y-4">
+          <div class="flex justify-between items-center">
+            <span class="text-2xl font-black text-white">ትግርኛ</span>
+            <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-purple-900/60 text-purple-300 border border-purple-700">Ge'ez Script</span>
+          </div>
+          <h4 class="text-lg font-bold text-white">Tigrinya</h4>
+          <p class="text-xs text-slate-300">Over 10M speakers. Highly underserved linguistic domain. Medical terminology translation, parallel English-Tigrinya text, and speech sampling.</p>
+          <div class="pt-2 text-xs font-mono text-slate-400">Corpus: 140+ Hours Audio</div>
+        </div>
+
+        <!-- Somali -->
+        <div class="glass-panel p-6 rounded-2xl space-y-4">
+          <div class="flex justify-between items-center">
+            <span class="text-2xl font-black text-white">Af-Soomaali</span>
+            <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-amber-900/60 text-amber-300 border border-amber-700">Latin Script</span>
+          </div>
+          <h4 class="text-lg font-bold text-white">Somali</h4>
+          <p class="text-xs text-slate-300">Over 22M speakers across Eastern Ethiopia and the Horn. Cross-border commercial dialogue, e-commerce voice query datasets, and translation benchmarks.</p>
+          <div class="pt-2 text-xs font-mono text-slate-400">Corpus: 120+ Hours Audio</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BUYER PACKAGES & PRICING (USD) -->
+  <section id="buyers" class="py-20 px-6 bg-slate-950/80 border-t border-slate-800">
+    <div class="max-w-6xl mx-auto space-y-12">
+      <div class="text-center space-y-3">
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-white">For Global AI Labs &amp; Enterprise Buyers</h2>
+        <p class="text-slate-400 text-sm max-w-2xl mx-auto">Purchase validated language datasets or commission custom voice &amp; text annotation pipelines with strict quality assurance.</p>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-6">
+        <!-- Package 1 -->
+        <div class="glass-panel p-8 rounded-3xl space-y-6 flex flex-col justify-between">
+          <div class="space-y-4">
+            <div class="text-xs font-mono text-brand-interactive uppercase tracking-wider font-bold">Pilot Audio Corpus</div>
+            <h3 class="text-2xl font-bold text-white">Speech &amp; ASR Starter</h3>
+            <div class="text-3xl font-extrabold text-white">$2,500 <span class="text-xs text-slate-400 font-normal">/ 50 Hours</span></div>
+            <p class="text-xs text-slate-300 leading-relaxed">
+              50 hours of verified, native speaker recordings across balanced demographics (gender, age, regional accents) with time-aligned word-level transcription.
+            </p>
+            <ul class="text-xs text-slate-300 space-y-2 font-mono">
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-emerald-400"></i> Amharic or Afaan Oromoo</li>
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-emerald-400"></i> Double-blind QC verification</li>
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-emerald-400"></i> Full commercial license</li>
+            </ul>
+          </div>
+          <button onclick="openDatasetModal('Speech & ASR Starter ($2,500)')" class="w-full py-3 rounded-xl bg-slate-800 hover:bg-slate-700 text-white font-mono text-xs font-bold transition-all">Order Pilot Corpus</button>
+        </div>
+
+        <!-- Package 2 -->
+        <div class="glass-panel p-8 rounded-3xl space-y-6 border-2 border-brand-interactive relative flex flex-col justify-between shadow-2xl shadow-brand-primary/20">
+          <div class="absolute -top-3.5 left-1/2 -translate-x-1/2 px-4 py-1 rounded-full bg-gradient-to-r from-brand-primary to-brand-interactive text-white text-[10px] font-mono font-bold tracking-wider uppercase">Most Popular</div>
+          <div class="space-y-4">
+            <div class="text-xs font-mono text-brand-interactive uppercase tracking-wider font-bold">Comprehensive Dataset</div>
+            <h3 class="text-2xl font-bold text-white">Enterprise Speech &amp; NLP</h3>
+            <div class="text-3xl font-extrabold text-white">$6,500 <span class="text-xs text-slate-400 font-normal">/ 150 Hours</span></div>
+            <p class="text-xs text-slate-300 leading-relaxed">
+              150 hours of high-fidelity audio, domain-specific vocabularies (banking, health, legal), sentiment tags, and conversational LLM fine-tuning dialogues.
+            </p>
+            <ul class="text-xs text-slate-300 space-y-2 font-mono">
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-brand-interactive"></i> Choice of any 2 languages</li>
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-brand-interactive"></i> 99.2% phonetic accuracy</li>
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-brand-interactive"></i> Hugging Face / PyTorch format</li>
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-brand-interactive"></i> Includes 50 youth job hours</li>
+            </ul>
+          </div>
+          <button onclick="openDatasetModal('Enterprise Speech & NLP ($6,500)')" class="w-full py-3 rounded-xl bg-gradient-to-r from-brand-primary to-brand-interactive text-white font-mono text-xs font-bold transition-all glow-cyan-btn">Commission Enterprise Corpus</button>
+        </div>
+
+        <!-- Package 3 -->
+        <div class="glass-panel p-8 rounded-3xl space-y-6 flex flex-col justify-between">
+          <div class="space-y-4">
+            <div class="text-xs font-mono text-amber-400 uppercase tracking-wider font-bold">Custom AI Pipeline</div>
+            <h3 class="text-2xl font-bold text-white">RLHF &amp; Model Alignment</h3>
+            <div class="text-3xl font-extrabold text-white">Custom <span class="text-xs text-slate-400 font-normal">/ Dedicated Pod</span></div>
+            <p class="text-xs text-slate-300 leading-relaxed">
+              Dedicated pod of qualified Ethiopian linguists for continuous reinforcement learning from human feedback (RLHF), safety red-teaming, and model localization.
+            </p>
+            <ul class="text-xs text-slate-300 space-y-2 font-mono">
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-amber-400"></i> Dedicated project manager</li>
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-amber-400"></i> Custom evaluation rubrics</li>
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-amber-400"></i> ISO &amp; ethical data protocols</li>
+            </ul>
+          </div>
+          <button onclick="openDatasetModal('Custom RLHF Pipeline')" class="w-full py-3 rounded-xl bg-slate-800 hover:bg-slate-700 text-white font-mono text-xs font-bold transition-all">Contact Engineering Team</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTRIBUTOR SIGNUP (ETB PAYOUTS) -->
+  <section id="contributors" class="py-20 px-6">
+    <div class="max-w-4xl mx-auto glass-panel p-8 sm:p-12 rounded-3xl border border-emerald-500/30 relative overflow-hidden">
+      <div class="absolute -right-20 -bottom-20 w-80 h-80 bg-emerald-500/10 rounded-full blur-[100px] -z-10"></div>
+      
+      <div class="space-y-6 text-center">
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-950 text-emerald-400 border border-emerald-800 text-xs font-mono">
+          <i data-lucide="check-circle" class="w-3.5 h-3.5"></i>
+          <span>ለኢትዮጵያውያን ተማሪዎች እና ወጣቶች የተዘጋጀ</span>
+        </div>
+
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-white">
+          በስልክዎ ድምፅ በመቅረጽ እና በመተርጎም በቴሌብር ይክፈሉ
+        </h2>
+
+        <p class="text-sm text-slate-300 max-w-2xl mx-auto leading-relaxed">
+          በአማርኛ፣ በኦሮምኛ፣ በትግርኛ ወይም በሶማሊኛ ቋንቋ አጫጭር ዓረፍተ ነገሮችን በማንበብ፣ ኦዲዮ በማዳመጥ ወይም በማረም ተጨማሪ ገቢ ያግኙ። የተሰሩ ስራዎች ሲረጋገጡ ክፍያዎ በቀጥታ በቴሌብር (Telebirr) ወይም በኢትዮጵያ ንግድ ባንክ (CBE) ይላክልዎታል።
+        </p>
+
+        <div class="pt-4 flex flex-wrap justify-center gap-4">
+          <button onclick="openContributorModal()" class="px-8 py-4 rounded-full text-sm font-bold bg-emerald-600 hover:bg-emerald-500 text-white shadow-xl shadow-emerald-600/30 flex items-center gap-2 transition-all">
+            <i data-lucide="user-plus" class="w-4 h-4"></i>
+            <span>በቴሌግራም ወይም በዌብሳይት ይመዝገቡ</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MODAL: ORDER DATASET -->
+  <div id="dataset-modal" class="fixed inset-0 z-50 hidden bg-black/80 backdrop-blur-sm flex items-center justify-center p-4">
+    <div class="glass-panel p-8 rounded-3xl max-w-lg w-full space-y-4 border border-slate-700">
+      <div class="flex justify-between items-center">
+        <h3 class="text-xl font-bold text-white">Order Ethiopian AI Dataset</h3>
+        <button onclick="closeModal('dataset-modal')" class="text-slate-400 hover:text-white"><i data-lucide="x" class="w-5 h-5"></i></button>
+      </div>
+      <p class="text-xs text-slate-300" id="dataset-package-name">Selected: Speech & ASR Starter ($2,500)</p>
+      <form class="space-y-3" onsubmit="event.preventDefault(); alert('Thank you! Our AI Data Partnerships lead will contact you within 24 hours with sample corpora and SLA details.'); closeModal('dataset-modal');">
+        <div>
+          <label class="block text-xs font-mono text-slate-400 mb-1">Organization / AI Lab *</label>
+          <input type="text" required placeholder="e.g. Stanford NLP / Fintech AI" class="w-full px-4 py-2.5 rounded-xl bg-slate-900 border border-slate-700 text-white text-xs" />
+        </div>
+        <div>
+          <label class="block text-xs font-mono text-slate-400 mb-1">Work Email *</label>
+          <input type="email" required placeholder="name@organization.com" class="w-full px-4 py-2.5 rounded-xl bg-slate-900 border border-slate-700 text-white text-xs" />
+        </div>
+        <div>
+          <label class="block text-xs font-mono text-slate-400 mb-1">Target Languages</label>
+          <select class="w-full px-4 py-2.5 rounded-xl bg-slate-900 border border-slate-700 text-white text-xs">
+            <option>Amharic (አማርኛ)</option>
+            <option>Afaan Oromoo (Oromo)</option>
+            <option>Tigrinya (ትግርኛ)</option>
+            <option>Somali (Af-Soomaali)</option>
+            <option>Multi-Language Corpus</option>
+          </select>
+        </div>
+        <button type="submit" class="w-full py-3 rounded-xl bg-brand-primary hover:bg-brand-interactive text-white font-mono text-xs font-bold transition-all">Submit Inquiry &amp; Request Sample</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- MODAL: CONTRIBUTOR -->
+  <div id="contributor-modal" class="fixed inset-0 z-50 hidden bg-black/80 backdrop-blur-sm flex items-center justify-center p-4">
+    <div class="glass-panel p-8 rounded-3xl max-w-lg w-full space-y-4 border border-emerald-500/40">
+      <div class="flex justify-between items-center">
+        <h3 class="text-xl font-bold text-white">የቋንቋ ተሳታፊዎች ምዝገባ</h3>
+        <button onclick="closeModal('contributor-modal')" class="text-slate-400 hover:text-white"><i data-lucide="x" class="w-5 h-5"></i></button>
+      </div>
+      <p class="text-xs text-slate-300">እባክዎ መረጃዎን ይሙሉ፤ የማረጋገጫ ጥያቄዎች በቴሌግራም ወይም በኤስኤምኤስ ይደርስዎታል።</p>
+      <form class="space-y-3" onsubmit="event.preventDefault(); alert('እናመሰግናለን! ምዝገባዎ ተቀባይነት አግኝቷል። በቅርቡ በቴሌግራም የፈተና ሊንክ ይላክልዎታል።'); closeModal('contributor-modal');">
+        <div>
+          <label class="block text-xs font-mono text-slate-400 mb-1">ሙሉ ስም *</label>
+          <input type="text" required placeholder="የእርስዎን ስም ያስገቡ" class="w-full px-4 py-2.5 rounded-xl bg-slate-900 border border-slate-700 text-white text-xs" />
+        </div>
+        <div>
+          <label class="block text-xs font-mono text-slate-400 mb-1">የስልክ ቁጥር (ቴሌብር ያለበት) *</label>
+          <input type="tel" required placeholder="09... / 07..." class="w-full px-4 py-2.5 rounded-xl bg-slate-900 border border-slate-700 text-white text-xs" />
+        </div>
+        <div>
+          <label class="block text-xs font-mono text-slate-400 mb-1">በደንብ የሚናገሩት ቋንቋ</label>
+          <select class="w-full px-4 py-2.5 rounded-xl bg-slate-900 border border-slate-700 text-white text-xs">
+            <option>አማርኛ (Amharic)</option>
+            <option>Afaan Oromoo (Oromo)</option>
+            <option>ትግርኛ (Tigrinya)</option>
+            <option>Af-Soomaali (Somali)</option>
+          </select>
+        </div>
+        <button type="submit" class="w-full py-3 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white font-mono text-xs font-bold transition-all">ይመዝገቡ (Submit)</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="py-12 px-6 border-t border-slate-800 text-xs text-slate-400 text-center space-y-4">
+    <div class="flex justify-center items-center gap-6 font-semibold">
+      <a href="index.html" class="hover:text-white">Corporate Home</a>
+      <a href="ai-data.html" class="text-brand-interactive">Nova Voice &amp; Data</a>
+      <a href="diaspora.html" class="hover:text-white">Sponsor an SME</a>
+      <a href="erp.html" class="hover:text-white">Enterprise ERP</a>
+      <a href="mlm.html" class="hover:text-white">MLM SuperApp</a>
+      <a href="academy.html" class="hover:text-white">Nova Academy</a>
+    </div>
+    <div>&copy; 2026/27 Novarise Digital Solution PLC (novaraise.et). Addis Ababa, Ethiopia. All rights reserved.</div>
+    <div class="text-[11px] text-slate-400">In partnership with youth employment &amp; enterprise consulting initiatives across Ethiopia.</div>
+  </footer>
+
+  <script>
+    lucide.createIcons();
+    function openDatasetModal(pkg) {
+      document.getElementById('dataset-package-name').innerText = 'Selected: ' + pkg;
+      document.getElementById('dataset-modal').classList.remove('hidden');
+    }
+    function openContributorModal() {
+      document.getElementById('contributor-modal').classList.remove('hidden');
+    }
+    function closeModal(id) {
+      document.getElementById(id).classList.add('hidden');
+    }
+  </script>
+</body>
+</html>
